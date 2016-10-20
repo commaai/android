@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="https://android.googlesource.com" name="aosp" review="android-review.googlesource.com" revision="refs/tags/android-6.0.1_r72"/>
-  <remote fetch="git://github.com" name="github"/>
+  <remote fetch="https://github.com" name="github"/>
   <remote fetch="ssh://git@github.com" name="private"/>
   
   <default remote="github" revision="refs/heads/cm-13.0" sync-c="true" sync-j="4"/>
   
-  <project name="commaai/android" path="android" remote="private" upstream="master"/>
+  <project name="commaai/android" path="android" remote="private" revision="master" upstream="master"/>
 
   <project name="CyanogenMod/AndroidAsync" path="external/koush/AndroidAsync" revision="58688ac2fa2668bf84c7e38410bd2c9f7a8123ee" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_abi_cpp" path="abi/cpp" revision="36b381298a4efb7c293d394d8b1acbda68230989" upstream="refs/heads/cm-13.0"/>
