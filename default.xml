@@ -9,7 +9,12 @@
   <project name="commaai/android" path="android" remote="private" revision="master" upstream="master"/>
   <project name="commaai/android_vendor_oneplus_oneplus3" path="vendor/oneplus/oneplus3" remote="private" revision="master" upstream="master"/>
 
-  <project name="CyanogenMod/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" revision="2c34315e1a330ec7441d69d95133e540bdfaa481" upstream="refs/heads/cm-13.0"/>
+  <project name="commaai/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="private" revision="master" upstream="master"/>
+  <project name="commaai/android_system_extras_su" path="system/extras/su" remote="private" revision="master" upstream="master"/>
+  <project name="commaai/android_vendor_cm" path="vendor/cm" remote="private" revision="master" upstream="master"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_frameworks_base" path="frameworks/base" remote="private" revision="master" upstream="master"/>
+  <project groups="pdk-fs" name="commaai/android_packages_apps_Settings" path="packages/apps/Settings" remote="private" revision="master" upstream="master"/>
+
   <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" revision="8f36610922a87b579ba0accbb54ee8a969578682" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" revision="24789192eaafa42ef2d0af0dfefc3ebfa6244a6f" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" revision="69a2f76594b76f0c8236dc928d538009a0094521" upstream="refs/heads/cm-13.0"/>
@@ -137,7 +142,6 @@
   <project name="CyanogenMod/android_external_zip" path="external/zip" revision="ac4f560c264cef168d4834f50a51538d3e422739" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_external_zlib" path="external/zlib" revision="55411b151568e5e3ca27041a9e6bb65ba3469839" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_frameworks_av" path="frameworks/av" revision="cb1cdffd7dfae7db36ecd06ce058eba505fb1b9d" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_base" path="frameworks/base" revision="19139443a777843efe4e0f02a77e939629bd249b" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_frameworks_compile_libbcc" path="frameworks/compile/libbcc" revision="b7f05114e5f408479b50647837cdf25187bfd164" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_frameworks_compile_mclinker" path="frameworks/compile/mclinker" revision="8c10afdc806cbb9d4560e90b100f0dcefdd46a21" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_frameworks_compile_slang" path="frameworks/compile/slang" revision="e29831fd37cff02f731617a6e11ca69ee1901992" upstream="refs/heads/cm-13.0"/>
@@ -265,7 +269,6 @@
   <project name="CyanogenMod/android_packages_apps_Profiles" path="packages/apps/Profiles" revision="5385cd8c6f96f6e996ce259c375f73ac58890190" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Provision" path="packages/apps/Provision" revision="78ca0db658fe6253d506916e36319e620476f809" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_apps_Screencast" path="packages/apps/Screencast" revision="f4f2ed60111382a6f7705e6a781a58bd2ecb8320" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" revision="345b425f13e4d0912d39b1e1e5dcb2fd44f32fa1" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" revision="cca206faa1a057cbb75e1648339091d9ea81ff21" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_apps_Snap" path="packages/apps/Snap" revision="c84f5b63e94d8abbd8d61427bccb389be1a404cb" upstream="refs/heads/cm-13.0"/>
@@ -318,14 +321,12 @@
   <project groups="pdk" name="CyanogenMod/android_system_bt" path="system/bt" revision="ccde045431d38d4828412149f067631487f8025f" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_core" path="system/core" revision="7e1cf25bc3f0b5af9106bc09989d63e5c8c46c37" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_extras" path="system/extras" revision="0d598afe878adff21637d2673a07a7280c7151c5" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_system_extras_su" path="system/extras/su" revision="d2c8eb2fe7fa1a0dc89a07f4021c8739557835ab" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_keymaster" path="system/keymaster" revision="dc06a0f1f26ff5431d13c544b0603c32d97ba2e9" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_media" path="system/media" revision="69c4724d5c9f0335258d9219fe1bb285f887495d" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_netd" path="system/netd" revision="a178f137f9ab96f79b9c676983036b0c2143b61e" upstream="refs/heads/cm-13.0"/>
   <project groups="qcom" name="CyanogenMod/android_system_qcom" path="system/qcom" revision="fc46d223c635380bcd0a6fd04f719f89f30ba9aa" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_security" path="system/security" revision="6b8a2a31177c7baeabe9a05afb72cdd411698598" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_vold" path="system/vold" revision="89599b68da8bca97575add0493e2440d5e204cbe" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_vendor_cm" path="vendor/cm" revision="0432d1c84921af05b0f32540e30fd1d793662322" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" revision="5451bb05347d541eb0b65aac6739a25da338e3b3" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_qcom_opensource_dpm" path="vendor/qcom/opensource/dpm" revision="070a9ec1127b42da4a4c58bd865ba64b8730d9e3" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_qcom_opensource_time-services" path="vendor/qcom/opensource/time-services" revision="6efa6a5100fb0401a02f4df40b98c495a240ce33" upstream="refs/heads/cm-13.0"/>
