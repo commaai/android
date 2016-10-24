@@ -72,7 +72,6 @@
   <project groups="pdk" name="CyanogenMod/android_external_flac" path="external/flac" revision="be255519f545b882abf564c9cd99d7b1e2703525" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_external_fsck_msdos" path="external/fsck_msdos" revision="10e42bba874acde198c4c028247790b23b7ab6a3" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_external_fuse" path="external/fuse" revision="42f00b6e0c5eb0b3f5e9168c87bf9ff276673a4e" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_external_gello_build" path="external/gello-build" revision="012226735efbf68e24ec9f5f2eab866fe47ef077" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_external_gmock" path="external/gmock" revision="31293b8f01859b67f23f2883485fc2fa11a79e7d" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_external_google" path="external/google" revision="c64f3e349dd019c7cfa030c7f021d22ed6f79d81" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_external_gptfdisk" path="external/gptfdisk" revision="1c3ad1dffdbd52c6ab842a564cd953ff567b7ee5" upstream="refs/heads/cm-13.0"/>
@@ -231,35 +230,17 @@
   <project name="CyanogenMod/android_hardware_ti_wpan" path="hardware/ti/wpan" revision="bcf2967acf1a644a59cb113891ad618b1a4cad5f" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_libcore" path="libcore" revision="436c54bf01a5f9168a5e91d241bc28f2256cd08c" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_libnativehelper" path="libnativehelper" revision="b7a25286026b49f0f7d95b25f2d32c4f47f498ef" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_AudioFX" path="packages/apps/AudioFX" revision="73e1903cc69c0302f7db0990466db974a2cc8bbc" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="ca20d951d77b5cac96d0b04f51f70108cce7f21d" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" revision="0df71000e9edb685f6be00401f88d02cbb509cf2" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_apps_BluetoothExt" path="packages/apps/BluetoothExt" revision="865465dd36988f0f933d2a1935eac91e4c4448e6" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Browser" path="packages/apps/Browser" revision="856061c377f1027db8b328762dd577af97c44b2b" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_CMBugreport" path="packages/apps/CMBugReport" revision="d15bb87357d395ef64f2e31d377e25861f1230bf" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_CMFileManager" path="packages/apps/CMFileManager" revision="96809f823932275a78c4f24a03138d06f03902c6" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_CMUpdater" path="packages/apps/CMUpdater" revision="525e0a772d06577c84a2d969b9273ccdc0d2251f" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_CMWallpapers" path="packages/apps/CMWallpapers" revision="cb8f43eb4f5c0f6d09989ee6203315a33c60a9b2" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Calendar" path="packages/apps/Calendar" revision="d531eb33ef7d2b9cc6cac70536de5aef1be1bb71" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Camera2" path="packages/apps/Camera2" revision="042a29c1d0fcb1fa7a024748043f88ee31c8261a" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" revision="ad2308f2ae01422dfcc02538584ba3dfaf9cdf47" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="60fd85ca6a06b9fdcc2ffcf120a692d90aa1d1ec" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_CertInstaller" path="packages/apps/CertInstaller" revision="c8f7e9b90ea04c8bed402f896c9168c8214343dd" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Contacts" path="packages/apps/Contacts" revision="d7eedfae7950da592014939920e43789e5d6ad19" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" revision="7744f5ca537a1a1a12ebb5afeb2cd6c3b9fd4959" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_DeskClock" path="packages/apps/DeskClock" revision="958482fbf6efa123fd4e1aa76946aacea4565c66" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Dialer" path="packages/apps/Dialer" revision="ba24a30348925078e75f138aae5dfa4d603d059e" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_Eleven" path="packages/apps/Eleven" revision="f1daeeb7b9c7efe848d6859d3d17930e362c9048" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Email" path="packages/apps/Email" revision="de1a09698082225ae9af6515a6fd3f699ba3d573" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" revision="6e780cf402aa8d0df6e68622c604a8f4fa8f85be" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Exchange" path="packages/apps/Exchange" revision="222f41e78ec73b5419bdf259477a73813cdd779a" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_FMRadio" path="packages/apps/FMRadio" revision="6e58d26be1d420468f07ee62597469751aae2c5a" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Gallery2" path="packages/apps/Gallery2" revision="2f766165a59dc730d264535b8dfa2db9818712d1" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_Gello" path="packages/apps/Gello" revision="88555fa75ed8aa49ab5f438232872a2c3bf24fbf" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_HTMLViewer" path="packages/apps/HTMLViewer" revision="7f53cdd9ca7d016d771521a7cc7219bdc8754675" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_InCallUI" path="packages/apps/InCallUI" revision="2f2c518cce8c1af9a46e7a0298a3ebd8ea893a78" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_KeyChain" path="packages/apps/KeyChain" revision="2674ad7724497782c96fba24d7d907525f59d8e8" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_LockClock" path="packages/apps/LockClock" revision="9599f79185426485723b597cf7091484b4932adc" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="5024c3561a2970964f755ae9306a1f33596ee38d" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Messaging" path="packages/apps/Messaging" revision="7619c3c57f0e9cd41a26aa8170ecae05591ac466" upstream="refs/heads/cm-13.0"/>
   <project groups="apps_nfc,pdk-fs" name="CyanogenMod/android_packages_apps_Nfc" path="packages/apps/Nfc" revision="dba33131a0d2f1d2cf6ab3f081ed07ec2198b0d4" upstream="refs/heads/cm-13.0"/>
@@ -268,12 +249,8 @@
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" revision="846011826a98c7f9093f5560e8d22a3290fe0504" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_apps_Profiles" path="packages/apps/Profiles" revision="5385cd8c6f96f6e996ce259c375f73ac58890190" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Provision" path="packages/apps/Provision" revision="78ca0db658fe6253d506916e36319e620476f809" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_Screencast" path="packages/apps/Screencast" revision="f4f2ed60111382a6f7705e6a781a58bd2ecb8320" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" revision="cca206faa1a057cbb75e1648339091d9ea81ff21" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_Snap" path="packages/apps/Snap" revision="c84f5b63e94d8abbd8d61427bccb389be1a404cb" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" revision="4c55ff0c752c34db53bbeff36e22c67efe0374bb" upstream="refs/heads/cm-13.0"/>
-  <project groups="apps_stk,pdk-fs" name="CyanogenMod/android_packages_apps_Stk" path="packages/apps/Stk" revision="94041302a54827aba890f70a0c7cd4e246439bb2" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Tag" path="packages/apps/Tag" revision="12547f35f3cf23f2e8483482747d0d1f893fd6d8" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Terminal" path="packages/apps/Terminal" revision="63398dea1c96c056d7b802fdc4ebe8caba547dbf" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_apps_ThemeChooser" path="packages/apps/ThemeChooser" revision="56b2153bb8e407d4b1b54fd6eefcc88245838500" upstream="refs/heads/cm-13.0"/>
@@ -308,15 +285,7 @@
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Telephony" path="packages/services/Telephony" revision="b8655dc761dc98734f40440d1888e26b6593bb95" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_ThemeManagerService" path="packages/services/ThemeManagerService" revision="7b296c5f08ec5aad18384e9def2295abcada49fd" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_WeatherService" path="packages/services/WeatherService" revision="8859ec368e71cbd431ba84ef227e720f8f4da0e4" upstream="refs/heads/cm-13.0"/>
-  <project groups="themes" name="CyanogenMod/android_packages_themes_HexoLibre" path="packages/themes/HexoLibre" revision="7a26b56c6100808b99e559b7860d9e1965bda0a3" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_wallpapers_Basic" path="packages/wallpapers/Basic" revision="7faa195d30bae754aecaddeab0a96b443fa76caf" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_wallpapers_Galaxy4" path="packages/wallpapers/Galaxy4" revision="3cf4e1c1c69043944911bfa7422713a09e7ebbb8" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_wallpapers_HoloSpiral" path="packages/wallpapers/HoloSpiral" revision="69c0ea634caf7bd27ba8364ed596151333358449" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_wallpapers_LivePicker" path="packages/wallpapers/LivePicker" revision="24c9bd7c4363fc00f80487bc9ea2d8c7bc2364fd" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_wallpapers_MagicSmoke" path="packages/wallpapers/MagicSmoke" revision="b51da837117eb0c50c275a80cba3c8d1bddde5af" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_wallpapers_NoiseField" path="packages/wallpapers/NoiseField" revision="1cc45c9e0aaf310ce456dce2dca2c2f65396e37a" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_wallpapers_PhaseBeam" path="packages/wallpapers/PhaseBeam" revision="4e6ecc6767d89dd10d847ec2bde3450966932957" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_wallpapers_PhotoPhase" path="packages/wallpapers/PhotoPhase" revision="d3e978f63341790fb2be768ecfa905dfedb78b5c" upstream="refs/heads/cm-13.0"/>
   <project clone-depth="1" name="CyanogenMod/android_prebuilts_cmsdk" path="prebuilts/cmsdk" revision="755b2245ebe8e65177615966dc45964365718519" upstream="master"/>
   <project groups="pdk" name="CyanogenMod/android_system_bt" path="system/bt" revision="ccde045431d38d4828412149f067631487f8025f" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_core" path="system/core" revision="7e1cf25bc3f0b5af9106bc09989d63e5c8c46c37" upstream="refs/heads/cm-13.0"/>
