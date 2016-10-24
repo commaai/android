@@ -14,6 +14,8 @@
   <project name="commaai/android_vendor_cm" path="vendor/cm" remote="private" revision="master" upstream="master"/>
   <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_frameworks_base" path="frameworks/base" remote="private" revision="master" upstream="master"/>
   <project groups="pdk-fs" name="commaai/android_packages_apps_Settings" path="packages/apps/Settings" remote="private" revision="master" upstream="master"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="private" revision="master" upstream="master"/>
+
 
   <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" revision="8f36610922a87b579ba0accbb54ee8a969578682" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" revision="24789192eaafa42ef2d0af0dfefc3ebfa6244a6f" upstream="refs/heads/cm-13.0"/>
@@ -231,35 +233,24 @@
   <project groups="pdk" name="CyanogenMod/android_libcore" path="libcore" revision="436c54bf01a5f9168a5e91d241bc28f2256cd08c" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_libnativehelper" path="libnativehelper" revision="b7a25286026b49f0f7d95b25f2d32c4f47f498ef" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="ca20d951d77b5cac96d0b04f51f70108cce7f21d" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" revision="0df71000e9edb685f6be00401f88d02cbb509cf2" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_apps_BluetoothExt" path="packages/apps/BluetoothExt" revision="865465dd36988f0f933d2a1935eac91e4c4448e6" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" revision="ad2308f2ae01422dfcc02538584ba3dfaf9cdf47" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="60fd85ca6a06b9fdcc2ffcf120a692d90aa1d1ec" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_CertInstaller" path="packages/apps/CertInstaller" revision="c8f7e9b90ea04c8bed402f896c9168c8214343dd" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" revision="7744f5ca537a1a1a12ebb5afeb2cd6c3b9fd4959" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Email" path="packages/apps/Email" revision="de1a09698082225ae9af6515a6fd3f699ba3d573" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Exchange" path="packages/apps/Exchange" revision="222f41e78ec73b5419bdf259477a73813cdd779a" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_InCallUI" path="packages/apps/InCallUI" revision="2f2c518cce8c1af9a46e7a0298a3ebd8ea893a78" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_KeyChain" path="packages/apps/KeyChain" revision="2674ad7724497782c96fba24d7d907525f59d8e8" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="5024c3561a2970964f755ae9306a1f33596ee38d" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Messaging" path="packages/apps/Messaging" revision="7619c3c57f0e9cd41a26aa8170ecae05591ac466" upstream="refs/heads/cm-13.0"/>
   <project groups="apps_nfc,pdk-fs" name="CyanogenMod/android_packages_apps_Nfc" path="packages/apps/Nfc" revision="dba33131a0d2f1d2cf6ab3f081ed07ec2198b0d4" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_OpenWeatherMapProvider" path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" revision="266118841ccf396adda6ed3e5407d38092784ff0" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" revision="0dc4a6ba667a17de1764ac0c00c2e6a47c6a7fe2" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" revision="846011826a98c7f9093f5560e8d22a3290fe0504" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_apps_Profiles" path="packages/apps/Profiles" revision="5385cd8c6f96f6e996ce259c375f73ac58890190" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Provision" path="packages/apps/Provision" revision="78ca0db658fe6253d506916e36319e620476f809" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" revision="cca206faa1a057cbb75e1648339091d9ea81ff21" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Tag" path="packages/apps/Tag" revision="12547f35f3cf23f2e8483482747d0d1f893fd6d8" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Terminal" path="packages/apps/Terminal" revision="63398dea1c96c056d7b802fdc4ebe8caba547dbf" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_ThemeChooser" path="packages/apps/ThemeChooser" revision="56b2153bb8e407d4b1b54fd6eefcc88245838500" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_apps_Trebuchet" path="packages/apps/Trebuchet" revision="abc57d4d5d7f408b26859de2eda60d39cc474c3d" upstream="refs/heads/cm-13.0"/>
   <project groups="generic_fs" name="CyanogenMod/android_packages_apps_TvSettings" path="packages/apps/TvSettings" revision="2ed1168c272e4586d4cedfec8d30f0f0c60910c8" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_UnifiedEmail" path="packages/apps/UnifiedEmail" revision="351a9d1027b392f308219fcb1996de994bf699b1" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" revision="d11a843729f03fbabb8911bc599ad03a59982c2b" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_WundergroundWeatherProvider" path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" revision="e630607144d9c847db86ad5b98f82ad71bf84e0f" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_YahooWeatherProvider" path="vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider" revision="56154d0302626cc8fdf2db03b985db4e891e1f38" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_packages_experimental" path="packages/experimental" revision="7b02b6bbaf0b4330ac05fda8cd47f4044ee2740a" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" revision="ed2ba122a32cdb479ecfe78de511b196bf180dc2" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_providers_BookmarkProvider" path="packages/providers/BookmarkProvider" revision="9be5364a221a113b4457e480deb0397cee2b2ee3" upstream="refs/heads/cm-13.0"/>
@@ -274,18 +265,12 @@
   <project name="CyanogenMod/android_packages_providers_ThemesProvider" path="packages/providers/ThemesProvider" revision="6abe369faa49d1e219d2c0456428be9d73d8442c" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_providers_TvProvider" path="packages/providers/TvProvider" revision="3edf32b0129657ef58e8c60d58ad0ead2c0744b6" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_providers_UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="2d21c4f2ca9dc10372ae70b66c14d0d73119eb2f" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_providers_WeatherProvider" path="packages/providers/WeatherProvider" revision="34d9c3e993ea4a7dc60189ef6822118a71707c77" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_screensavers_Basic" path="packages/screensavers/Basic" revision="de1b4b4e556824f427dec51670d1d3925918b1be" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_screensavers_PhotoTable" path="packages/screensavers/PhotoTable" revision="fc5761b6e8ee2cdf6535fc5307f03900282e1968" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_screensavers_WebView" path="packages/screensavers/WebView" revision="6e0a80f6faed6191acc8ce1b6c79eada09e9e042" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_CMAudioService" path="packages/services/CMAudioService" revision="aa1ccf09d64d52ffc3dd83ec93f1001758bda9e6" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_LiveLockScreenService" path="packages/services/LiveLockScreenService" revision="40301ec5974c1fddeef1af964c8d9f8ed7ffad5b" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Mms" path="packages/services/Mms" revision="477457f40fa5d4938c182ca938f02229529280dc" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Telecomm" path="packages/services/Telecomm" revision="812605dcc76c1ab2855a1515d19d51ad33048a6a" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Telephony" path="packages/services/Telephony" revision="b8655dc761dc98734f40440d1888e26b6593bb95" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_ThemeManagerService" path="packages/services/ThemeManagerService" revision="7b296c5f08ec5aad18384e9def2295abcada49fd" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_WeatherService" path="packages/services/WeatherService" revision="8859ec368e71cbd431ba84ef227e720f8f4da0e4" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_wallpapers_LivePicker" path="packages/wallpapers/LivePicker" revision="24c9bd7c4363fc00f80487bc9ea2d8c7bc2364fd" upstream="refs/heads/cm-13.0"/>
   <project clone-depth="1" name="CyanogenMod/android_prebuilts_cmsdk" path="prebuilts/cmsdk" revision="755b2245ebe8e65177615966dc45964365718519" upstream="master"/>
   <project groups="pdk" name="CyanogenMod/android_system_bt" path="system/bt" revision="ccde045431d38d4828412149f067631487f8025f" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_core" path="system/core" revision="7e1cf25bc3f0b5af9106bc09989d63e5c8c46c37" upstream="refs/heads/cm-13.0"/>
