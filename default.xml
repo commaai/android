@@ -13,7 +13,7 @@
   <project name="commaai/android_system_extras_su" path="system/extras/su" remote="private" revision="master" upstream="master"/>
   <project name="commaai/android_vendor_cm" path="vendor/cm" remote="private" revision="master" upstream="master"/>
   <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_frameworks_base" path="frameworks/base" remote="private" revision="master" upstream="master"/>
-  <project groups="pdk-fs" name="commaai/android_packages_apps_Settings" path="packages/apps/Settings" remote="private" revision="master" upstream="master"/>
+  <!-- <project groups="pdk-fs" name="commaai/android_packages_apps_Settings" path="packages/apps/Settings" remote="private" revision="master" upstream="master"/> -->
   <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="private" revision="master" upstream="master"/>
   <project groups="pdk" name="commaai/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="private" revision="master" upstream="master"/>
 
@@ -241,8 +241,8 @@
   <project groups="apps_nfc,pdk-fs" name="CyanogenMod/android_packages_apps_Nfc" path="packages/apps/Nfc" revision="dba33131a0d2f1d2cf6ab3f081ed07ec2198b0d4" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" revision="0dc4a6ba667a17de1764ac0c00c2e6a47c6a7fe2" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" revision="846011826a98c7f9093f5560e8d22a3290fe0504" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Terminal" path="packages/apps/Terminal" revision="63398dea1c96c056d7b802fdc4ebe8caba547dbf" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_Trebuchet" path="packages/apps/Trebuchet" revision="abc57d4d5d7f408b26859de2eda60d39cc474c3d" upstream="refs/heads/cm-13.0"/>
+  <!-- <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_Terminal" path="packages/apps/Terminal" revision="63398dea1c96c056d7b802fdc4ebe8caba547dbf" upstream="refs/heads/cm-13.0"/>
+  <project name="CyanogenMod/android_packages_apps_Trebuchet" path="packages/apps/Trebuchet" revision="abc57d4d5d7f408b26859de2eda60d39cc474c3d" upstream="refs/heads/cm-13.0"/> -->
   <project name="CyanogenMod/android_packages_experimental" path="packages/experimental" revision="7b02b6bbaf0b4330ac05fda8cd47f4044ee2740a" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" revision="ed2ba122a32cdb479ecfe78de511b196bf180dc2" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" revision="183a77036d5890f8aca3b7849c92a294dc3dbb95" upstream="refs/heads/cm-13.0"/>
