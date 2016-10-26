@@ -16,11 +16,9 @@
   <!-- <project groups="pdk-fs" name="commaai/android_packages_apps_Settings" path="packages/apps/Settings" remote="private" revision="master" upstream="master"/> -->
   <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="private" revision="master" upstream="master"/>
   <project groups="pdk" name="commaai/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="private" revision="master" upstream="master"/>
-
-  <project name="commaai/android_kernel_oneplus_msm8996" path="kernel/comma/msm8996" revision="master" upstream="master" />
+  <project name="commaai/android_kernel_oneplus_msm8996_2" path="kernel/oneplus/msm8996" remote="private" revision="master" upstream="master"/>
 
   <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" revision="8f36610922a87b579ba0accbb54ee8a969578682" upstream="refs/heads/cm-13.0"/>
-  <!-- <project name="CyanogenMod/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" revision="24789192eaafa42ef2d0af0dfefc3ebfa6244a6f" upstream="refs/heads/cm-13.0"/> -->
   <project name="CyanogenMod/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" revision="69a2f76594b76f0c8236dc928d538009a0094521" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" revision="024db7f5c0fb6b0a76db1240d5cdd040248aa039" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" revision="a9f7d1d41426352fd651520dc5d6a87edd868ee9" upstream="refs/heads/cm-13.0"/>
