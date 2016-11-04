@@ -16,7 +16,8 @@
   <!-- <project groups="pdk-fs" name="commaai/android_packages_apps_Settings" path="packages/apps/Settings" remote="private" revision="master" upstream="master"/> -->
   <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="private" revision="master" upstream="master"/>
   <project groups="pdk" name="commaai/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="private" revision="master" upstream="master"/>
-  <project name="commaai/android_kernel_oneplus_msm8996_2" path="kernel/oneplus/msm8996" remote="private" revision="master" upstream="master"/>
+  <project name="commaai/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="private" revision="master" upstream="master"/>
+  <project groups="pdk" name="commaai/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="private" revision="master" upstream="master"/>
 
   <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" revision="8f36610922a87b579ba0accbb54ee8a969578682" upstream="refs/heads/cm-13.0"/>
   <!-- <project name="CyanogenMod/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" revision="69a2f76594b76f0c8236dc928d538009a0094521" upstream="refs/heads/cm-13.0"/> -->
@@ -163,7 +164,6 @@
   <project groups="pdk-fs" name="CyanogenMod/android_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" revision="2a21941a046fca9b7a7ff79903bc32523d1c22e5" upstream="refs/heads/cm-13.0"/>
   <project groups="frameworks_ims,pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_net_ims" path="frameworks/opt/net/ims" revision="adbcc1db161da32f97de4eba11e51ff62f605ee6" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_net_voip" path="frameworks/opt/net/voip" revision="7b21ed512efedc31ab4acb93f02efb8f4a1329a2" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="CyanogenMod/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" revision="e9e7aedfb2b136b1576bd89d365704d5f76b8816" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_photoviewer" path="frameworks/opt/photoviewer" revision="4fe7a6da051ef57951bbb7f95a56d73014e2e653" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_setupwizard" path="frameworks/opt/setupwizard" revision="a30259bf61a6676d546dcd4907b515212b4d23fa" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_timezonepicker" path="frameworks/opt/timezonepicker" revision="5969b9a0b925095ca0bfe036a54b98c1f479abe4" upstream="refs/heads/cm-13.0"/>
