@@ -4,7 +4,7 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 
 mkdir -p ~/android/system
 cd ~/android/system
-repo init git@github.com:commaai/android.git
+repo init -u git@github.com:commaai/android.git
 repo sync
 
 source build/envsetup.sh
