@@ -21,10 +21,12 @@
   <project groups="pdk" name="commaai/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="private" revision="master" upstream="master"/>
 
   <project name="commaai/android_device_oppo_common" path="device/oppo/common" remote="private" revision="master" upstream="master"/>
-  <!-- <project name="CyanogenMod/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" revision="69a2f76594b76f0c8236dc928d538009a0094521" upstream="refs/heads/cm-13.0"/> -->
-  <!-- <project name="CyanogenMod/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" revision="024db7f5c0fb6b0a76db1240d5cdd040248aa039" upstream="refs/heads/cm-13.0"/> -->
-  <!-- <project name="CyanogenMod/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" revision="a9f7d1d41426352fd651520dc5d6a87edd868ee9" upstream="refs/heads/cm-13.0"/> -->
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" revision="d08df7b60be52867937fd02c92cbe6624a3c3ca7" upstream="refs/heads/cm-13.0"/>
+
+  <project groups="pdk,qcom,qcom_display" name="sultanxda/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8996" revision="7e3da286fe738f395aee606d126912dc8547ce46" upstream="cm-13.0-caf-8996_1.3.2"/>
+  <project groups="qcom" name="sultanxda/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8996" revision="2a76ca5e969171812a0938ac3c705b9f49b2caa4" upstream="cm-13.0-caf-8996_1.3.2"/>
+  <project groups="pdk" name="sultanxda/android_hardware_ril" path="hardware/ril-caf" revision="985f3bb2495189242e008e7ae848c71cb7c93e07" upstream="cm-13.0-caf-8996"/>
+
 
   <project groups="pdk" name="commaai/android_build" path="build" remote="private" revision="master" upstream="master">
     <copyfile dest="Makefile" src="core/root.mk"/>
@@ -200,31 +202,11 @@
   <project groups="qcom" name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt" revision="74b0e9f702d1a2af5e4e95e901270f6a15b878c4" upstream="refs/heads/cm-13.0"/>
   <project groups="qcom" name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt-caf" revision="e024328cac2c92fb32882e05d4e558d31968812b" upstream="cm-13.0-caf"/>
   <project groups="qcom" name="CyanogenMod/android_hardware_qcom_camera" path="hardware/qcom/camera" revision="84a2ea4aa3a87aaab0238aaba2f78761dcaac6b3" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk,qcom,qcom_display" name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display" revision="6b48c2bc749287fb2abc4cc6d369525c88761b1e" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk,qcom,qcom_display" name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/apq8084" revision="68a2e3a4e0b219ba302587a2f7419e3a071f3fc8" upstream="cm-13.0-caf-8084"/>
-  <project groups="pdk,qcom,qcom_display" name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8916" revision="f4fdc6ef828770406d939f21847e0c2a74806489" upstream="cm-13.0-caf-8916"/>
-  <project groups="pdk,qcom,qcom_display" name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8937" revision="e435cea769e8619e4f46bd6ace39765ccdd05aa7" upstream="cm-13.0-caf-8937"/>
-  <project groups="pdk,qcom,qcom_display" name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8952" revision="1605e822fda6d6ac9c3c72d8fb2413ac24128fba" upstream="cm-13.0-caf-8952"/>
-  <project groups="pdk,qcom,qcom_display" name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" revision="08b30db524a1a879bb4903ae123c48721821c8bb" upstream="cm-13.0-caf-8960"/>
-  <project groups="pdk,qcom,qcom_display" name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8974" revision="59e66c66fe0bcde9c884cb0e3a93af96d4c53270" upstream="cm-13.0-caf-8974"/>
-  <project groups="pdk,qcom,qcom_display" name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8994" revision="cedd62af6303983c7e61f2f188c25b2d28bd7b5b" upstream="cm-13.0-caf-8994"/>
-  <project groups="pdk,qcom,qcom_display" name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8996" revision="b2ef0dbddc90ea70d3240c2ddc25c93fc111204f" upstream="cm-13.0-caf-8996"/>
   <project groups="qcom,qcom_fm" name="CyanogenMod/android_hardware_qcom_fm" path="hardware/qcom/fm" revision="acf84fb67db816488c267e3d0b42660b40baec32" upstream="refs/heads/cm-13.0"/>
   <project groups="qcom,qcom_gps" name="CyanogenMod/android_hardware_qcom_gps" path="hardware/qcom/gps" revision="b2278c8670f7f4743847e1fee76fd68ddb1453bd" upstream="refs/heads/cm-13.0"/>
   <project groups="qcom,qcom_keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" path="hardware/qcom/keymaster" revision="980b695eb09b0acff3832fba95b6f4dd23d2e516" upstream="refs/heads/cm-13.0"/>
-  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media/default" revision="a1b4b98b7f449668b027701f6b5cb96a5d54f47f" upstream="refs/heads/cm-13.0"/>
-  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/apq8084" revision="e79efd8fa991c8a9f717c447728f46d7dc5937ca" upstream="cm-13.0-caf-8084"/>
-  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8916" revision="7c1a7af144b2a69d445d738ed94376f68ac18fa2" upstream="cm-13.0-caf-8916"/>
-  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8937" revision="a7b48861f9105998248612b559098e748181f4d5" upstream="cm-13.0-caf-8937"/>
-  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8952" revision="2182d032d7e203b5dedefc7291ed7ace7ae5ba91" upstream="cm-13.0-caf-8952"/>
-  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8960" revision="c4e89aca65da7798d5fb99f841c4f0ca791cc641" upstream="cm-13.0-caf-8960"/>
-  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8974" revision="052ff8f9ecb5f29f6967dc665e1fdfa36903dbf4" upstream="cm-13.0-caf-8974"/>
-  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8994" revision="4e82dac5255269cbfcf848ea935e1d835885e230" upstream="cm-13.0-caf-8994"/>
-  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8996" revision="1cbab898b8ce21e43e2303299c34dd5a707e9847" upstream="cm-13.0-caf-8996"/>
   <project groups="qcom_wlan" name="CyanogenMod/android_hardware_qcom_wlan" path="hardware/qcom/wlan" revision="70d3f9f7afb90a0b6d1d3321ef80175ab3584719" upstream="refs/heads/cm-13.0"/>
   <project groups="qcom_wlan" name="CyanogenMod/android_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" revision="665a3bc42894a04f8e5218fa1a8085831b9cc4b1" upstream="cm-13.0-caf"/>
-  <project groups="pdk" name="CyanogenMod/android_hardware_ril" path="hardware/ril" revision="65c89893ba772cc1bc0804365dd3efa16be58745" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="CyanogenMod/android_hardware_ril" path="hardware/ril-caf" revision="24443ade2360760e9c357a98c3d9e1675dafd25c" upstream="cm-13.0-caf"/>
   <project name="CyanogenMod/android_hardware_samsung_slsi_exynos5" path="hardware/samsung_slsi/exynos5" revision="3ac2ff83d66f1abfdb23d695670e631206c19df9" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_hardware_ti_omap4" path="hardware/ti/omap4" revision="8d0de830c81234da8a6536af4bd07bb69fffc274" upstream="refs/heads/cm-13.0"/>
   <project groups="omap4" name="CyanogenMod/android_hardware_ti_omap4xxx" path="hardware/ti/omap4xxx" revision="b94c6fe6065530b9b10ac3be53a35906e81a155a" upstream="refs/heads/cm-13.0"/>
