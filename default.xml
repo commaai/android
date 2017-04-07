@@ -432,7 +432,6 @@
   <project groups="omap3" name="platform/hardware/ti/omap3" path="hardware/ti/omap3" remote="aosp" revision="40292fb9eeb2cf0bb95dc818da12ddcae40b931c" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="omap4-aah" name="platform/hardware/ti/omap4-aah" path="hardware/ti/omap4-aah" remote="aosp" revision="80bb3b85334de55efaf304b421602bbc7239fc97" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="generic_fs" name="platform/ndk" path="ndk" remote="aosp" revision="e6403c6a048bdec5a7fc7c6c0cc149fc5f098f80" upstream="refs/tags/android-6.0.1_r72"/>
-  <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" remote="aosp" revision="01e429c08e51291315890de9677151a7e0b6ad35" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk" name="platform/pdk" path="pdk" remote="aosp" revision="708589163e790eb3a7fec09f4832a0f78999bdf3" upstream="refs/tags/android-6.0.1_r72"/>
   <project name="platform/platform_testing" path="platform_testing" remote="aosp" revision="79de7db6f3e5402f51d72a5db1e8501e5eb8de84" upstream="refs/tags/android-6.0.1_r72"/>
   <project clone-depth="1" groups="pdk-fs" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" remote="aosp" revision="b728a257b2a06f1d18b7349dc2e90bebd013bbd4" upstream="refs/tags/android-6.0.1_r72"/>
