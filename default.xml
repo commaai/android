@@ -232,7 +232,6 @@
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" revision="c3d8153bec08a97c9e0983e28d593de67e657672" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_CMAudioService" path="packages/services/CMAudioService" revision="aa1ccf09d64d52ffc3dd83ec93f1001758bda9e6" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Mms" path="packages/services/Mms" revision="477457f40fa5d4938c182ca938f02229529280dc" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Telecomm" path="packages/services/Telecomm" revision="812605dcc76c1ab2855a1515d19d51ad33048a6a" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Telephony" path="packages/services/Telephony" revision="b8655dc761dc98734f40440d1888e26b6593bb95" upstream="refs/heads/cm-13.0"/>
   <project clone-depth="1" name="CyanogenMod/android_prebuilts_cmsdk" path="prebuilts/cmsdk" revision="755b2245ebe8e65177615966dc45964365718519" upstream="master"/>
   <project groups="pdk" name="CyanogenMod/android_system_bt" path="system/bt" revision="ccde045431d38d4828412149f067631487f8025f" upstream="refs/heads/cm-13.0"/>
