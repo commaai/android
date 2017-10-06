@@ -26,6 +26,9 @@
   <project groups="pdk" name="LineageOS/android_device_generic_goldfish" path="device/generic/goldfish" revision="208361067bfcad5223a774f5251b459390a0af56" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_device_generic_mips" path="device/generic/mips" revision="bf07c7522e80eef53a58a49e5d05b8913d00d1a6" upstream="refs/heads/cm-13.0"/>
   <project groups="device,fugu,broadcom_pdk,generic_fs" name="LineageOS/android_device_google_atv" path="device/google/atv" revision="6ed67b2e600169010776823f8b6edbe39304d662" upstream="refs/heads/cm-13.0"/>
+  <project name="LineageOS/android_device_leeco_msm8996-common" path="device/leeco/msm8996-common" revision="b3a1d46b4630180faf0dcf95e3331d7af8e41b10" upstream="refs/heads/cm-13.0"/>
+  <project name="LineageOS/android_device_leeco_zl1" path="device/leeco/zl1" revision="153856e864b846ba9f1b7dabad6d286f4a0fe075" upstream="refs/heads/cm-13.0"/>
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" revision="c8a3d160822c284d6bad579130d30a5096947e70" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy" revision="3d5eb2a2e062a3739aeac5bebfb129886e31e2d2" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_external_ahbottomnavigation" path="external/ahbottomnavigation" revision="db5dd3444071add22989f47e6ca2acc0387e8239" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_external_android-clat" path="external/android-clat" revision="bee83f8d7edb48a1d8b8f2333a1b259854c44b95" upstream="refs/heads/cm-13.0"/>
@@ -115,6 +118,7 @@
   <project groups="pdk" name="LineageOS/android_external_spongycastle" path="external/spongycastle" revision="fc2a21c6321063531b273385708adc81a8e51a31" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_external_sqlite" path="external/sqlite" revision="b0216e4fbbb4690f534a9d3c0374aadd22940e47" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_external_stagefright-plugins" path="external/stagefright-plugins" revision="4f5545a5df7fbc14aaaa00c707fd6c9e6e606b43" upstream="refs/heads/cm-13.0"/>
+  <project name="LineageOS/android_external_stlport" path="external/stlport" revision="176973f0a182bab49f43993aefa34e0d76790ac9" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_external_strace" path="external/strace" revision="d11ea977261016ccf81738eafd6f208a832c237f" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk,pdk-cw-fs,pdk-fs" name="LineageOS/android_external_tcpdump" path="external/tcpdump" revision="b5d6f230d44e96d2ac9cbd7f6bb2862fa88a60c4" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_external_tinyalsa" path="external/tinyalsa" revision="d477bf7d9ca2920bbf9e2cf1a7eb8cba56634596" upstream="refs/heads/cm-13.0"/>
@@ -219,6 +223,7 @@
   <project groups="omap4" name="LineageOS/android_hardware_ti_omap4xxx" path="hardware/ti/omap4xxx" revision="b94c6fe6065530b9b10ac3be53a35906e81a155a" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_hardware_ti_wlan" path="hardware/ti/wlan" revision="ffa26818d1db202adb19c9fe8849e16924b42f78" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_hardware_ti_wpan" path="hardware/ti/wpan" revision="bcf2967acf1a644a59cb113891ad618b1a4cad5f" upstream="refs/heads/cm-13.0"/>
+  <project name="LineageOS/android_kernel_leeco_msm8996" path="kernel/leeco/msm8996" revision="b000abc5d63da4c8561e04bafc8090c7b1e2e833" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_libcore" path="libcore" revision="aaa7cbd25bc14e3457d72d5b0e00a0777f59ed28" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_libnativehelper" path="libnativehelper" revision="b7a25286026b49f0f7d95b25f2d32c4f47f498ef" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_packages_apps_AudioFX" path="packages/apps/AudioFX" revision="7dba4ff04bf52e5c1b4dba93da6a3285632fae9b" upstream="refs/heads/cm-13.0"/>
@@ -320,6 +325,9 @@
   <project groups="pdk" name="LineageOS/android_system_security" path="system/security" revision="6b8a2a31177c7baeabe9a05afb72cdd411698598" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_system_vold" path="system/vold" revision="61aaa60ee21768657b0d35ece9a67726b5c6efaa" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_vendor_cm" path="vendor/cm" revision="109fef9e1e04b2faa44c5f9dc7c5b8d3ba559858" upstream="refs/heads/cm-13.0"/>
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" revision="69a2f76594b76f0c8236dc928d538009a0094521" upstream="refs/heads/cm-13.0"/>
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" revision="024db7f5c0fb6b0a76db1240d5cdd040248aa039" upstream="refs/heads/cm-13.0"/>
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" revision="a9f7d1d41426352fd651520dc5d6a87edd868ee9" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" revision="98f70c5bf93fca8d5b31b9787f2f1f8258d145e4" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" revision="5451bb05347d541eb0b65aac6739a25da338e3b3" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_vendor_qcom_opensource_dpm" path="vendor/qcom/opensource/dpm" revision="070a9ec1127b42da4a4c58bd865ba64b8730d9e3" upstream="refs/heads/cm-13.0"/>
