@@ -8,15 +8,31 @@
   
   <project name="commaai/android" path="android" remote="private" revision="leeco" upstream="leeco"/>
   <project name="commaai/android_vendor_leeco" path="vendor/leeco" remote="private" revision="master" upstream="master"/>
+  <project name="commaai/android_packages_apps_NEOSSetup" path="packages/apps/NEOSSetup" remote="private" revision="master" upstream="master"/>
+
+  <project groups="pdk" name="commaai/android_system_core" path="system/core" remote="private" revision="leeco" upstream="leeco"/>
+  <project name="commaai/android_system_extras_su" path="system/extras/su" remote="private" revision="leeco" upstream="leeco"/>
+  <project name="commaai/android_vendor_cm" path="vendor/cm" remote="private" revision="leeco" upstream="leeco"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_frameworks_base" path="frameworks/base" remote="private" revision="leeco" upstream="leeco"/>
+  <project groups="pdk-fs" name="commaai/android_packages_apps_Settings" path="packages/apps/Settings" remote="private" revision="leeco" upstream="leeco"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="private" revision="leeco" upstream="leeco"/>
+  <project groups="pdk" name="commaai/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="private" revision="leeco" upstream="leeco"/>
+  <project groups="pdk" name="commaai/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="private" revision="leeco" upstream="leeco"/>
+
+  <project name="commaai/android_kernel_leeco_msm8996" path="kernel/leeco/msm8996" remote="private" revision="master" upstream="master"/>
+  <project name="commaai/android_device_leeco_msm8996-common" path="device/leeco/msm8996-common" remote="private" revision="master" upstream="master"/>
+  <project name="commaai/android_device_leeco_zl1" path="device/leeco/zl1" remote="private" revision="master" upstream="master"/>
+  
+
+  <project groups="pdk" name="commaai/android_build" path="build" remote="private" revision="leeco" upstream="leeco">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
 
   <project name="LineageOS/AndroidAsync" path="external/koush/AndroidAsync" revision="58688ac2fa2668bf84c7e38410bd2c9f7a8123ee" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_abi_cpp" path="abi/cpp" revision="36b381298a4efb7c293d394d8b1acbda68230989" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_art" path="art" revision="7592c94124e7fd7ea8bd8592c4a8e1001d6f6e4d" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_bionic" path="bionic" revision="3a461fe0e6c0686a76f17ad3d37127293be543c8" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_bootable_recovery" path="bootable/recovery" revision="735e1195c28a628731d3e31f76d8dc3f8a1b9fe6" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="LineageOS/android_build" path="build" revision="c5d9c72d9d9da2c5333744966e273393a71a179f" upstream="refs/heads/cm-13.0">
-    <copyfile dest="Makefile" src="core/root.mk"/>
-  </project>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_dalvik" path="dalvik" revision="c27cc462b6c89d1e32c5e6641f2935e2c52bf91e" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_development" path="development" revision="87654bc0a08a4da5813c719a65087120068d5341" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_device_common" path="device/common" revision="e0e0d5b4b4e81fafd4bc1c96744b367ce3e73f6e" upstream="refs/heads/cm-13.0"/>
@@ -26,8 +42,6 @@
   <project groups="pdk" name="LineageOS/android_device_generic_goldfish" path="device/generic/goldfish" revision="208361067bfcad5223a774f5251b459390a0af56" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_device_generic_mips" path="device/generic/mips" revision="bf07c7522e80eef53a58a49e5d05b8913d00d1a6" upstream="refs/heads/cm-13.0"/>
   <project groups="device,fugu,broadcom_pdk,generic_fs" name="LineageOS/android_device_google_atv" path="device/google/atv" revision="6ed67b2e600169010776823f8b6edbe39304d662" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_device_leeco_msm8996-common" path="device/leeco/msm8996-common" revision="b3a1d46b4630180faf0dcf95e3331d7af8e41b10" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_device_leeco_zl1" path="device/leeco/zl1" revision="153856e864b846ba9f1b7dabad6d286f4a0fe075" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" revision="c8a3d160822c284d6bad579130d30a5096947e70" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy" revision="3d5eb2a2e062a3739aeac5bebfb129886e31e2d2" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_external_ahbottomnavigation" path="external/ahbottomnavigation" revision="db5dd3444071add22989f47e6ca2acc0387e8239" upstream="refs/heads/cm-13.0"/>
@@ -135,7 +149,6 @@
   <project name="LineageOS/android_external_zip" path="external/zip" revision="ac4f560c264cef168d4834f50a51538d3e422739" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_external_zlib" path="external/zlib" revision="55411b151568e5e3ca27041a9e6bb65ba3469839" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_frameworks_av" path="frameworks/av" revision="66461a19dae20ad3df643166a39100ef58202bc3" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_frameworks_base" path="frameworks/base" revision="8dca9a8dbd1dd018ca498358c1ae871b1ff4e8b3" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_frameworks_compile_libbcc" path="frameworks/compile/libbcc" revision="b7f05114e5f408479b50647837cdf25187bfd164" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_frameworks_compile_mclinker" path="frameworks/compile/mclinker" revision="8c10afdc806cbb9d4560e90b100f0dcefdd46a21" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_frameworks_compile_slang" path="frameworks/compile/slang" revision="e29831fd37cff02f731617a6e11ca69ee1901992" upstream="refs/heads/cm-13.0"/>
@@ -156,10 +169,8 @@
   <project groups="pdk-fs" name="LineageOS/android_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" revision="2a21941a046fca9b7a7ff79903bc32523d1c22e5" upstream="refs/heads/cm-13.0"/>
   <project groups="frameworks_ims,pdk-cw-fs,pdk-fs" name="LineageOS/android_frameworks_opt_net_ims" path="frameworks/opt/net/ims" revision="adbcc1db161da32f97de4eba11e51ff62f605ee6" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_frameworks_opt_net_voip" path="frameworks/opt/net/voip" revision="7b21ed512efedc31ab4acb93f02efb8f4a1329a2" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="LineageOS/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" revision="2e1ff498017ee2e2a403fce604efe8947ed85411" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_frameworks_opt_photoviewer" path="frameworks/opt/photoviewer" revision="4fe7a6da051ef57951bbb7f95a56d73014e2e653" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_frameworks_opt_setupwizard" path="frameworks/opt/setupwizard" revision="a30259bf61a6676d546dcd4907b515212b4d23fa" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="LineageOS/android_frameworks_opt_telephony" path="frameworks/opt/telephony" revision="b51f0ccf5d961e0525efeae75395b7b0207f57ed" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_frameworks_opt_timezonepicker" path="frameworks/opt/timezonepicker" revision="5969b9a0b925095ca0bfe036a54b98c1f479abe4" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_frameworks_opt_vcard" path="frameworks/opt/vcard" revision="22b057b0863763c2f4634935dd09c15e3f1e11d7" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_frameworks_rs" path="frameworks/rs" revision="c882d498464a78f70560f85d9f42af637f560235" upstream="refs/heads/cm-13.0"/>
@@ -223,111 +234,36 @@
   <project groups="omap4" name="LineageOS/android_hardware_ti_omap4xxx" path="hardware/ti/omap4xxx" revision="b94c6fe6065530b9b10ac3be53a35906e81a155a" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_hardware_ti_wlan" path="hardware/ti/wlan" revision="ffa26818d1db202adb19c9fe8849e16924b42f78" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_hardware_ti_wpan" path="hardware/ti/wpan" revision="bcf2967acf1a644a59cb113891ad618b1a4cad5f" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_kernel_leeco_msm8996" path="kernel/leeco/msm8996" revision="b000abc5d63da4c8561e04bafc8090c7b1e2e833" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_libcore" path="libcore" revision="aaa7cbd25bc14e3457d72d5b0e00a0777f59ed28" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_libnativehelper" path="libnativehelper" revision="b7a25286026b49f0f7d95b25f2d32c4f47f498ef" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_AudioFX" path="packages/apps/AudioFX" revision="7dba4ff04bf52e5c1b4dba93da6a3285632fae9b" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_apps_BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="4e8485f8d271adb19593a07f908982b937829edc" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" revision="49576fb874b18c369ea7d0e8601f685dc0dfd044" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_packages_apps_BluetoothExt" path="packages/apps/BluetoothExt" revision="118256f28705ba533abb199406f2b93dbfaa89de" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Browser" path="packages/apps/Browser" revision="0271c2cbe40ada7ffeec8681aebda28b5c24aded" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_CMBugreport" path="packages/apps/CMBugReport" revision="ac4724ed5d4603a58e94be1e1de01a37b770d3a2" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_CMFileManager" path="packages/apps/CMFileManager" revision="5de91d3848e5b9880852c05599ca1b7a4656756b" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_CMUpdater" path="packages/apps/CMUpdater" revision="b8a1e716e3d4291eb7183f94bab354b8c2d1e939" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_CMWallpapers" path="packages/apps/CMWallpapers" revision="451d635606489a98eb55c6c089d402638c6e52f2" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Calendar" path="packages/apps/Calendar" revision="07231384181b9cb4412fded2b39dc318d32191fc" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Camera2" path="packages/apps/Camera2" revision="613c483e6e43d995706c257b948521bdd44104cd" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="LineageOS/android_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" revision="921cc6255a43ef99f9be5a23ef334d40b4e72b4d" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="2edd3dd309778871da0cfac237576de41c0094d1" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_apps_CertInstaller" path="packages/apps/CertInstaller" revision="48919a17b2084909b0e66fb8a8565e36ce587fed" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Contacts" path="packages/apps/Contacts" revision="375f0f461fb35da65bbbc84e32c46ebc2921f256" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" revision="c10e284d5eb8dd5ef2130ebd86a96824ca5eaa17" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_DeskClock" path="packages/apps/DeskClock" revision="3864aa0070e518baa0f212e92d9728c582a00db0" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Dialer" path="packages/apps/Dialer" revision="2f5eba4e7ecf5f18d356ccaa44393e067d88c035" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_Eleven" path="packages/apps/Eleven" revision="fbf7d63467e7b13302c8274f214436af8e8ec84e" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Email" path="packages/apps/Email" revision="3d3fd35587259d6996c21ff8083cf4c706236112" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" revision="34b9b192e7a5cddb197cc6a120fa6d3784822153" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Exchange" path="packages/apps/Exchange" revision="0ae98487f1a531d5d94db8e7be4e189a9653d95c" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_FMRadio" path="packages/apps/FMRadio" revision="2d9d84fdfc457d4728c2e54975ecf0aa937a20a7" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Gallery2" path="packages/apps/Gallery2" revision="04fe75e7cc36bad06b87beb48485e22aaaaa4de8" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_Gello" path="packages/apps/Gello" revision="b7bedda0c8bcf371c2207c2dceb02595aa16320b" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_HTMLViewer" path="packages/apps/HTMLViewer" revision="7f494bd0e12c270306df91dd634a21cc9c4aac21" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_InCallUI" path="packages/apps/InCallUI" revision="286677a93a227119da379fa37fd16a9981dd34ef" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="LineageOS/android_packages_apps_KeyChain" path="packages/apps/KeyChain" revision="c6a1e02b9ac2e2764211b4e51f9da602144f3d80" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_LockClock" path="packages/apps/LockClock" revision="36ea4b9f6a6dbf779a3d2be7da0852b6b44f04b6" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="46f60e7c80222cb30e2f4fb8cdade53ef01dac38" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Messaging" path="packages/apps/Messaging" revision="9885aa80867718c5141eeeb7456a29280552be59" upstream="refs/heads/cm-13.0"/>
   <project groups="apps_nfc,pdk-fs" name="LineageOS/android_packages_apps_Nfc" path="packages/apps/Nfc" revision="1e1c537b8fedb73b07fc1cdbeebe535291fc448f" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_OpenWeatherMapProvider" path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" revision="266118841ccf396adda6ed3e5407d38092784ff0" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="LineageOS/android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" revision="5345fa2fe53224f2036329fd04cbfc1fb9c020ad" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" revision="869f9de8247a3aaf5a537fc34bd29346599142a3" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_Profiles" path="packages/apps/Profiles" revision="2ec11fad552fed794f9d49f355214380b53781ef" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Provision" path="packages/apps/Provision" revision="78ca0db658fe6253d506916e36319e620476f809" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_Screencast" path="packages/apps/Screencast" revision="8cab9cde66c8669660e437ab80d20653c77b2ab1" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Settings" path="packages/apps/Settings" revision="270f0b422846f599d9d9949ab3bae7eb7eb39cb7" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_SetupWizard" path="packages/apps/SetupWizard" revision="d62c60773e93eee4b7d715c2962f452cadd57e66" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_Snap" path="packages/apps/Snap" revision="72c44777047ccc7b2fb446088d8faa10e00b8fa6" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" revision="9576aa033f7ca832671cfe8885dc9ea2993e2fca" upstream="refs/heads/cm-13.0"/>
-  <project groups="apps_stk,pdk-fs" name="LineageOS/android_packages_apps_Stk" path="packages/apps/Stk" revision="9484d5ac684aeabf428ebe9e03bc1ac882acc357" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_Tag" path="packages/apps/Tag" revision="18a212aee1ccebb922e6cbef54884b54151a411a" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="LineageOS/android_packages_apps_Terminal" path="packages/apps/Terminal" revision="3ed569fa35195f4bea555f6b54285719d503b5d4" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_ThemeChooser" path="packages/apps/ThemeChooser" revision="0787c4f8ff7b50a70efc67d4e8297958998e4b28" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_packages_apps_Trebuchet" path="packages/apps/Trebuchet" revision="47c9206f00c176a895ce4aaaba6d420c6cfcc62d" upstream="refs/heads/cm-13.0"/>
-  <project groups="generic_fs" name="LineageOS/android_packages_apps_TvSettings" path="packages/apps/TvSettings" revision="aca1a5de9a5dffdbe3bad47b8b4c79a04662de29" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_apps_UnifiedEmail" path="packages/apps/UnifiedEmail" revision="e59a2416086fbfff2d836bd993635d30e5cabe46" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" revision="c3b0ec5203b63bb905a54505c80b04b86bc31f9b" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_WundergroundWeatherProvider" path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" revision="6eb7e273b613072e886f9d498d2ca04477004c61" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_YahooWeatherProvider" path="vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider" revision="ea14149345c04c7cbd5fa1b4de611704099c4476" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_packages_experimental" path="packages/experimental" revision="7b02b6bbaf0b4330ac05fda8cd47f4044ee2740a" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="LineageOS/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" revision="a601aab80c3e86efa45970c8621d1c2ab8ef0475" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_providers_BookmarkProvider" path="packages/providers/BookmarkProvider" revision="9a66e79109e68cdcce06326a2b31896afad7fdb5" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_providers_CalendarProvider" path="packages/providers/CalendarProvider" revision="d6c3c3ecf197effe8599a89451f8353c5bb51c33" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_providers_CallLogProvider" path="packages/providers/CallLogProvider" revision="8e23cfdfe91483413b282f69f84741f6c06c61e8" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" revision="a146f30d84383db0b06a7cfe73dd0004e506331f" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_packages_providers_DataUsageProvider" path="packages/providers/DataUsageProvider" revision="4c0f46e40f20a0f69b111a7e8d4b4934f38878ad" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" revision="b05778693f0bceb85b5621fb610b1ea3c64b4c83" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_providers_MediaProvider" path="packages/providers/MediaProvider" revision="5317ddfd6078ab96c4415ac1f9ce7a7198869a2e" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_providers_PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="96d0a80af45923767baf449fc8c735c2f71d64ae" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" revision="30aae7f7bdf891ae2e26849a0b68c4c6d10e1109" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_providers_ThemesProvider" path="packages/providers/ThemesProvider" revision="d93e6560e53afa8fa54e7fa60b890c69fbc06f78" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_providers_TvProvider" path="packages/providers/TvProvider" revision="3edf32b0129657ef58e8c60d58ad0ead2c0744b6" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_providers_UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="b6b9ee1a092cd490fa5f77f13985560ebad15c6f" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_providers_WeatherProvider" path="packages/providers/WeatherProvider" revision="f39cd0051cc7d2148a0695e7ccac984b5e4ea2f8" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_screensavers_Basic" path="packages/screensavers/Basic" revision="979b89b4d152f5e9ec7d35177befa5ee6f39e4d1" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_screensavers_PhotoTable" path="packages/screensavers/PhotoTable" revision="2482e08015a8a1cc9d55651f424f4755e4deeafa" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_screensavers_WebView" path="packages/screensavers/WebView" revision="6e0a80f6faed6191acc8ce1b6c79eada09e9e042" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_services_CMAudioService" path="packages/services/CMAudioService" revision="298e2076391786993c97b4a970ca480ccf8956b0" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_services_LiveLockScreenService" path="packages/services/LiveLockScreenService" revision="f7868d77cb953d6a9ce6224f7b7adc93b144791c" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_services_Mms" path="packages/services/Mms" revision="560c73268e55f1a1ccf5ef2d6ba92729cedc5872" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_services_Telecomm" path="packages/services/Telecomm" revision="fabd253ea202babce9d86e16cbbbd75aff2ef1ce" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_services_Telephony" path="packages/services/Telephony" revision="cb7918854dc8ac8c706a650d7013771c8242d1cc" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_services_ThemeManagerService" path="packages/services/ThemeManagerService" revision="71dd5e8a6f3938b95a5f473ae17a962c17b76b87" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_services_WeatherService" path="packages/services/WeatherService" revision="f3b27b6775de8c54349a33ba7b15e4c5a0ea22cc" upstream="refs/heads/cm-13.0"/>
-  <project groups="themes" name="LineageOS/android_packages_themes_HexoLibre" path="packages/themes/HexoLibre" revision="7a26b56c6100808b99e559b7860d9e1965bda0a3" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_wallpapers_Basic" path="packages/wallpapers/Basic" revision="81c3a2886bf94bf76b81a1044501cd4290d1b795" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_wallpapers_Galaxy4" path="packages/wallpapers/Galaxy4" revision="7e9fdf77b1a01eebdf7e99713e52d84e90b0bf37" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_wallpapers_HoloSpiral" path="packages/wallpapers/HoloSpiral" revision="3d8a267b5558dd09705eb1303631cf62f6ebc9a9" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_wallpapers_LivePicker" path="packages/wallpapers/LivePicker" revision="d5553d361e644bb5c6cc749532b1233f9a753bac" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_wallpapers_MagicSmoke" path="packages/wallpapers/MagicSmoke" revision="35fdd124f84fbcc3294f7996b1dab590639e5ea7" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_wallpapers_NoiseField" path="packages/wallpapers/NoiseField" revision="b70126b25bcb4b2bc91cae3121289fdb3d14eb7d" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="LineageOS/android_packages_wallpapers_PhaseBeam" path="packages/wallpapers/PhaseBeam" revision="be3eccfd5d1753e9d030695f6da2db220473350e" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_wallpapers_PhotoPhase" path="packages/wallpapers/PhotoPhase" revision="14e531f5952195d2ade0d5f7887f89f56fe3f5dd" upstream="refs/heads/cm-13.0"/>
   <project clone-depth="1" name="LineageOS/android_prebuilts_cmsdk" path="prebuilts/cmsdk" revision="755b2245ebe8e65177615966dc45964365718519" upstream="master"/>
   <project groups="pdk" name="LineageOS/android_system_bt" path="system/bt" revision="dc14b3fcab08d9b411b44e7af91b7c7a47d7661d" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="LineageOS/android_system_core" path="system/core" revision="4f84775fef93119cb80be7bd93b6bfaf8c02b192" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_system_extras" path="system/extras" revision="0d598afe878adff21637d2673a07a7280c7151c5" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_system_extras_su" path="system/extras/su" revision="f73434ad99cb8245b4d9cee89cce449f965449a7" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_system_keymaster" path="system/keymaster" revision="dc06a0f1f26ff5431d13c544b0603c32d97ba2e9" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_system_media" path="system/media" revision="c37b3f880a73397521518c1e7bae0a8a5c45764e" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_system_netd" path="system/netd" revision="a178f137f9ab96f79b9c676983036b0c2143b61e" upstream="refs/heads/cm-13.0"/>
   <project groups="qcom" name="LineageOS/android_system_qcom" path="system/qcom" revision="fc46d223c635380bcd0a6fd04f719f89f30ba9aa" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_system_security" path="system/security" revision="6b8a2a31177c7baeabe9a05afb72cdd411698598" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="LineageOS/android_system_vold" path="system/vold" revision="61aaa60ee21768657b0d35ece9a67726b5c6efaa" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_vendor_cm" path="vendor/cm" revision="109fef9e1e04b2faa44c5f9dc7c5b8d3ba559858" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" revision="69a2f76594b76f0c8236dc928d538009a0094521" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" revision="024db7f5c0fb6b0a76db1240d5cdd040248aa039" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" revision="a9f7d1d41426352fd651520dc5d6a87edd868ee9" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" revision="98f70c5bf93fca8d5b31b9787f2f1f8258d145e4" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" revision="5451bb05347d541eb0b65aac6739a25da338e3b3" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_vendor_qcom_opensource_dpm" path="vendor/qcom/opensource/dpm" revision="070a9ec1127b42da4a4c58bd865ba64b8730d9e3" upstream="refs/heads/cm-13.0"/>
