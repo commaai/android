@@ -245,7 +245,6 @@
   <project groups="pdk-fs" name="LineageOS/android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" revision="5345fa2fe53224f2036329fd04cbfc1fb9c020ad" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" revision="869f9de8247a3aaf5a537fc34bd29346599142a3" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="LineageOS/android_packages_apps_Terminal" path="packages/apps/Terminal" revision="3ed569fa35195f4bea555f6b54285719d503b5d4" upstream="refs/heads/cm-13.0"/>
-  <project name="LineageOS/android_packages_apps_Trebuchet" path="packages/apps/Trebuchet" revision="47c9206f00c176a895ce4aaaba6d420c6cfcc62d" upstream="refs/heads/cm-13.0"/>
   <project name="LineageOS/android_packages_experimental" path="packages/experimental" revision="7b02b6bbaf0b4330ac05fda8cd47f4044ee2740a" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="LineageOS/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" revision="a601aab80c3e86efa45970c8621d1c2ab8ef0475" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="LineageOS/android_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" revision="a146f30d84383db0b06a7cfe73dd0004e506331f" upstream="refs/heads/cm-13.0"/>
