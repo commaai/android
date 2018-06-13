@@ -9,7 +9,6 @@
   <project name="commaai/android" path="android" remote="private" revision="mindroid" upstream="mindroid"/>
 
 <!-- device specific -->
-
   <!-- build system -->
   <project groups="pdk" name="commaai/android_build" path="build" remote="private" revision="master" upstream="master">
     <copyfile dest="Makefile" src="core/root.mk"/>
@@ -52,6 +51,7 @@
   <project groups="pdk" name="CyanogenMod/android_bionic" path="bionic" revision="92595081575c82ace07201a3ea32004eba968c0b" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_libnativehelper" path="libnativehelper" revision="b7a25286026b49f0f7d95b25f2d32c4f47f498ef" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_development" path="development" revision="87654bc0a08a4da5813c719a65087120068d5341" upstream="refs/heads/cm-13.0"/>
+
 
 <!-- Android -->
   <!-- NEOS apps -->
@@ -169,33 +169,6 @@
   <project groups="pdk" name="CyanogenMod/android_external_sqlite" path="external/sqlite" revision="3d331b083b747f9a48464e94710d8432e2f5e454" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="platform/external/clang" path="external/clang" remote="aosp" revision="6270ca65199882c73aa9699d8fbeb580870e8d30" upstream="refs/tags/android-6.0.1_r72"/>
 
-  <!-- compression externals -->
-  <project groups="pdk" name="CyanogenMod/android_external_zlib" path="external/zlib" revision="55411b151568e5e3ca27041a9e6bb65ba3469839" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_external_libtar" path="external/libtar" revision="9d133fd44abe462e4134d6a170e5871e56e081de" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_external_pigz" path="external/pigz" revision="b017edd756ff80d8b3beac8652bb227e021b91f2" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="CyanogenMod/android_external_lzma" path="external/lzma" revision="c678f1d533a0aeb9c564e79aab35e3c13b233031" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/zopfli" path="external/zopfli" remote="aosp" revision="bb96afe13a50bfc17259dcf56f44e997923c705c" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk" name="platform/external/liblzf" path="external/liblzf" remote="aosp" revision="6946aa575b0949d045722794850896099d937cbb" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk" name="CyanogenMod/android_external_bzip2" path="external/bzip2" revision="cefef6281721443eb3ea7c93d5cc60c84340c499" upstream="refs/heads/cm-13.0"/>
-
-  <!-- image/codec externals -->
-  <project groups="pdk" name="platform/external/libpng" path="external/libpng" remote="aosp" revision="9d4853418ab2f754c2b63e091c29c5529b8b86ca" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk" name="CyanogenMod/android_external_jpeg" path="external/jpeg" revision="60a4dc292437079cfc3031e3e24d9c1fe8513fb9" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libexif" path="external/libexif" remote="aosp" revision="fa0c1e7d954230cd29d896e6015314b2f68ad7bd" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk,qcom_msm8x26" name="platform/external/giflib" path="external/giflib" remote="aosp" revision="9b8f8602a74a943ddc356bb11c55b4998b2b386d" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk,qcom_msm8x26" name="platform/external/webp" path="external/webp" remote="aosp" revision="9e80ee991168a0a6c2a906dd2c17c5e17df4566e" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk" name="CyanogenMod/android_external_speex" path="external/speex" revision="ca7a472058815913338dd93d82d6f7cdd3667a2c" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="platform/external/libopus" path="external/libopus" remote="aosp" revision="1391dbf0ccd121ce7a49d30e2142d36c8d404990" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libvorbis" path="external/libvorbis" remote="aosp" revision="61a5b54ff699f0cd339121c14432d0d2517907b1" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk" name="platform/external/tremolo" path="external/tremolo" remote="aosp" revision="659030a2e80c38fb8da0a4eb68695349eec6778b" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk" name="CyanogenMod/android_external_libvpx" path="external/libvpx" revision="22ab46526bb7175217c59e974ed8589b48c298df" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="CyanogenMod/android_external_flac" path="external/flac" revision="be255519f545b882abf564c9cd99d7b1e2703525" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="platform/external/libogg" path="external/libogg" remote="aosp" revision="e4375ffe5491c4742bec47ae5468a9df5ffc3528" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk" name="platform/external/aac" path="external/aac" remote="aosp" revision="d99efb715cee295ce97ac7329f72f30f4bc6df2d" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk" name="CyanogenMod/android_external_libavc" path="external/libavc" revision="130f76a5868449479de535f6485ddc571820515a" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_external_ffmpeg" path="external/ffmpeg" revision="0a27fb6d73b5e644ff9ea7099afbbdfc6c69e23a" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_external_stagefright-plugins" path="external/stagefright-plugins" revision="4f5545a5df7fbc14aaaa00c707fd6c9e6e606b43" upstream="refs/heads/cm-13.0"/>
-
   <!-- filesystem externals -->
   <project groups="pdk" name="platform/external/squashfs-tools" path="external/squashfs-tools" remote="aosp" revision="1a710ff698178fbf71251395c4c96e3e7e73e2ed" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk" name="CyanogenMod/android_external_e2fsprogs" path="external/e2fsprogs" revision="d377698f96e3aa8cedaef5fd10c15de2bc614a7b" upstream="refs/heads/cm-13.0"/>
@@ -215,22 +188,14 @@
   <project groups="pdk" name="platform/external/cblas" path="external/cblas" remote="aosp" revision="0ab3e6274f109964d912c83ecd6abe6a3bf926c6" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk" name="platform/external/eigen" path="external/eigen" remote="aosp" revision="1ba7f856248f3d72a4549722b6c80dd6fde4abf5" upstream="refs/tags/android-6.0.1_r72"/>
 
-  <!-- audio externals -->
-  <project groups="pdk" name="CyanogenMod/android_external_tinyalsa" path="external/tinyalsa" revision="d477bf7d9ca2920bbf9e2cf1a7eb8cba56634596" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="platform/external/sonic" path="external/sonic" remote="aosp" revision="10c16fc60582d7e8bcf7533793871485d339e241" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk" name="platform/external/libgsm" path="external/libgsm" remote="aosp" revision="1e26679795597459732408891bedea130b3ee1f1" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk" name="CyanogenMod/android_external_sonivox" path="external/sonivox" revision="4d2a2d96ae259abf1310b1775ad6ff1498e581eb" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="CyanogenMod/android_external_tinycompress" path="external/tinycompress" revision="fdaf3e1660ee28900ecd34ed7ccc90a187858f37" upstream="refs/heads/cm-13.0"/>
-
-  <!-- protobuf -->
-  <project groups="pdk" name="platform/external/protobuf" path="external/protobuf" remote="aosp" revision="2f4d8a1b744e2e62dcd68b7cb7159000e5751975" upstream="refs/tags/android-6.0.1_r72"/>
-  <project name="CyanogenMod/android_external_protobuf-c" path="external/protobuf-c" revision="f5acb16b4e8b57f5be4083960023982443bddbca" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="platform/external/nanopb-c" path="external/nanopb-c" remote="aosp" revision="7e7f2e9122af6c7e7e7d4ba205fdf46d50b95eef" upstream="refs/tags/android-6.0.1_r72"/>
-
-  <!-- random externals -->
-  <project name="CyanogenMod/android_external_cyanogen_UICommon" path="external/uicommon" revision="d5b6fc53ad2f530a993bce8ccd789991e6bac6cf" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" revision="85290ef0527d2f4cf82fdc3ffc290c970ca57f6b" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" remote="aosp" revision="c15709c28e9623c1937038f08af603c492901cbd" upstream="refs/tags/android-6.0.1_r72"/>
+  <!-- compression externals -->
+  <project groups="pdk" name="CyanogenMod/android_external_zlib" path="external/zlib" revision="55411b151568e5e3ca27041a9e6bb65ba3469839" upstream="refs/heads/cm-13.0"/>
+  <project name="CyanogenMod/android_external_libtar" path="external/libtar" revision="9d133fd44abe462e4134d6a170e5871e56e081de" upstream="refs/heads/cm-13.0"/>
+  <project name="CyanogenMod/android_external_pigz" path="external/pigz" revision="b017edd756ff80d8b3beac8652bb227e021b91f2" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk" name="CyanogenMod/android_external_lzma" path="external/lzma" revision="c678f1d533a0aeb9c564e79aab35e3c13b233031" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/zopfli" path="external/zopfli" remote="aosp" revision="bb96afe13a50bfc17259dcf56f44e997923c705c" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="platform/external/liblzf" path="external/liblzf" remote="aosp" revision="6946aa575b0949d045722794850896099d937cbb" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="CyanogenMod/android_external_bzip2" path="external/bzip2" revision="cefef6281721443eb3ea7c93d5cc60c84340c499" upstream="refs/heads/cm-13.0"/>
 
   <!-- networking externals -->
   <project name="CyanogenMod/android_external_libnfnetlink" path="external/libnfnetlink" revision="80ba60f6a117f73fb4497615511dac44870eacdb" upstream="refs/heads/cm-13.0"/>
@@ -239,6 +204,36 @@
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_external_dhcpcd" path="external/dhcpcd" revision="49aad12aa28b7f709d9614f452ca8bdf21b0fccd" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="platform/external/mdnsresponder" path="external/mdnsresponder" remote="aosp" revision="11b8cee2c468b71a9629ea7f126a4935432977d1" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_external_iptables" path="external/iptables" revision="e075a20fc1379d617d1e4e7b064ea1d50eac10d6" upstream="refs/heads/cm-13.0"/>
+
+  <!-- audio externals -->
+  <project groups="pdk" name="CyanogenMod/android_external_tinyalsa" path="external/tinyalsa" revision="d477bf7d9ca2920bbf9e2cf1a7eb8cba56634596" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk" name="platform/external/sonic" path="external/sonic" remote="aosp" revision="10c16fc60582d7e8bcf7533793871485d339e241" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="platform/external/libgsm" path="external/libgsm" remote="aosp" revision="1e26679795597459732408891bedea130b3ee1f1" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="CyanogenMod/android_external_sonivox" path="external/sonivox" revision="4d2a2d96ae259abf1310b1775ad6ff1498e581eb" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk" name="CyanogenMod/android_external_tinycompress" path="external/tinycompress" revision="fdaf3e1660ee28900ecd34ed7ccc90a187858f37" upstream="refs/heads/cm-13.0"/>
+
+  <!-- image/codec externals -->
+  <project groups="pdk" name="platform/external/libpng" path="external/libpng" remote="aosp" revision="9d4853418ab2f754c2b63e091c29c5529b8b86ca" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="CyanogenMod/android_external_jpeg" path="external/jpeg" revision="60a4dc292437079cfc3031e3e24d9c1fe8513fb9" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libexif" path="external/libexif" remote="aosp" revision="fa0c1e7d954230cd29d896e6015314b2f68ad7bd" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk,qcom_msm8x26" name="platform/external/giflib" path="external/giflib" remote="aosp" revision="9b8f8602a74a943ddc356bb11c55b4998b2b386d" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk,qcom_msm8x26" name="platform/external/webp" path="external/webp" remote="aosp" revision="9e80ee991168a0a6c2a906dd2c17c5e17df4566e" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="CyanogenMod/android_external_speex" path="external/speex" revision="ca7a472058815913338dd93d82d6f7cdd3667a2c" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk" name="platform/external/libopus" path="external/libopus" remote="aosp" revision="1391dbf0ccd121ce7a49d30e2142d36c8d404990" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libvorbis" path="external/libvorbis" remote="aosp" revision="61a5b54ff699f0cd339121c14432d0d2517907b1" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="platform/external/tremolo" path="external/tremolo" remote="aosp" revision="659030a2e80c38fb8da0a4eb68695349eec6778b" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="CyanogenMod/android_external_libvpx" path="external/libvpx" revision="22ab46526bb7175217c59e974ed8589b48c298df" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk" name="CyanogenMod/android_external_flac" path="external/flac" revision="be255519f545b882abf564c9cd99d7b1e2703525" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk" name="platform/external/libogg" path="external/libogg" remote="aosp" revision="e4375ffe5491c4742bec47ae5468a9df5ffc3528" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="platform/external/aac" path="external/aac" remote="aosp" revision="d99efb715cee295ce97ac7329f72f30f4bc6df2d" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="CyanogenMod/android_external_libavc" path="external/libavc" revision="130f76a5868449479de535f6485ddc571820515a" upstream="refs/heads/cm-13.0"/>
+  <project name="CyanogenMod/android_external_ffmpeg" path="external/ffmpeg" revision="0a27fb6d73b5e644ff9ea7099afbbdfc6c69e23a" upstream="refs/heads/cm-13.0"/>
+  <project name="CyanogenMod/android_external_stagefright-plugins" path="external/stagefright-plugins" revision="4f5545a5df7fbc14aaaa00c707fd6c9e6e606b43" upstream="refs/heads/cm-13.0"/>
+
+  <!-- protobuf -->
+  <project groups="pdk" name="platform/external/protobuf" path="external/protobuf" remote="aosp" revision="2f4d8a1b744e2e62dcd68b7cb7159000e5751975" upstream="refs/tags/android-6.0.1_r72"/>
+  <project name="CyanogenMod/android_external_protobuf-c" path="external/protobuf-c" revision="f5acb16b4e8b57f5be4083960023982443bddbca" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk" name="platform/external/nanopb-c" path="external/nanopb-c" remote="aosp" revision="7e7f2e9122af6c7e7e7d4ba205fdf46d50b95eef" upstream="refs/tags/android-6.0.1_r72"/>
 
   <!-- renderer / web browser -->
   <project groups="pdk" name="platform/external/freetype" path="external/freetype" remote="aosp" revision="f720f0dbcf012d6c984dbbefa0875ef9840458c6" upstream="refs/tags/android-6.0.1_r72"/>
@@ -251,6 +246,12 @@
   <project groups="pdk-fs" name="platform/external/chromium-libpac" path="external/chromium-libpac" remote="aosp" revision="c1e2d09f531717e7d0e853a6ea34ac605279ca83" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk" name="platform/external/webrtc" path="external/webrtc" remote="aosp" revision="e4dce38d3d19cc36b32c33a87f504bdb6dbb76ae" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ksoap2" path="external/ksoap2" remote="aosp" revision="f13853ff0fa5eb65afc847176e55ca6db293eb3c" upstream="refs/tags/android-6.0.1_r72"/>
+
+  <!-- random externals -->
+  <project name="CyanogenMod/android_external_cyanogen_UICommon" path="external/uicommon" revision="d5b6fc53ad2f530a993bce8ccd789991e6bac6cf" upstream="refs/heads/cm-13.0"/>
+  <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" revision="85290ef0527d2f4cf82fdc3ffc290c970ca57f6b" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk-fs" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" remote="aosp" revision="c15709c28e9623c1937038f08af603c492901cbd" upstream="refs/tags/android-6.0.1_r72"/>
+
 
 <!-- prebuilts -->
   <!-- android -->
