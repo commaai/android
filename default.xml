@@ -37,7 +37,9 @@
   <project groups="pdk-fs" name="commaai/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="private" revision="master" upstream="master"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" revision="0dc4a6ba667a17de1764ac0c00c2e6a47c6a7fe2" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="commaai/android_packages_apps_Settings" path="packages/apps/Settings" remote="private" revision="master" upstream="master"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="private" revision="master" upstream="master"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Telephony" path="packages/services/Telephony" revision="b8655dc761dc98734f40440d1888e26b6593bb95" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" revision="846011826a98c7f9093f5560e8d22a3290fe0504" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_KeyChain" path="packages/apps/KeyChain" revision="2674ad7724497782c96fba24d7d907525f59d8e8" upstream="refs/heads/cm-13.0"/>
 
   <!-- one off folders -->
   <project groups="pdk" name="CyanogenMod/android_libnativehelper" path="libnativehelper" revision="b7a25286026b49f0f7d95b25f2d32c4f47f498ef" upstream="refs/heads/cm-13.0"/>
@@ -62,8 +64,6 @@
   <project name="CyanogenMod/android_hardware_cyanogen" path="hardware/cyanogen" revision="74128e2849286af0ad3b0b19b140887e1a8b59db" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="sultanxda/android_hardware_ril" path="hardware/ril-caf" revision="985f3bb2495189242e008e7ae848c71cb7c93e07" upstream="cm-13.0-caf-8996"/>
   <project groups="qcom,qcom_keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" path="hardware/qcom/keymaster" revision="980b695eb09b0acff3832fba95b6f4dd23d2e516" upstream="refs/heads/cm-13.0"/>
-  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt" revision="74b0e9f702d1a2af5e4e95e901270f6a15b878c4" upstream="refs/heads/cm-13.0"/>
-  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt-caf" revision="e024328cac2c92fb32882e05d4e558d31968812b" upstream="cm-13.0-caf"/>
   <project groups="qcom,qcom_gps" name="CyanogenMod/android_hardware_qcom_gps" path="hardware/qcom/gps" revision="b2278c8670f7f4743847e1fee76fd68ddb1453bd" upstream="refs/heads/cm-13.0"/>
 
   <!-- android base -->
@@ -191,8 +191,6 @@
   <project name="CyanogenMod/android_external_cyanogen_UICommon" path="external/uicommon" revision="d5b6fc53ad2f530a993bce8ccd789991e6bac6cf" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" revision="85290ef0527d2f4cf82fdc3ffc290c970ca57f6b" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ksoap2" path="external/ksoap2" remote="aosp" revision="f13853ff0fa5eb65afc847176e55ca6db293eb3c" upstream="refs/tags/android-6.0.1_r72"/>
-
-  <!-- bullshit externals -->
   <project groups="pdk-fs" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" remote="aosp" revision="c15709c28e9623c1937038f08af603c492901cbd" upstream="refs/tags/android-6.0.1_r72"/>
 
   <!-- math externals -->
@@ -264,11 +262,16 @@
 
   <!-- NEOS extra apps -->
   <!--<project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="ca20d951d77b5cac96d0b04f51f70108cce7f21d" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_apps_BluetoothExt" path="packages/apps/BluetoothExt" revision="865465dd36988f0f933d2a1935eac91e4c4448e6" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" revision="ad2308f2ae01422dfcc02538584ba3dfaf9cdf47" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_CertInstaller" path="packages/apps/CertInstaller" revision="c8f7e9b90ea04c8bed402f896c9168c8214343dd" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_KeyChain" path="packages/apps/KeyChain" revision="2674ad7724497782c96fba24d7d907525f59d8e8" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" revision="846011826a98c7f9093f5560e8d22a3290fe0504" upstream="refs/heads/cm-13.0"/>-->
+  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_CertInstaller" path="packages/apps/CertInstaller" revision="c8f7e9b90ea04c8bed402f896c9168c8214343dd" upstream="refs/heads/cm-13.0"/>-->
+
+  <!-- extra fonts -->
+  <!--<project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" remote="aosp" revision="0062a10458d4c357f3082d66bcb129d11913aaae" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" remote="aosp" revision="2c5cb418c690815545bbb0316eae5fd33b9fc859" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" remote="aosp" revision="bce2136662854076023066602526ba299e6556b2" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" remote="aosp" revision="7b6623bd54cee3e48ae8a4f477f616366643cc78" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/naver-fonts" path="external/naver-fonts" remote="aosp" revision="91e6e9f94d1d769a8f742649674149ba98ce7d45" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="platform/external/noto-fonts" path="external/noto-fonts" remote="aosp" revision="8f0a9cf95c5d7048bd55329776f58a0b800a3ef5" upstream="refs/tags/android-6.0.1_r72"/>-->
 
   <!-- hardware (extra?) -->
   <!--<project name="CyanogenMod/android_hardware_samsung_slsi_exynos5" path="hardware/samsung_slsi/exynos5" revision="3ac2ff83d66f1abfdb23d695670e631206c19df9" upstream="refs/heads/cm-13.0"/>-->
@@ -278,7 +281,16 @@
   <project groups="qcom_msm8x26" name="platform/hardware/qcom/msm8x26" path="hardware/qcom/msm8x26" remote="aosp" revision="3ddc8d3a5ae1f5e264822c55c06c4e472aa17bc0" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="qcom_msm8x27" name="platform/hardware/qcom/msm8x27" path="hardware/qcom/msm8x27" remote="aosp" revision="8ff5c0057cbdecfa09410c1710ba043e191a2862" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk,qcom_msm8x74" name="platform/hardware/qcom/msm8x74" path="hardware/qcom/msm8x74" remote="aosp" revision="2b96ffd283fd14d7d153b6b66680da98548679fd" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="qcom_msm8x84" name="platform/hardware/qcom/msm8x84" path="hardware/qcom/msm8x84" remote="aosp" revision="582b414269d8472d17eef65d8a8965aa8105042f" upstream="refs/tags/android-6.0.1_r72"/>-->
+  <project groups="qcom_msm8x84" name="platform/hardware/qcom/msm8x84" path="hardware/qcom/msm8x84" remote="aosp" revision="582b414269d8472d17eef65d8a8965aa8105042f" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt" revision="74b0e9f702d1a2af5e4e95e901270f6a15b878c4" upstream="refs/heads/cm-13.0"/>
+  <project groups="qcom" name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt-caf" revision="e024328cac2c92fb32882e05d4e558d31968812b" upstream="cm-13.0-caf"/>
+  -->
+
+  <!-- Bluetooth -->
+  <!--<project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_bluetooth" path="frameworks/opt/bluetooth" revision="ee991e9ed86e90ba56e56b9e05c89012097972d4" upstream="refs/heads/cm-13.0"/>
+  <project name="CyanogenMod/android_packages_apps_BluetoothExt" path="packages/apps/BluetoothExt" revision="865465dd36988f0f933d2a1935eac91e4c4448e6" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="private" revision="master" upstream="master"/>
+  -->
 
   <!--<project name="CyanogenMod/AndroidAsync" path="external/koush/AndroidAsync" revision="58688ac2fa2668bf84c7e38410bd2c9f7a8123ee" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_development" path="development" revision="87654bc0a08a4da5813c719a65087120068d5341" upstream="refs/heads/cm-13.0"/>
@@ -341,7 +353,6 @@
   <project groups="pdk" name="CyanogenMod/android_frameworks_compile_mclinker" path="frameworks/compile/mclinker" revision="8c10afdc806cbb9d4560e90b100f0dcefdd46a21" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_ml" path="frameworks/ml" revision="e0721529b9662b5ffb6cc7daf5b097720f5eb3e8" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="CyanogenMod/android_frameworks_opt_bitmap" path="frameworks/opt/bitmap" revision="856e2a9d72fe3a79cd7bfa5cf443d13a60495c4b" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_bluetooth" path="frameworks/opt/bluetooth" revision="ee991e9ed86e90ba56e56b9e05c89012097972d4" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_calendar" path="frameworks/opt/calendar" revision="03b18577f8f8f799e87a62b8e03889ddacf6daa2" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_chips" path="frameworks/opt/chips" revision="0c78a7d28011bc03e57849c3776c4707420f20ff" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_colorpicker" path="frameworks/opt/colorpicker" revision="382f81ff096903faec0bd7e97b021053f50c426a" upstream="refs/heads/cm-13.0"/>
@@ -376,7 +387,6 @@
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" revision="c3d8153bec08a97c9e0983e28d593de67e657672" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_CMAudioService" path="packages/services/CMAudioService" revision="aa1ccf09d64d52ffc3dd83ec93f1001758bda9e6" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Mms" path="packages/services/Mms" revision="477457f40fa5d4938c182ca938f02229529280dc" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Telephony" path="packages/services/Telephony" revision="b8655dc761dc98734f40440d1888e26b6593bb95" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_bt" path="system/bt" revision="ccde045431d38d4828412149f067631487f8025f" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" revision="5451bb05347d541eb0b65aac6739a25da338e3b3" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_qcom_opensource_time-services" path="vendor/qcom/opensource/time-services" revision="6efa6a5100fb0401a02f4df40b98c495a240ce33" upstream="refs/heads/cm-13.0"/>
@@ -420,10 +430,6 @@
   <project groups="pdk-fs" name="platform/external/fonttools" path="external/fonttools" remote="aosp" revision="fe6c510afddcf7f5d980b49e4398dc31953b43d3" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-fs" name="platform/external/glide" path="external/glide" remote="aosp" revision="ac008b7995cd6956fc466f873ee2d810779a1e9b" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="dragon" name="platform/external/google-breakpad" path="external/google-breakpad" remote="aosp" revision="7e61ab71172b9e0d477f16a5e3b3ec32f866d1a6" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" remote="aosp" revision="0062a10458d4c357f3082d66bcb129d11913aaae" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" remote="aosp" revision="2c5cb418c690815545bbb0316eae5fd33b9fc859" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" remote="aosp" revision="bce2136662854076023066602526ba299e6556b2" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" remote="aosp" revision="7b6623bd54cee3e48ae8a4f477f616366643cc78" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-fs" name="platform/external/google-tv-pairing-protocol" path="external/google-tv-pairing-protocol" remote="aosp" revision="2c2109e246e439f977e366ec78de0b147b06bb60" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ipsec-tools" path="external/ipsec-tools" remote="aosp" revision="be69e0250002f998173bedb124c56b68ab6292cd" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/iputils" path="external/iputils" remote="aosp" revision="fdf8e83818340ee2efa54654fb294da919d1a4b1" upstream="refs/tags/android-6.0.1_r72"/>
@@ -455,12 +461,10 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mp4parser" path="external/mp4parser" remote="aosp" revision="16051e950485c6b62127c0446a760111de1a0cb9" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mtpd" path="external/mtpd" remote="aosp" revision="acfaed8bf7d1928ecb1e15b56497ba5da885101d" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-fs" name="platform/external/nanohttpd" path="external/nanohttpd" remote="aosp" revision="2aa25f6af65e07f4c1ce167e2de2aaee2f0cffe8" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/naver-fonts" path="external/naver-fonts" remote="aosp" revision="91e6e9f94d1d769a8f742649674149ba98ce7d45" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/netcat" path="external/netcat" remote="aosp" revision="b023a43765b15f0b0fd5b52b7d8021f515c59c23" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/netperf" path="external/netperf" remote="aosp" revision="27ffe986a2933b1ff0eecbcc51a807d130e254ec" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/neven" path="external/neven" remote="aosp" revision="b212725fe71ed9ce8d0adda92fc43030337bd48a" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/nfacct" path="external/nfacct" remote="aosp" revision="6f7aae0264821b44e9fe80fb5596c525d3e2f475" upstream="refs/tags/android-6.0.1_r72"/>
-  <project groups="pdk" name="platform/external/noto-fonts" path="external/noto-fonts" remote="aosp" revision="8f0a9cf95c5d7048bd55329776f58a0b800a3ef5" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/oauth" path="external/oauth" remote="aosp" revision="bc170f58de82000ed6460f111686a850a1890c07" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/opencv" path="external/opencv" remote="aosp" revision="70a06ce5365b0248e0ad39df681d6c934d3618f3" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/openfst" path="external/openfst" remote="aosp" revision="d329901723ef29099659d9b955c5580de686fd6d" upstream="refs/tags/android-6.0.1_r72"/>
