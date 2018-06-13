@@ -7,6 +7,10 @@
   <default remote="github" revision="refs/heads/cm-13.0" sync-c="true" sync-j="4"/>
   
   <project name="commaai/android" path="android" remote="private" revision="mindroid" upstream="mindroid"/>
+  <project groups="pdk" name="commaai/android_build" path="build" remote="private" revision="master" upstream="master">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
+
   <!--<project name="commaai/android_vendor_oneplus_oneplus3" path="vendor/oneplus/oneplus3" remote="private" revision="master" upstream="master"/>
   <project name="commaai/android_packages_apps_NEOSSetup" path="packages/apps/NEOSSetup" remote="private" revision="master" upstream="master"/>
 
@@ -29,10 +33,6 @@
   <project groups="qcom" name="sultanxda/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8996" revision="2a76ca5e969171812a0938ac3c705b9f49b2caa4" upstream="cm-13.0-caf-8996_1.3.2"/>
   <project groups="pdk" name="sultanxda/android_hardware_ril" path="hardware/ril-caf" revision="985f3bb2495189242e008e7ae848c71cb7c93e07" upstream="cm-13.0-caf-8996"/>
 
-
-  <project groups="pdk" name="commaai/android_build" path="build" remote="private" revision="master" upstream="master">
-    <copyfile dest="Makefile" src="core/root.mk"/>
-  </project>
 
   <project name="CyanogenMod/AndroidAsync" path="external/koush/AndroidAsync" revision="58688ac2fa2668bf84c7e38410bd2c9f7a8123ee" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_abi_cpp" path="abi/cpp" revision="36b381298a4efb7c293d394d8b1acbda68230989" upstream="refs/heads/cm-13.0"/>
