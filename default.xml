@@ -144,11 +144,14 @@
   
 
 <!-- GNU core system -->
-  <!-- system externals -->
+  <!-- toolchain -->
   <project groups="pdk" name="platform/external/libcxx" path="external/libcxx" remote="aosp" revision="076df933eb2d98152218b874abfa91cba660bcbd" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt" remote="aosp" revision="3b1a2d532ed2c4444dbc7557784d6f4dfe15a90c" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk" name="platform/external/libcxxabi" path="external/libcxxabi" remote="aosp" revision="b451069aab57ccfe64c0fc7a18cfc487862fe985" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk" name="platform/external/llvm" path="external/llvm" remote="aosp" revision="039ace80c6746a215b3ea7403e60183f4ce78239" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="platform/external/clang" path="external/clang" remote="aosp" revision="6270ca65199882c73aa9699d8fbeb580870e8d30" upstream="refs/tags/android-6.0.1_r72"/>
+
+  <!-- system externals -->
   <project groups="pdk" name="platform/external/jemalloc" path="external/jemalloc" remote="aosp" revision="486fa41f4ace88a9d1b96831bc36cbd2cfa4957e" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk,pdk-cw-fs,pdk-fs" name="platform/external/libpcap" path="external/libpcap" remote="aosp" revision="c442bf68e06f961ad0f8fc5a7d19e0984985ea30" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk" name="CyanogenMod/android_external_pcre" path="external/pcre" revision="0d3d4875d4e672ab52cfd421da9a7fddbbaecda3" upstream="refs/heads/cm-13.0"/>
@@ -167,7 +170,6 @@
   <project groups="pdk" name="platform/external/jsmn" path="external/jsmn" remote="aosp" revision="27b5a35db0630b86791fa037a12da7b37c2aab49" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk" name="platform/external/bsdiff" path="external/bsdiff" remote="aosp" revision="9d4448afbbbe00353ea05f3be091535885e2e155" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk" name="CyanogenMod/android_external_sqlite" path="external/sqlite" revision="3d331b083b747f9a48464e94710d8432e2f5e454" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="platform/external/clang" path="external/clang" remote="aosp" revision="6270ca65199882c73aa9699d8fbeb580870e8d30" upstream="refs/tags/android-6.0.1_r72"/>
 
   <!-- filesystem externals -->
   <project groups="pdk" name="platform/external/squashfs-tools" path="external/squashfs-tools" remote="aosp" revision="1a710ff698178fbf71251395c4c96e3e7e73e2ed" upstream="refs/tags/android-6.0.1_r72"/>
