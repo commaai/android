@@ -72,15 +72,6 @@
   <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="private" revision="master" upstream="master"/>
   <project name="CyanogenMod/android_packages_apps_BluetoothExt" path="packages/apps/BluetoothExt" revision="865465dd36988f0f933d2a1935eac91e4c4448e6" upstream="refs/heads/cm-13.0"/>
 
-  <!-- NEOS extra apps -->
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="ca20d951d77b5cac96d0b04f51f70108cce7f21d" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" revision="ad2308f2ae01422dfcc02538584ba3dfaf9cdf47" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_CertInstaller" path="packages/apps/CertInstaller" revision="c8f7e9b90ea04c8bed402f896c9168c8214343dd" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" revision="183a77036d5890f8aca3b7849c92a294dc3dbb95" upstream="refs/heads/cm-13.0"/>
-  <project name="CyanogenMod/android_packages_providers_DataUsageProvider" path="packages/providers/DataUsageProvider" revision="ffd3c508f66a1ff76d0e4b9eb4882a6b1de47227" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_CMAudioService" path="packages/services/CMAudioService" revision="aa1ccf09d64d52ffc3dd83ec93f1001758bda9e6" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Mms" path="packages/services/Mms" revision="477457f40fa5d4938c182ca938f02229529280dc" upstream="refs/heads/cm-13.0"/>
-
   <!-- art (and support) -->
   <project groups="pdk" name="CyanogenMod/android_art" path="art" revision="7592c94124e7fd7ea8bd8592c4a8e1001d6f6e4d" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="platform/external/vixl" path="external/vixl" remote="aosp" revision="dc661669ef2e2fd18c4e21333d6a12112b520436" upstream="refs/tags/android-6.0.1_r72"/>
@@ -303,6 +294,15 @@
   <project clone-depth="1" groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" remote="aosp" revision="f61a459478cdc31e8aae22a182cdbf814ba08012" upstream="refs/tags/android-6.0.1_r72"/>
 
 <!-- disabled -->
+  <!-- extra apps -->
+  <!--<project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="ca20d951d77b5cac96d0b04f51f70108cce7f21d" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" revision="ad2308f2ae01422dfcc02538584ba3dfaf9cdf47" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_CertInstaller" path="packages/apps/CertInstaller" revision="c8f7e9b90ea04c8bed402f896c9168c8214343dd" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" revision="183a77036d5890f8aca3b7849c92a294dc3dbb95" upstream="refs/heads/cm-13.0"/>
+  <project name="CyanogenMod/android_packages_providers_DataUsageProvider" path="packages/providers/DataUsageProvider" revision="ffd3c508f66a1ff76d0e4b9eb4882a6b1de47227" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_CMAudioService" path="packages/services/CMAudioService" revision="aa1ccf09d64d52ffc3dd83ec93f1001758bda9e6" upstream="refs/heads/cm-13.0"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Mms" path="packages/services/Mms" revision="477457f40fa5d4938c182ca938f02229529280dc" upstream="refs/heads/cm-13.0"/>-->
+
   <!-- android very optional frameworks -->
   <!--<project groups="pdk" name="CyanogenMod/android_frameworks_compile_mclinker" path="frameworks/compile/mclinker" revision="8c10afdc806cbb9d4560e90b100f0dcefdd46a21" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_ml" path="frameworks/ml" revision="e0721529b9662b5ffb6cc7daf5b097720f5eb3e8" upstream="refs/heads/cm-13.0"/>
