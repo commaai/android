@@ -207,6 +207,7 @@
   <project groups="pdk" name="platform/external/mdnsresponder" path="external/mdnsresponder" remote="aosp" revision="11b8cee2c468b71a9629ea7f126a4935432977d1" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_external_iptables" path="external/iptables" revision="e075a20fc1379d617d1e4e7b064ea1d50eac10d6" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/iputils" path="external/iputils" remote="aosp" revision="fdf8e83818340ee2efa54654fb294da919d1a4b1" upstream="refs/tags/android-6.0.1_r72"/>
+  <project groups="pdk" name="CyanogenMod/android_external_iproute2" path="external/iproute2" revision="791d8c99b8cad6b3b41a679e1ae0f236f43d75a3" upstream="refs/heads/cm-13.0"/>
 
   <!-- audio externals -->
   <project groups="pdk" name="CyanogenMod/android_external_tinyalsa" path="external/tinyalsa" revision="d477bf7d9ca2920bbf9e2cf1a7eb8cba56634596" upstream="refs/heads/cm-13.0"/>
@@ -337,7 +338,6 @@
   <project name="CyanogenMod/android_external_google" path="external/google" revision="c64f3e349dd019c7cfa030c7f021d22ed6f79d81" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_external_gson" path="external/gson" revision="4bc2ec0628f74bc24c3820951f4ca2c91e516f7a" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_external_htop" path="external/htop" revision="841159c272ac08b1cd5bdef5167a8ce11383fbb5" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="CyanogenMod/android_external_iproute2" path="external/iproute2" revision="791d8c99b8cad6b3b41a679e1ae0f236f43d75a3" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_external_json-c" path="external/json-c" revision="6f9c02d6b1437f5203f866805c8f602476b3cc4e" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_external_libncurses" path="external/libncurses" revision="067ae32f7e4b45bb1cb7ba37d0ffe618905e049f" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_external_libphonenumbergoogle" path="external/libphonenumbergoogle" revision="6d3030c03cc39c4921b77dbf3f4905be41585881" upstream="refs/heads/cm-13.0"/>
