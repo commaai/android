@@ -39,7 +39,7 @@
   <project groups="pdk" name="CyanogenMod/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="1f27ca88dc332eecf1dda3a6dc1afcdef6591e78" upstream="refs/heads/cm-13.0"/>
   <project groups="qcom" name="CyanogenMod/android_hardware_qcom_camera" path="hardware/qcom/camera" revision="84a2ea4aa3a87aaab0238aaba2f78761dcaac6b3" upstream="refs/heads/cm-13.0"/>
   <project groups="qcom,qcom_audio" name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio/default" revision="20bb5b4400ae1051619593e322f8eee5297addf1" upstream="refs/heads/cm-13.0"/>
-  <project groups="qcom,qcom_audio" name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8996" revision="abff8fef577cf293375b7b7b552f823b1c44aca6" upstream="cm-13.0-caf-8996"/>
+  <project groups="qcom,qcom_audio" name="commaai/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8996" remote="private" revision="master" upstream="master"/>
   <project groups="qcom" name="sultanxda/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8996" revision="2a76ca5e969171812a0938ac3c705b9f49b2caa4" upstream="cm-13.0-caf-8996_1.3.2"/>
   <project groups="pdk,qcom,qcom_display" name="sultanxda/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8996" revision="7e3da286fe738f395aee606d126912dc8547ce46" upstream="cm-13.0-caf-8996_1.3.2"/>
   <project groups="qcom_wlan" name="CyanogenMod/android_hardware_qcom_wlan" path="hardware/qcom/wlan" revision="70d3f9f7afb90a0b6d1d3321ef80175ab3584719" upstream="refs/heads/cm-13.0"/>
