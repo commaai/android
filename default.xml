@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <remote fetch="ssh://git@github.com" name="private"/>
   <default remote="caf" revision="refs/heads/android-external.lnx.2.9.1-rel"/>
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="20912fa054260e187db965941783ddcd6287d454" upstream="uefi.lnx.1.9.r7-rel"/>
   <project name="device/common" revision="44f3e76431cd7ab8d546d4eac9fccd391f28bc15" upstream="android-framework.lnx.3.1.r4-rel"/>
@@ -31,7 +32,7 @@
   </project>
   <project name="device/qcom/sepolicy" revision="4417979ca9a059085fb7fe0e1211532b0044c497" upstream="sepolicy.lnx.3.0.1.r6-rel"/>
   <project name="device/sample" revision="373ff40941e4d8d17f07345703d85ba825cb4a61" upstream="android-framework.lnx.3.1.r4-rel"/>
-  <project name="kernel/msm-4.9" revision="ad3529717941db46cf46306d401b7090f5d7866c" upstream="kernel.lnx.4.9.r7-rel"/>
+  <project name="commaai/android_kernel_comma_sdm845" path="kernel/msm-4.9" remote="private" revision="master"/>
   <project name="platform/art" path="art" revision="b940f4d47b04c6d79e4f40de31b25e32e07236ba" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/bionic" path="bionic" revision="a9bccefbc102bd8366f0cc41242cafec2984941b" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/bootable/recovery" path="bootable/recovery" revision="08cb0cca814949aaf65b1bfbb21db4bab8d9d6e1" upstream="android-framework.lnx.3.1.r4-rel"/>
@@ -601,7 +602,7 @@
   <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="1167c445c8a7a6f926455f4b6d75de0a94e68eec" upstream="wlan-cmn.driver.lnx.1.0.r34-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="56804ed344c1c1f98857196439eb6cdeafc63a99" upstream="wlan-cld3.driver.lnx.1.1.r34-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="20d9c6ba5cba92e03665b13f15d778e94c559592" upstream="wlan-service.lnx.1.9.r16-rel"/>
-  <project name="platform/vendor/qcom/skunk" path="device/qcom/sdm845" revision="065877d7c5268c335413ddc4509057bf80b0c1ed" upstream="qcom-devices.lnx.3.0.r6-rel"/>
+  <project name="commaai/android_vendor_qcom_skunk" path="device/qcom/sdm845" remote="private" revision="master"/>
   <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="6a461864882ef2fec0caab813044b2106bfa199d" upstream="qcom-devices.lnx.3.0.r6-rel"/>
   <project name="toolchain/binutils" revision="dd7b632eac4d3d51c445f60bb87348b005691703" upstream="android-framework.lnx.3.1.r4-rel"/>
 </manifest>
