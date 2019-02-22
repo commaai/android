@@ -534,7 +534,7 @@
   <project name="platform/system/chre" path="system/chre" revision="c681bd722081f54fb5b3de61e7c2ece54f5adb0b" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="8ca3363b50c108bf90b21c2818f02867947827fa" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="4a8ce635151597ebd50ed908afb307967e96db91" upstream="android-framework.lnx.3.1.r4-rel"/>
-  <project name="platform/system/core" path="system/core" revision="078e8831b9f2dd3257277198954ae6452a9232a2" upstream="android-framework.lnx.3.1.r4-rel"/>
+  <project name="commaai/android_system_core" path="system/core" remote="private" revision="sdm845"/>
   <project name="platform/system/extras" path="system/extras" revision="1a4d36bbf03677d82a5fa47944d04cf68f7694dc" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/gatekeeper" path="system/gatekeeper" revision="1b43581e2497d120e9a7eb3d0cf29a39b3edc0b3" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="244deb7559a1982cbaa21d9bd74d7e94b27694ee" upstream="android-framework.lnx.3.1.r4-rel"/>
