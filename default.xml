@@ -342,7 +342,7 @@
   <project name="platform/external/zopfli" path="external/zopfli" revision="069cb023c39358bc0e1b3dc0397b8fcdd84b4d44" upstream="android-external.lnx.3.1.r4-rel"/>
   <project name="platform/external/zxing" path="external/zxing" revision="fedf8f2d8099bf7bb85dc3db8699343d56617deb" upstream="android-external.lnx.3.1.r4-rel"/>
   <project name="platform/frameworks/av" path="frameworks/av" revision="efd487a0e29c7a7d0feeb347eca816b04079473e" upstream="av-aosp.lnx.2.9.2.r6-rel"/>
-  <project name="platform/frameworks/base" path="frameworks/base" revision="7888d8ffddb5ab7b00277f3c7b7e248c0a9bd276" upstream="android-framework.lnx.3.1.r4-rel"/>
+  <project name="commaai/android_frameworks_base" path="frameworks/base" remote="private" revision="sdm845"/>
   <project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="7273219b3c1634618813f5e1b55df4e432cde268" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="5db188878b2b20c02e7cbd3ef50ae46faf2f056d" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="85534a6340718a380bb8851d9d2394f2654ccf77" upstream="android-framework.lnx.3.1.r4-rel"/>
