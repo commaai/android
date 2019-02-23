@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
-  <remote fetch="ssh://git@github.com" name="private"/>
+  <remote fetch="ssh://git@github.com/commaai/" name="comma"/>
   <default remote="caf" revision="refs/heads/android-external.lnx.2.9.1-rel"/>
+
+  <!-- Comma repos -->
+  <project name="android_frameworks_base" path="frameworks/base" remote="comma" revision="sdm845"/>
+  <project name="android_kernel_comma_sdm845" path="kernel/msm-4.9" remote="comma" revision="master"/>
+  <project name="android_system_core" path="system/core" remote="comma" revision="sdm845"/>
+  <project name="android_vendor_qcom_skunk" path="device/qcom/sdm845" remote="comma" revision="master"/>
+  <project name="android_build_kati" path="build/kati" remote="comma" revision="sdm845"/>
+  <project name="usr" path="external/usr" remote="comma" revision="master"/>
+
+  <!-- CAF repos -->
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="20912fa054260e187db965941783ddcd6287d454" upstream="uefi.lnx.1.9.r7-rel"/>
   <project name="device/common" revision="44f3e76431cd7ab8d546d4eac9fccd391f28bc15" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="device/generic/arm64" revision="392eec3cb4c64721cd5b76fa36535954b5d45309" upstream="android-framework.lnx.3.1.r4-rel"/>
@@ -32,7 +42,6 @@
   </project>
   <project name="device/qcom/sepolicy" revision="4417979ca9a059085fb7fe0e1211532b0044c497" upstream="sepolicy.lnx.3.0.1.r6-rel"/>
   <project name="device/sample" revision="373ff40941e4d8d17f07345703d85ba825cb4a61" upstream="android-framework.lnx.3.1.r4-rel"/>
-  <project name="commaai/android_kernel_comma_sdm845" path="kernel/msm-4.9" remote="private" revision="master"/>
   <project name="platform/art" path="art" revision="b940f4d47b04c6d79e4f40de31b25e32e07236ba" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/bionic" path="bionic" revision="a9bccefbc102bd8366f0cc41242cafec2984941b" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/bootable/recovery" path="bootable/recovery" revision="08cb0cca814949aaf65b1bfbb21db4bab8d9d6e1" upstream="android-framework.lnx.3.1.r4-rel"/>
@@ -46,7 +55,6 @@
     <linkfile dest="build/tools" src="tools"/>
   </project>
   <project name="platform/build/blueprint" path="build/blueprint" revision="70ae58a8b5527bc116b4d1603ad798482882ac89" upstream="android-framework.lnx.3.1.r4-rel"/>
-  <project name="platform/build/kati" path="build/kati" revision="76918caacd8d8dba3eead3a58d85c3d95f49fdb0" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/build/soong" path="build/soong" revision="9cf1b2993815d3aa14d68def6da93f00a597b968" upstream="android-framework.lnx.3.1.r4-rel">
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
@@ -342,7 +350,6 @@
   <project name="platform/external/zopfli" path="external/zopfli" revision="069cb023c39358bc0e1b3dc0397b8fcdd84b4d44" upstream="android-external.lnx.3.1.r4-rel"/>
   <project name="platform/external/zxing" path="external/zxing" revision="fedf8f2d8099bf7bb85dc3db8699343d56617deb" upstream="android-external.lnx.3.1.r4-rel"/>
   <project name="platform/frameworks/av" path="frameworks/av" revision="efd487a0e29c7a7d0feeb347eca816b04079473e" upstream="av-aosp.lnx.2.9.2.r6-rel"/>
-  <project name="commaai/android_frameworks_base" path="frameworks/base" remote="private" revision="sdm845"/>
   <project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="7273219b3c1634618813f5e1b55df4e432cde268" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="5db188878b2b20c02e7cbd3ef50ae46faf2f056d" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="85534a6340718a380bb8851d9d2394f2654ccf77" upstream="android-framework.lnx.3.1.r4-rel"/>
@@ -534,7 +541,6 @@
   <project name="platform/system/chre" path="system/chre" revision="c681bd722081f54fb5b3de61e7c2ece54f5adb0b" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="8ca3363b50c108bf90b21c2818f02867947827fa" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="4a8ce635151597ebd50ed908afb307967e96db91" upstream="android-framework.lnx.3.1.r4-rel"/>
-  <project name="commaai/android_system_core" path="system/core" remote="private" revision="sdm845"/>
   <project name="platform/system/extras" path="system/extras" revision="1a4d36bbf03677d82a5fa47944d04cf68f7694dc" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/gatekeeper" path="system/gatekeeper" revision="1b43581e2497d120e9a7eb3d0cf29a39b3edc0b3" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="244deb7559a1982cbaa21d9bd74d7e94b27694ee" upstream="android-framework.lnx.3.1.r4-rel"/>
@@ -602,7 +608,6 @@
   <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="1167c445c8a7a6f926455f4b6d75de0a94e68eec" upstream="wlan-cmn.driver.lnx.1.0.r34-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="56804ed344c1c1f98857196439eb6cdeafc63a99" upstream="wlan-cld3.driver.lnx.1.1.r34-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="20d9c6ba5cba92e03665b13f15d778e94c559592" upstream="wlan-service.lnx.1.9.r16-rel"/>
-  <project name="commaai/android_vendor_qcom_skunk" path="device/qcom/sdm845" remote="private" revision="master"/>
   <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="6a461864882ef2fec0caab813044b2106bfa199d" upstream="qcom-devices.lnx.3.0.r6-rel"/>
   <project name="toolchain/binutils" revision="dd7b632eac4d3d51c445f60bb87348b005691703" upstream="android-framework.lnx.3.1.r4-rel"/>
 </manifest>
