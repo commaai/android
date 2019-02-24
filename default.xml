@@ -7,6 +7,7 @@
   <!-- Comma repos -->
   <project name="android_build_kati" path="build/kati" remote="comma" revision="sdm845"/>
   <project name="android_frameworks_base" path="frameworks/base" remote="comma" revision="sdm845"/>
+  <project name="android_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" remote="comma" revision="sdm845"/>
   <project name="android_kernel_comma_sdm845" path="kernel/msm-4.9" remote="comma" revision="master"/>
   <project name="android_system_core" path="system/core" remote="comma" revision="sdm845"/>
   <project name="android_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="comma" revision="sdm845"/>
@@ -371,7 +372,6 @@
   <project name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji" revision="92eede13edbf22b501edb9aeb92366f91eab9781" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/frameworks/opt/inputconnectioncommon" path="frameworks/opt/inputconnectioncommon" revision="3baece9b20fa480da46d860acd7320fd9eee3386" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/frameworks/opt/inputmethodcommon" path="frameworks/opt/inputmethodcommon" revision="990fcb1a6dbb5d1204cc8ec86e4bc3f691f4aeeb" upstream="android-framework.lnx.3.1.r4-rel"/>
-  <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="997023d08b6f0a973f1d83aba79839d26d92386f" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="c86bb247c74ea8d7ad2f7f0f837a6723054311c2" upstream="atel.lnx.2.9.2.r6-rel"/>
   <project name="platform/frameworks/opt/net/lowpan" path="frameworks/opt/net/lowpan" revision="84056f40394d65dbf78c4d83771d7a70d117ee9f" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="5a6b2cb6dcd0383f0da7b8daa957819dbd191acc" upstream="android-framework.lnx.3.1.r4-rel"/>
