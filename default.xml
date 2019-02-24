@@ -5,11 +5,12 @@
   <default remote="caf" revision="refs/heads/android-external.lnx.2.9.1-rel"/>
 
   <!-- Comma repos -->
+  <project name="android_build_kati" path="build/kati" remote="comma" revision="sdm845"/>
   <project name="android_frameworks_base" path="frameworks/base" remote="comma" revision="sdm845"/>
   <project name="android_kernel_comma_sdm845" path="kernel/msm-4.9" remote="comma" revision="master"/>
   <project name="android_system_core" path="system/core" remote="comma" revision="sdm845"/>
+  <project name="android_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="comma" revision="sdm845"/>
   <project name="android_vendor_qcom_skunk" path="device/qcom/sdm845" remote="comma" revision="master"/>
-  <project name="android_build_kati" path="build/kati" remote="comma" revision="sdm845"/>
   <project name="usr" path="external/usr" remote="comma" revision="master"/>
 
   <!-- CAF repos -->
