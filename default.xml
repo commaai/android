@@ -6,10 +6,17 @@
 
   <!-- Comma repos -->
   <project name="android_build_kati" path="build/kati" remote="comma" revision="sdm845"/>
+  <project name="android_device_qcom_common" path="device/qcom/common" remote="comma" revision="sdm845">
+    <copyfile dest="build.sh" src="build.sh"/>
+    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+    <copyfile dest="kernel/Android.mk" src="stop_scan.mk"/>
+    <copyfile dest="disregard/Android.mk" src="stop_scan.mk"/>
+  </project>
   <project name="android_frameworks_base" path="frameworks/base" remote="comma" revision="sdm845"/>
   <project name="android_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" remote="comma" revision="sdm845"/>
   <project name="android_kernel_comma_sdm845" path="kernel/msm-4.9" remote="comma" revision="master"/>
   <project name="android_system_core" path="system/core" remote="comma" revision="sdm845"/>
+  <project name="android_system_extras" path="system/extras" remote="comma" revision="sdm845"/>
   <project name="android_vendor_qcom_opensource_wlan_qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" remote="comma" revision="sdm845"/>
   <project name="android_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="comma" revision="sdm845"/>
   <project name="android_vendor_qcom_skunk" path="device/qcom/sdm845" remote="comma" revision="master"/>
@@ -37,12 +44,6 @@
   <project name="device/google/atv" revision="fe24d2cbe6b0fca07e8da1773ab8aa967a32d227" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="device/google/contexthub" revision="9369db1ceb43f2fbd5e0afe3d0531d0cfa74c98c" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="device/google/vrservices" revision="7cd849f396995cf8a3659024f0f0894e25bc735d" upstream="android-framework.lnx.3.1.r4-rel"/>
-  <project name="device/qcom/common" revision="d8715797e0ccd4a6207aee3a516b30ff8e2c924c" upstream="qcom-devices.lnx.3.0.r6-rel">
-    <copyfile dest="build.sh" src="build.sh"/>
-    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-    <copyfile dest="kernel/Android.mk" src="stop_scan.mk"/>
-    <copyfile dest="disregard/Android.mk" src="stop_scan.mk"/>
-  </project>
   <project name="device/qcom/sepolicy" revision="4417979ca9a059085fb7fe0e1211532b0044c497" upstream="sepolicy.lnx.3.0.1.r6-rel"/>
   <project name="device/sample" revision="373ff40941e4d8d17f07345703d85ba825cb4a61" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/art" path="art" revision="b940f4d47b04c6d79e4f40de31b25e32e07236ba" upstream="android-framework.lnx.3.1.r4-rel"/>
@@ -543,7 +544,6 @@
   <project name="platform/system/chre" path="system/chre" revision="c681bd722081f54fb5b3de61e7c2ece54f5adb0b" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="8ca3363b50c108bf90b21c2818f02867947827fa" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="4a8ce635151597ebd50ed908afb307967e96db91" upstream="android-framework.lnx.3.1.r4-rel"/>
-  <project name="platform/system/extras" path="system/extras" revision="1a4d36bbf03677d82a5fa47944d04cf68f7694dc" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/gatekeeper" path="system/gatekeeper" revision="1b43581e2497d120e9a7eb3d0cf29a39b3edc0b3" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="244deb7559a1982cbaa21d9bd74d7e94b27694ee" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="005c9587f56d7cfe724f6268f0e160d8755d91d6" upstream="android-framework.lnx.3.1.r4-rel"/>
