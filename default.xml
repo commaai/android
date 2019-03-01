@@ -5,6 +5,15 @@
   <default remote="caf" revision="refs/heads/android-external.lnx.2.9.1-rel"/>
 
   <!-- Comma repos -->
+  <project name="android_build" path="build/make" remote="comma" revision="sdm845">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
   <project name="android_build_kati" path="build/kati" remote="comma" revision="sdm845"/>
   <project name="android_device_qcom_common" path="device/qcom/common" remote="comma" revision="sdm845">
     <copyfile dest="build.sh" src="build.sh"/>
@@ -49,15 +58,6 @@
   <project name="platform/art" path="art" revision="b940f4d47b04c6d79e4f40de31b25e32e07236ba" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/bionic" path="bionic" revision="a9bccefbc102bd8366f0cc41242cafec2984941b" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/bootable/recovery" path="bootable/recovery" revision="08cb0cca814949aaf65b1bfbb21db4bab8d9d6e1" upstream="android-framework.lnx.3.1.r4-rel"/>
-  <project name="platform/build" path="build/make" revision="ad2fa86d6b1ca4c545bef86a5687b827400dfe34" upstream="android-framework.lnx.3.1.r4-rel">
-    <copyfile dest="Makefile" src="core/root.mk"/>
-    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
-    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
-    <linkfile dest="build/core" src="core"/>
-    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
-    <linkfile dest="build/target" src="target"/>
-    <linkfile dest="build/tools" src="tools"/>
-  </project>
   <project name="platform/build/blueprint" path="build/blueprint" revision="70ae58a8b5527bc116b4d1603ad798482882ac89" upstream="android-framework.lnx.3.1.r4-rel"/>
   <project name="platform/build/soong" path="build/soong" revision="9cf1b2993815d3aa14d68def6da93f00a597b968" upstream="android-framework.lnx.3.1.r4-rel">
     <linkfile dest="Android.bp" src="root.bp"/>
