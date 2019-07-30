@@ -44,7 +44,7 @@
     <project name="device/qcom/qssi" revision="refs/heads/qcom-devices.lnx.4.0.r5-rel"/>
     <project name="device/qcom/sepolicy" revision="refs/heads/sepolicy.lnx.4.0.r6-rel"/>
     <project groups="mirror-aosp-pie-platform-release,pdk" name="device/sample" revision="refs/heads/ks-aosp.lnx.1.0.r1-rel"/>
-    <project name="device/comma/tici" remote="comma" />
+    <project name="android_device_comma_tici" path="device/comma/tici" remote="comma" />
 
   <!-- Kernel -->
     <!-- <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="kernel/configs" revision="refs/heads/ks-aosp.lnx.1.0.r1-rel"/> -->
