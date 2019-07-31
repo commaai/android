@@ -3,6 +3,7 @@
   <!-- Remotes -->
   <remote fetch="git://codeaurora.org/quic/la" name="caf" review="codeaurora.org"/>
   <remote fetch="ssh://git@github.com/commaai" name="comma"/>
+  <remote fetch="ssh://git@github.com/commaai" name="comma_private"/>
   <default remote="caf" revision="refs/heads/LA.UM.7.3.r1"/>
 
   <!-- Manifest -->
@@ -732,6 +733,7 @@
     <project name="platform/vendor/qcom/skunk" path="device/qcom/sdm845" revision="refs/heads/qcom-devices.lnx.4.0.r5-rel"/>
     <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="refs/heads/qcom-devices.lnx.4.0.r5-rel"/>
     <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="refs/heads/wlan-service.lnx.4.0.r5-rel"/>
+    <project name="android_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="comma_private" revision="tici" upstream="tici"/>
   
   <!-- Toolchain -->
     <project groups="mirror-aosp-pie-platform-release,pdk" name="toolchain/binutils" revision="refs/heads/ks-aosp.lnx.1.0.r1-rel"/>
