@@ -1,9 +1,9 @@
 # Android manifest for Comma Tici 
 ## Base source
-This manifest is based on the latest Android 9 release, modified by Code Aurora Forum to support the Qualcomm SDM845. Cloned tag is `LA.UM.7.3.r1-07900-sdm845.0`.
+Pulled from https://source.codeaurora.org/quic/la/platform/manifest/plain/LA.UM.6.3.r7-01900-sdm845.0.xml?h=LA.UM.6.3.r7-01900-sdm845.0
 
 ## Build instructions
-* Initialize repo: `repo init -u https://github.com/commaai/android/ -b tici`
+* Initialize repo: `repo init -u https://github.com/commaai/android/ -b tici-8`
 * Sync repo: `repo sync`
 * Run `./build.sh tici -j$(nproc)`
 * Profit
