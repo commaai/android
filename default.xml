@@ -2,8 +2,52 @@
 <manifest>
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
   <default remote="caf" revision="refs/heads/android-external.lnx.2.9.1-rel"/>
+
+  <!-- device specific -->
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="4903118f022b5faa2f69a31ca8516fab37374539" upstream="refs/heads/uefi.lnx.1.9.r25-rel"/>
+  <project clone-depth="1" name="kernel/msm-4.9" revision="993115b8d103e819c3ae24d5c4b454308449e6c9" upstream="refs/heads/kernel.lnx.4.9.r21-rel"/>
+  <project name="device/qcom/common" revision="65f346fa720a71ca15a24005d7b592b23cfdc28c" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel">
+    <copyfile dest="build.sh" src="build.sh"/>
+    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+    <copyfile dest="kernel/Android.mk" src="stop_scan.mk"/>
+    <copyfile dest="disregard/Android.mk" src="stop_scan.mk"/>
+  </project>
+  <project name="device/qcom/sepolicy" revision="57b1c51ed75387c1c6adde9233308a518ba87706" upstream="refs/heads/sepolicy.lnx.3.0.1.r16-rel"/>
   <project name="device/common" revision="44f3e76431cd7ab8d546d4eac9fccd391f28bc15" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/vendor/qcom/skunk" path="device/qcom/sdm845" revision="13a36aceb4a2cb9a8d80d7fac12737a55f1cd123" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel"/>
+
+  <!-- build -->
+  <project name="platform/build" path="build/make" revision="a5fc209d4868fcee67f393bc61bbcacfec576ff9" upstream="refs/heads/android-framework.lnx.3.1.r14-rel">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project name="platform/build/blueprint" path="build/blueprint" revision="70ae58a8b5527bc116b4d1603ad798482882ac89" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/build/kati" path="build/kati" revision="76918caacd8d8dba3eead3a58d85c3d95f49fdb0" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/build/soong" path="build/soong" revision="e6775ca97c837e402e0c95c24ad5e192430a5d32" upstream="refs/heads/android-framework.lnx.3.1.r14-rel">
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+
+  <!-- android -->
+  <project name="platform/bionic" path="bionic" revision="c6c89b3401f3f6690e2307de7e2d079894c8147a" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
+  <!-- art -->
+  <project name="platform/art" path="art" revision="09f517d456acc6c4813d5a21e0b5469cf56670bd" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/sdk" path="sdk" revision="5b11a64436399a07daaf6034193be981193a7b93" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
+  <!-- prebuilts -->
+  <project clone-depth="1" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="f39cb3e537ad90d4985fc372b339d466799d964e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="692a2a62d5862258c6a88d3b9bfcbc1dd0431ae8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="88fa20009d5581163b4656d52e2fcc1f56042da6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/tools" path="prebuilts/tools" revision="bd037f3696cc33196a876c34a7f5a0dcc6e089ee" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="9802e351bf16f8137807da945a4bc36371a16be6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
+  <!--
   <project name="device/generic/arm64" revision="392eec3cb4c64721cd5b76fa36535954b5d45309" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/generic/armv7-a-neon" revision="d86e5c5d2bc5cabb347b3da718e9fc7d185a6503" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/generic/car" revision="a00c93a19344fe3767a70955d343d15c752ba748" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -23,33 +67,8 @@
   <project name="device/google/atv" revision="fe24d2cbe6b0fca07e8da1773ab8aa967a32d227" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/google/contexthub" revision="9369db1ceb43f2fbd5e0afe3d0531d0cfa74c98c" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/google/vrservices" revision="7cd849f396995cf8a3659024f0f0894e25bc735d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="device/qcom/common" revision="65f346fa720a71ca15a24005d7b592b23cfdc28c" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel">
-    <copyfile dest="build.sh" src="build.sh"/>
-    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-    <copyfile dest="kernel/Android.mk" src="stop_scan.mk"/>
-    <copyfile dest="disregard/Android.mk" src="stop_scan.mk"/>
-  </project>
-  <project name="device/qcom/sepolicy" revision="57b1c51ed75387c1c6adde9233308a518ba87706" upstream="refs/heads/sepolicy.lnx.3.0.1.r16-rel"/>
   <project name="device/sample" revision="373ff40941e4d8d17f07345703d85ba825cb4a61" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="kernel/msm-4.9" revision="993115b8d103e819c3ae24d5c4b454308449e6c9" upstream="refs/heads/kernel.lnx.4.9.r21-rel"/>
-  <project name="platform/art" path="art" revision="09f517d456acc6c4813d5a21e0b5469cf56670bd" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/bionic" path="bionic" revision="c6c89b3401f3f6690e2307de7e2d079894c8147a" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/bootable/recovery" path="bootable/recovery" revision="1b00333a4ca9ce5300926b002b06d5d483b13315" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/build" path="build/make" revision="a5fc209d4868fcee67f393bc61bbcacfec576ff9" upstream="refs/heads/android-framework.lnx.3.1.r14-rel">
-    <copyfile dest="Makefile" src="core/root.mk"/>
-    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
-    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
-    <linkfile dest="build/core" src="core"/>
-    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
-    <linkfile dest="build/target" src="target"/>
-    <linkfile dest="build/tools" src="tools"/>
-  </project>
-  <project name="platform/build/blueprint" path="build/blueprint" revision="70ae58a8b5527bc116b4d1603ad798482882ac89" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/build/kati" path="build/kati" revision="76918caacd8d8dba3eead3a58d85c3d95f49fdb0" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/build/soong" path="build/soong" revision="e6775ca97c837e402e0c95c24ad5e192430a5d32" upstream="refs/heads/android-framework.lnx.3.1.r14-rel">
-    <linkfile dest="Android.bp" src="root.bp"/>
-    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
-  </project>
   <project name="platform/compatibility/cdd" path="compatibility/cdd" revision="70c77e25eabef4b774b503f29aa2a505a46897ff" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/cts" path="cts" revision="a20777516cf10dcee47cf58b9dfefeecbc278627" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/dalvik" path="dalvik" revision="e134902ce29f3b6d31b34dbb1379962afeee1b16" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -500,7 +519,6 @@
   <project name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" revision="84799d6c14e7c88d7c6eea06b799858bbc834efa" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" revision="2522cfbaea6f7ddd8d1416e9db9f84dc7eef1226" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="400cd54dca1c329fd7f1c8cb9e40b1fbbf3f3af3" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="88fa20009d5581163b4656d52e2fcc1f56042da6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" revision="f6f661b424f646bc5ddf9e1b1e644abb492b7547" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" revision="a8a50e922b39a2dba7e56030c660e1aabca168f3" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="ce80566d209ef0fba56e5bd4cc4cf11435f83a71" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -516,19 +534,14 @@
   <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="e76a9a506d7ad132f107eb2f7c27b6a8ccb68b91" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="a57c546eec04da569ddd24dd72b0d57feb95845a" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" revision="4adfde8bc82dd39f59e0445588c3e599ada477d2" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="9802e351bf16f8137807da945a4bc36371a16be6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="cd1b6806eae4eaa88d82ce61dbb7c2bcfea1f96a" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" revision="4949e1906af402a00d74e20939abc6b95d2caf30" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit" revision="d32685dba4011664b590b94ad156bc734c2c9bb5" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="c7fc1cdb67ff477e4ef1f7dee12568f223ea18c7" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="268c5495b8003e09173a1ae7b1e9dc9b019e300d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/misc" path="prebuilts/misc" revision="598387341a7104f2bd46fca3e2c1161bce609de3" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="f39cb3e537ad90d4985fc372b339d466799d964e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="49b50adb1a149100905b368570c2cb56cadc0854" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="87e7c6027290300bfb92c082c4fa622e78b03359" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="692a2a62d5862258c6a88d3b9bfcbc1dd0431ae8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/tools" path="prebuilts/tools" revision="bd037f3696cc33196a876c34a7f5a0dcc6e089ee" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/sdk" path="sdk" revision="5b11a64436399a07daaf6034193be981193a7b93" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/bt" path="system/bt" revision="edc988e2b17fc2829346b0e245d9b63fe280920d" upstream="refs/heads/bt.lnx.3.2.r18-rel"/>
   <project name="platform/system/ca-certificates" path="system/ca-certificates" revision="5ce37ce30d01ba9069a6875d2e1555c961decd70" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/chre" path="system/chre" revision="c0a7292323d7726bd504fc72f1ca74c6cb8cba13" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -602,7 +615,7 @@
   <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="7970e06904797835b4f1011304e4560f0b8e20f4" upstream="refs/heads/wlan-cmn.driver.lnx.1.0.r53-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="ad88d9834b2f2b92677ed6d971f06fc2f6169c79" upstream="refs/heads/wlan-cld3.driver.lnx.1.1.r53-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="20d9c6ba5cba92e03665b13f15d778e94c559592" upstream="refs/heads/wlan-service.lnx.1.9.r26-rel"/>
-  <project name="platform/vendor/qcom/skunk" path="device/qcom/sdm845" revision="13a36aceb4a2cb9a8d80d7fac12737a55f1cd123" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel"/>
   <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="6a461864882ef2fec0caab813044b2106bfa199d" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel"/>
   <project name="toolchain/binutils" revision="dd7b632eac4d3d51c445f60bb87348b005691703" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  -->
 </manifest>

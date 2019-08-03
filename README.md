@@ -5,5 +5,5 @@ Pulled from https://source.codeaurora.org/quic/la/platform/manifest/plain/LA.UM.
 ## Build instructions
 * Initialize repo: `repo init -u https://github.com/commaai/android/ -b tici-8`
 * Sync repo: `repo sync`
-* Run `./build.sh tici -j$(nproc)`
+* Run `./build.sh sdm845 -j$(nproc)`
 * Profit
