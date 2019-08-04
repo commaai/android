@@ -16,6 +16,37 @@
   <project name="device/common" revision="44f3e76431cd7ab8d546d4eac9fccd391f28bc15" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/vendor/qcom/skunk" path="device/qcom/sdm845" revision="13a36aceb4a2cb9a8d80d7fac12737a55f1cd123" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel"/>
 
+  <!-- other vendor stuff -->
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" revision="f6732010a96e5c535d505501ebb5b2b6274edc50" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
+  <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/interfaces/opensource/nfc" revision="e7f7684c6cd11cffd288c9a71ee2485bb50ee334" upstream="refs/heads/nfc.lnx.3.2.r10-rel">
+    <linkfile dest="vendor/nxp/interfaces/Android.bp" src="prop_pickup.bp"/>
+  </project>
+  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci" revision="4f24a67e26218ae343c5b0d593a8e5da4f75af16" upstream="refs/heads/nfc.lnx.3.2.r10-rel"/>
+  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" revision="a580d5d081890a604ec41d1dc324db0cd47557bb" upstream="refs/heads/nfc.lnx.3.2.r10-rel"/>
+  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" revision="0481a49257a902fe53b3f4cff65b502f50bd9938" upstream="refs/heads/nfc.lnx.3.2.r10-rel"/>
+
+  <project name="platform/vendor/opensource/audio-kernel" path="kernel/msm-4.9/techpack/audio" revision="947ddb4cd30c6ca2d220bdf3a83d5257e8d3b66d" upstream="refs/heads/audio-drivers.lnx.1.0.r19-rel"/>
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/audio" revision="e60741df748d7e5bb06f394f50e148d156395bbb" upstream="refs/heads/av-aosp-qc.lnx.4.0.r19-rel"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/bluetooth" revision="1588953c18c654fbc9f063c5482f7b6bab863e7f" upstream="refs/heads/bt-qc.lnx.2.0.r22-rel"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/bluetooth_ext" revision="6ec9fa110e9e6321d4427213539962207a71fcf5" upstream="refs/heads/bt.lnx.3.2.r18-rel"/>
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="59dde8d894a03a87650c58252aa111f3f85990a2" upstream="refs/heads/data.lnx.3.0.r26-rel"/>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="dba447c1eed52628c756fc2614de119d44da10f3" upstream="refs/heads/data.lnx.3.0.r26-rel"/>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="1ed5881aa4b5c6c6cf51b71cc82777e5a018e974" upstream="refs/heads/data.lnx.3.0.r26-rel"/>
+  <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm" revision="ee397206894cfb727b8b2ce021f584f737518d17" upstream="refs/heads/fm.lnx.2.9.1.r38-rel"/>
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="f4c31ee234ac080470102476819f5d977bba95a4" upstream="refs/heads/wigig.lnx.1.9.r34-rel"/>
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="1c6eeaa13ed8f62018c9a66bd8f34091780c8966" upstream="refs/heads/android-vendor-hals.lnx.1.0.r23-rel"/>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="771441e8bef07f55030b880ae17820b411b48ae4" upstream="refs/heads/location.lnx.3.0.r11-rel"/>
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="053754b3d2550699c3a70eedbe655268cfeeae6c" upstream="refs/heads/core-technologies.lnx.1.0.r56-rel"/>
+  <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" revision="5dccbab946b999207ff3ceb3ac5f3afea6669775" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="214ece874ced71fcbeb2fbc0a218b0824be60c34" upstream="refs/heads/data.lnx.3.0.r26-rel"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="4a916f792ee26e8af67c69057ce1068dbb737e84" upstream="refs/heads/core-technologies.lnx.1.0.r56-rel"/>
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="28731cd99ca121dedb37cc727d18cdb78794fa4c" upstream="refs/heads/opensource-tools.lnx.1.0.r49-rel"/>
+  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" revision="f3b405aa28cd7c3b2af7003da250b362277ff345" upstream="refs/heads/wigig.lnx.1.9.r34-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="d768fde7f05979d85bc34597a5dd6dc6b0329937" upstream="refs/heads/wlan-api.lnx.1.1.r57-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="7970e06904797835b4f1011304e4560f0b8e20f4" upstream="refs/heads/wlan-cmn.driver.lnx.1.0.r53-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="ad88d9834b2f2b92677ed6d971f06fc2f6169c79" upstream="refs/heads/wlan-cld3.driver.lnx.1.1.r53-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="20d9c6ba5cba92e03665b13f15d778e94c559592" upstream="refs/heads/wlan-service.lnx.1.9.r26-rel"/>
+
   <!-- build -->
   <project name="platform/build" path="build/make" revision="a5fc209d4868fcee67f393bc61bbcacfec576ff9" upstream="refs/heads/android-framework.lnx.3.1.r14-rel">
     <copyfile dest="Makefile" src="core/root.mk"/>
@@ -89,6 +120,23 @@
   <project name="platform/system/update_engine" path="system/update_engine" revision="6235c9e2acd750b8fa4f745b92705a998ac12d13" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/libhidl" path="system/libhidl" revision="686135f821bdf3d45107fc6d447db4ce0f7a1be4" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/libhwbinder" path="system/libhwbinder" revision="5b1b248f53ce3aa9ff6b53fa56baba5b74c28125" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/tools/apksig" path="tools/apksig" revision="aa5e81d94308e777cd338807ea6bc823852701f1" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/external/dtc" path="external/dtc" revision="28db22e591524c297d99474dacede6e088f57d8e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+
+  <!-- android system extra -->
+  <project name="platform/system/ca-certificates" path="system/ca-certificates" revision="5ce37ce30d01ba9069a6875d2e1555c961decd70" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/chre" path="system/chre" revision="c0a7292323d7726bd504fc72f1ca74c6cb8cba13" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="4a8ce635151597ebd50ed908afb307967e96db91" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="244deb7559a1982cbaa21d9bd74d7e94b27694ee" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="54e7e43c4b41f1bb9a9feb21fcc334f0ed7436f8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/libfmq" path="system/libfmq" revision="c829c83361ae883449351342e095507aa9779a33" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/libufdt" path="system/libufdt" revision="c75cf9d7ae8c30d2e224e3a8d5d0571d01ce9886" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/libvintf" path="system/libvintf" revision="55af503b1bd35248724686972b2b65ea34b13e1e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/nfc" path="system/nfc" revision="1418a7ce16dd74e5e140a18c498e045c8c76f9a5" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/nvram" path="system/nvram" revision="a2cbda182e4631dc45b3e988db9a6c0a0c36a610" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/sepolicy" path="system/sepolicy" revision="df4432cedfa76b02f6dbcb26ff527e3b4d5d0375" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/timezone" path="system/timezone" revision="55f4d7209e0d1d198a5615a7b7a4a0c3339939cc" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/tpm" path="system/tpm" revision="987689803d813efb9b011236a7853c8f3edba1f6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
 
   <!-- android frameworks -->
   <project name="platform/frameworks/base" path="frameworks/base" revision="55d152845edfdb9bfb1804df4dccfd4b611daf35" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -151,6 +199,7 @@
   <project name="platform/external/javasqlite" path="external/javasqlite" revision="ee41d81872eedc632f42bd231b95bc945690d159" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/easymock" path="external/easymock" revision="eebaf1b32b478e5b6c610c23452c0bb32d14c207" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/nist-pkits" path="external/nist-pkits" revision="ca6b41c541f92f8e9c928561ff2b0890f337ada6" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/jacoco" path="external/jacoco" revision="de17e9e2d921152a621e9c2259d8a56afe32ebbb" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
 <!-- GNU core system -->
   <!-- toolchain -->
@@ -176,6 +225,8 @@
   <project name="platform/external/jsmn" path="external/jsmn" revision="f3db3a3e01dc80685f786c049f38cff6d2848430" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/bsdiff" path="external/bsdiff" revision="5841e70c640954a5530fae53be90085d4b0f3743" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/sqlite" path="external/sqlite" revision="7e8032233a9e93746b5c669246c386880cd66f41" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/minijail" path="external/minijail" revision="3e15fdc2e3394f38647512383172513bb99876d0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/libcap" path="external/libcap" revision="3a4e07136e6d79ba5cfafb639f9ecc5ff76000d2" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
   <!-- xml parsers -->
   <project name="platform/external/libxml2" path="external/libxml2" revision="dcd6a75fa64226add1b58f9ef2376e08e609e078" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -236,6 +287,7 @@
   <project name="platform/external/libogg" path="external/libogg" revision="d049cdb7d50d117ab5076fe6fd726b3e40fb1581" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/aac" path="external/aac" revision="4b803018da698081a99dcc0963b74f7e7ef4502e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libavc" path="external/libavc" revision="35ac4bcf073b88fd829ec635cd931ba1ee1e2f83" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/fec" path="external/fec" revision="4342555427f5bb0788dfacd1eb07d2876afab733" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
   <!-- protobuf -->
   <project name="platform/external/protobuf" path="external/protobuf" revision="e7b0e6a2c06a914742c3e216556908a4fe9bee8e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -260,6 +312,7 @@
   <project name="platform/external/libchrome" path="external/libchrome" revision="b4b96cdfd447daac679b067c3b969cc5ed22a798" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/googletest" path="external/googletest" revision="c906394684dc7773dd1d51da5f21149f6724f114" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libdivsufsort" path="external/libdivsufsort" revision="2a896e7033ced391c57ec46c1d772b15417621a4" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/avb" path="external/avb" revision="6ef1490a2cfbdd35448e11381a2ac66d85a69e7c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
 <!-- prebuilts -->
   <!-- android -->
@@ -320,7 +373,6 @@
   <project name="platform/external/archive-patcher" path="external/archive-patcher" revision="40b8a403ba0e5791ee99e2be12ac5dd2f9e314ea" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/arm-neon-tests" path="external/arm-neon-tests" revision="104e2a662ec8443e9a7603b22efbb3b86c1e7094" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/autotest" path="external/autotest" revision="bcf7573e28bc6a917166d313066021c46d604554" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/avb" path="external/avb" revision="6ef1490a2cfbdd35448e11381a2ac66d85a69e7c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/bart" path="external/bart" revision="232e1a3fdc810f60aedda0e58cd95e47296e0335" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
   <project name="platform/external/blktrace" path="external/blktrace" revision="d345431f16b8f76f30a58193ff2b26d5853e1109" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -345,7 +397,6 @@
   <project name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" revision="38e84e747804f4e51bdc10367c642ffe3eb78f48" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/droiddriver" path="external/droiddriver" revision="9c529227d3b7c8b2e8e1066a9d8ce325d0016713" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/drrickorang" path="external/drrickorang" revision="23d02aa32f580d03680aa8f0a62afbb4c915e669" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/dtc" path="external/dtc" revision="28db22e591524c297d99474dacede6e088f57d8e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/ebtables" path="external/ebtables" revision="3f430ac843caa90f25c5b4f695cf350beadec671" upstream="refs/heads/data-external.lnx.2.9.2.r16-rel"/>
   <project name="platform/external/eclipse-basebuilder" path="external/eclipse-basebuilder" revision="076f46888ed346775b8efc564d7694063ef5eea7" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/eclipse-windowbuilder" path="external/eclipse-windowbuilder" revision="c533332008088ee5f61745b724361fbde5b7e770" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -353,7 +404,6 @@
   <project name="platform/external/emma" path="external/emma" revision="deb5711b2635ee9d332605e2e00b63b32bed6777" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/esd" path="external/esd" revision="943c42b6f8e9afe821744aa4c039f4943ebf29f5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/eyes-free" path="external/eyes-free" revision="16bd4c7a4d1bfe229068b637614dad7c48dd2ceb" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/fec" path="external/fec" revision="4342555427f5bb0788dfacd1eb07d2876afab733" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/fio" path="external/fio" revision="829a57fb8ccc0af1f05507759fb84cf0c8175f72" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/flatbuffers" path="external/flatbuffers" revision="83d6225e9b642ea069023e45a943d3e7f916fb62" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/fmtlib" path="external/fmtlib" revision="f4d6768e2595b881a146e41e275f77203db9bc56" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -373,7 +423,6 @@
   <project name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="c4531e5b09403a9954213dfb18d0deaac5badc12" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/iputils" path="external/iputils" revision="feb69a81ce53a7c4c5859a7347a93e44be7a7fd5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/iw" path="external/iw" revision="1c37986b96ac3b1a204e69fc4a126586b9e4e536" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/jacoco" path="external/jacoco" revision="de17e9e2d921152a621e9c2259d8a56afe32ebbb" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/javassist" path="external/javassist" revision="f7c4b954072e563b75f6910c25bb689bbf38a3d1" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jcommander" path="external/jcommander" revision="9a3ba316f5b73c3a19291b92534e990eec263e8b" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jdiff" path="external/jdiff" revision="07d92bdaeeaac1e3c91b48226ca692bbcf3146b5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -385,7 +434,6 @@
   <project name="platform/external/kernel-headers" path="external/kernel-headers" revision="2834eaa11b034d77d2cd12b8410b20d878b8d0ae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/kmod" path="external/kmod" revision="4082ee0d1ad5ce92c5ea6fdc5ca08e89cdd9801d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libbackup" path="external/libbackup" revision="a645153b0a97663636bacdc5527c0d304fa79657" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/libcap" path="external/libcap" revision="3a4e07136e6d79ba5cfafb639f9ecc5ff76000d2" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libcap-ng" path="external/libcap-ng" revision="835f318b9785a70415980fba96c34ee5c6b7e415" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libconstrainedcrypto" path="external/libconstrainedcrypto" revision="6bf44d6ebfa08b5b9371c22e7dfd54a85bd98151" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libcups" path="external/libcups" revision="9f55742e1f1cb73c983ed0157bd1cd743dafe0d5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -416,7 +464,6 @@
   <project name="platform/external/markdown" path="external/markdown" revision="06a8f8b914d477183f68b84424bce8ff4dae7e84" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mesa3d" path="external/mesa3d" revision="535305b2743cf54b3b1770cae036864473c6ac43" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/messageformat" path="external/messageformat" revision="907c6d3a0e6887fe89da48f51012d0c14d881511" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/minijail" path="external/minijail" revision="3e15fdc2e3394f38647512383172513bb99876d0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mmc-utils" path="external/mmc-utils" revision="f105db5bd1934f0c3e5f74bbc9a5aaeac7a6bf2b" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mockftpserver" path="external/mockftpserver" revision="d2d467778a561725d42bc6c17e826e7ccf970bae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/modp_b64" path="external/modp_b64" revision="2df9f7bc7b980f78e0b367123fcbe1ae94077859" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -616,19 +663,6 @@
   <project name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="268c5495b8003e09173a1ae7b1e9dc9b019e300d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="49b50adb1a149100905b368570c2cb56cadc0854" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="87e7c6027290300bfb92c082c4fa622e78b03359" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/ca-certificates" path="system/ca-certificates" revision="5ce37ce30d01ba9069a6875d2e1555c961decd70" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/chre" path="system/chre" revision="c0a7292323d7726bd504fc72f1ca74c6cb8cba13" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="4a8ce635151597ebd50ed908afb307967e96db91" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="244deb7559a1982cbaa21d9bd74d7e94b27694ee" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="54e7e43c4b41f1bb9a9feb21fcc334f0ed7436f8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/libfmq" path="system/libfmq" revision="c829c83361ae883449351342e095507aa9779a33" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/libufdt" path="system/libufdt" revision="c75cf9d7ae8c30d2e224e3a8d5d0571d01ce9886" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/libvintf" path="system/libvintf" revision="55af503b1bd35248724686972b2b65ea34b13e1e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/nfc" path="system/nfc" revision="1418a7ce16dd74e5e140a18c498e045c8c76f9a5" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/nvram" path="system/nvram" revision="a2cbda182e4631dc45b3e988db9a6c0a0c36a610" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/sepolicy" path="system/sepolicy" revision="df4432cedfa76b02f6dbcb26ff527e3b4d5d0375" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/timezone" path="system/timezone" revision="55f4d7209e0d1d198a5615a7b7a4a0c3339939cc" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/tpm" path="system/tpm" revision="987689803d813efb9b011236a7853c8f3edba1f6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/test/vts" path="test/vts" revision="813e85a22a36fb996e10f2c436a01a87e51737c4" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="1827b3d57935677f0ded5f785385595f50ead1a8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="f4ebb39ac3b708a0bc36a1a3f9f38c06ededa0a6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -637,7 +671,6 @@
   <project name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="6609e8fa34e5fde9919d2d0b90959bd1baff558d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="848c88f45c929da9057afab2f4d6d084d1ee06db" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="61088bb1b171a1598252cce6f741bb820d4bf8ec" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/tools/apksig" path="tools/apksig" revision="aa5e81d94308e777cd338807ea6bc823852701f1" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/tools/external/fat32lib" path="tools/external/fat32lib" revision="b93883ec8d7c07817ae33ffe044ac84449066a02" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/tools/external/gradle" path="tools/external/gradle" revision="a5f47b25389d24b90a7cc3a1688c8f19a837eafc" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/tools/loganalysis" path="tools/loganalysis" revision="88493907ea17c2dc903ac90ada2628065ffe05a6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -645,35 +678,8 @@
   <project name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="661f90c02b9fe775b658702c0be68a814828955d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="9ba46410f65f03c885b65b949f2b04265cffdf05" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="ae5a64ebf99eb93d85a69cbf6a394f8327cb5d67" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" revision="f6732010a96e5c535d505501ebb5b2b6274edc50" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
-  <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/interfaces/opensource/nfc" revision="e7f7684c6cd11cffd288c9a71ee2485bb50ee334" upstream="refs/heads/nfc.lnx.3.2.r10-rel">
-    <linkfile dest="vendor/nxp/interfaces/Android.bp" src="prop_pickup.bp"/>
-  </project>
-  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci" revision="4f24a67e26218ae343c5b0d593a8e5da4f75af16" upstream="refs/heads/nfc.lnx.3.2.r10-rel"/>
-  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" revision="a580d5d081890a604ec41d1dc324db0cd47557bb" upstream="refs/heads/nfc.lnx.3.2.r10-rel"/>
-  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" revision="0481a49257a902fe53b3f4cff65b502f50bd9938" upstream="refs/heads/nfc.lnx.3.2.r10-rel"/>
-  <project name="platform/vendor/opensource/audio-kernel" path="kernel/msm-4.9/techpack/audio" revision="947ddb4cd30c6ca2d220bdf3a83d5257e8d3b66d" upstream="refs/heads/audio-drivers.lnx.1.0.r19-rel"/>
-  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/audio" revision="e60741df748d7e5bb06f394f50e148d156395bbb" upstream="refs/heads/av-aosp-qc.lnx.4.0.r19-rel"/>
-  <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/bluetooth" revision="1588953c18c654fbc9f063c5482f7b6bab863e7f" upstream="refs/heads/bt-qc.lnx.2.0.r22-rel"/>
-  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/bluetooth_ext" revision="6ec9fa110e9e6321d4427213539962207a71fcf5" upstream="refs/heads/bt.lnx.3.2.r18-rel"/>
-  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="59dde8d894a03a87650c58252aa111f3f85990a2" upstream="refs/heads/data.lnx.3.0.r26-rel"/>
-  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="dba447c1eed52628c756fc2614de119d44da10f3" upstream="refs/heads/data.lnx.3.0.r26-rel"/>
-  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="1ed5881aa4b5c6c6cf51b71cc82777e5a018e974" upstream="refs/heads/data.lnx.3.0.r26-rel"/>
-  <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm" revision="ee397206894cfb727b8b2ce021f584f737518d17" upstream="refs/heads/fm.lnx.2.9.1.r38-rel"/>
-  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="f4c31ee234ac080470102476819f5d977bba95a4" upstream="refs/heads/wigig.lnx.1.9.r34-rel"/>
-  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="1c6eeaa13ed8f62018c9a66bd8f34091780c8966" upstream="refs/heads/android-vendor-hals.lnx.1.0.r23-rel"/>
-  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="771441e8bef07f55030b880ae17820b411b48ae4" upstream="refs/heads/location.lnx.3.0.r11-rel"/>
-  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="053754b3d2550699c3a70eedbe655268cfeeae6c" upstream="refs/heads/core-technologies.lnx.1.0.r56-rel"/>
-  <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" revision="5dccbab946b999207ff3ceb3ac5f3afea6669775" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
-  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="214ece874ced71fcbeb2fbc0a218b0824be60c34" upstream="refs/heads/data.lnx.3.0.r26-rel"/>
-  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="4a916f792ee26e8af67c69057ce1068dbb737e84" upstream="refs/heads/core-technologies.lnx.1.0.r56-rel"/>
-  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="28731cd99ca121dedb37cc727d18cdb78794fa4c" upstream="refs/heads/opensource-tools.lnx.1.0.r49-rel"/>
-  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" revision="f3b405aa28cd7c3b2af7003da250b362277ff345" upstream="refs/heads/wigig.lnx.1.9.r34-rel"/>
-  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="d768fde7f05979d85bc34597a5dd6dc6b0329937" upstream="refs/heads/wlan-api.lnx.1.1.r57-rel"/>
-  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="7970e06904797835b4f1011304e4560f0b8e20f4" upstream="refs/heads/wlan-cmn.driver.lnx.1.0.r53-rel"/>
-  <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="ad88d9834b2f2b92677ed6d971f06fc2f6169c79" upstream="refs/heads/wlan-cld3.driver.lnx.1.1.r53-rel"/>
-  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="20d9c6ba5cba92e03665b13f15d778e94c559592" upstream="refs/heads/wlan-service.lnx.1.9.r26-rel"/>
   <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="6a461864882ef2fec0caab813044b2106bfa199d" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel"/>
   <project name="toolchain/binutils" revision="dd7b632eac4d3d51c445f60bb87348b005691703" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   -->
 </manifest>
+
