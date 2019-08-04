@@ -97,9 +97,12 @@
   <project name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="67d8b4d99e99ef6dae653913caba17a93cd09324" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
   <project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="5f2511109c1677cf0607fe602848baed6799c922" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
 
+  <!-- car crap, really needed? -->
+  <project name="platform/packages/services/Car" path="packages/services/Car" revision="5bc0accb2878d1320e517b618b7ad6d9c4241267" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="11a5e130be5a17f3b1f055805d373de08d00e639" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
   <!-- art (and support) -->
   <project name="platform/art" path="art" revision="09f517d456acc6c4813d5a21e0b5469cf56670bd" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/sdk" path="sdk" revision="5b11a64436399a07daaf6034193be981193a7b93" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/external/vixl" path="external/vixl" revision="95bafe9b046b15d01e5cadf4872ed50e20b3fbf0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/valgrind" path="external/valgrind" revision="42beee3cc3e4896603e678a1c9979cdab546c274" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libunwind" path="external/libunwind" revision="a2b897c00956a2acb911653303d2ab7a13bc38aa" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -125,7 +128,6 @@
   <project name="platform/system/libhidl" path="system/libhidl" revision="686135f821bdf3d45107fc6d447db4ce0f7a1be4" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/libhwbinder" path="system/libhwbinder" revision="5b1b248f53ce3aa9ff6b53fa56baba5b74c28125" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/tools/apksig" path="tools/apksig" revision="aa5e81d94308e777cd338807ea6bc823852701f1" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-
 
   <!-- android system extra -->
   <project name="platform/system/ca-certificates" path="system/ca-certificates" revision="5ce37ce30d01ba9069a6875d2e1555c961decd70" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -159,6 +161,11 @@
   <project name="platform/frameworks/ex" path="frameworks/ex" revision="6d31a0d5970c6fe871d602d3f808e12e4ab14018" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="9120e441d8ed74d2b3d852ad7dcf4c88369b7d95" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/data-binding" path="frameworks/data-binding" revision="82b5fd8e43ff8276419b032ce40f6eb42e04e67e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
+  <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="5db188878b2b20c02e7cbd3ef50ae46faf2f056d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="bb4526283b94dfcaa1bcd1f74e6b2433d57b4911" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="b92f89582e55359c0b6bcef75e6fbb72d5969cb3" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/frameworks/ml" path="frameworks/ml" revision="182295a3f930484289cf42cb2c86a96348517844" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
 
   <!-- android optional frameworks -->
   <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="997023d08b6f0a973f1d83aba79839d26d92386f" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -269,6 +276,8 @@
   <project name="platform/external/iproute2" path="external/iproute2" revision="75a9b2151ab6da4e6e900b785447a1f99d7a73cb" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/dnsmasq" path="external/dnsmasq" revision="a7646dd1a19ae183e9be30b5ea430edbcfadc5c2" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/android-clat" path="external/android-clat" revision="1d845d1c4b82a3557b35e98e6522a1b5063c6431" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/curl" path="external/curl" revision="b5c9d8dcd176a116701c532c138cbe09db56df68" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/volley" path="external/volley" revision="cc450f2af9e8d74d134883e3085688eeca34de38" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
   <!-- audio externals -->
   <project name="platform/external/tinyalsa" path="external/tinyalsa" revision="a81a9732aac762cf22d8bb08fb296614a6abf438" upstream="refs/heads/av-aosp.lnx.2.9.2.r16-rel"/>
@@ -318,6 +327,7 @@
   <project name="platform/external/googletest" path="external/googletest" revision="c906394684dc7773dd1d51da5f21149f6724f114" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libdivsufsort" path="external/libdivsufsort" revision="2a896e7033ced391c57ec46c1d772b15417621a4" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/avb" path="external/avb" revision="6ef1490a2cfbdd35448e11381a2ac66d85a69e7c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" revision="74576db80608980f4dc6afb8d1084d5b40bea9a0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
 <!-- prebuilts -->
   <!-- android -->
@@ -359,6 +369,7 @@
   <project name="device/google/contexthub" revision="9369db1ceb43f2fbd5e0afe3d0531d0cfa74c98c" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/google/vrservices" revision="7cd849f396995cf8a3659024f0f0894e25bc735d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/sample" revision="373ff40941e4d8d17f07345703d85ba825cb4a61" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
   <project name="platform/compatibility/cdd" path="compatibility/cdd" revision="70c77e25eabef4b774b503f29aa2a505a46897ff" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/cts" path="cts" revision="a20777516cf10dcee47cf58b9dfefeecbc278627" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/dalvik" path="dalvik" revision="e134902ce29f3b6d31b34dbb1379962afeee1b16" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -366,6 +377,7 @@
   <project name="platform/developers/demos" path="developers/demos" revision="0c26d2e66f1a4da8eda2c23e41a5045a0695fe06" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/developers/samples/android" path="developers/samples/android" revision="8cb79f3787bd82f2bfa7b55323cfd5c7969e923d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/docs/source.android.com" path="docs/source.android.com" revision="5766cd3e8210e84584e0f7a8364ec1d13ec3062d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
   <project name="platform/external/ImageMagick" path="external/ImageMagick" revision="aa6e4ff5986409f0892f6e9daee8111a30d7d468" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/Microsoft-GSL" path="external/Microsoft-GSL" revision="c7231a8b061cb44839292cf4de1aa2b8d3fc165f" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/abi-compliance-checker" path="external/abi-compliance-checker" revision="2cce41de7ef1c23f88acc611becf1431278f78e1" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -380,7 +392,6 @@
   <project name="platform/external/arm-neon-tests" path="external/arm-neon-tests" revision="104e2a662ec8443e9a7603b22efbb3b86c1e7094" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/autotest" path="external/autotest" revision="bcf7573e28bc6a917166d313066021c46d604554" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/bart" path="external/bart" revision="232e1a3fdc810f60aedda0e58cd95e47296e0335" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-
   <project name="platform/external/blktrace" path="external/blktrace" revision="d345431f16b8f76f30a58193ff2b26d5853e1109" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/brctl" path="external/brctl" revision="85130b403dea07b2230efed3287236fa0caefb1c" upstream="refs/heads/data-external.lnx.2.9.2.r16-rel"/>
   <project name="platform/external/brotli" path="external/brotli" revision="57de5cc4288565a9c3a7af978ef15f0abf0ada1b" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -390,7 +401,6 @@
   <project name="platform/external/cmockery" path="external/cmockery" revision="9199c7bfafefea32d1884182fa655b6e4578c1c4" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/crcalc" path="external/crcalc" revision="5559610bea3b267abef3273868f2d6b8c01409a5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/cros/system_api" path="external/cros/system_api" revision="e7a696e0ee9944ed085e54cc78ad60a6c08af9f0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/curl" path="external/curl" revision="b5c9d8dcd176a116701c532c138cbe09db56df68" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/dagger2" path="external/dagger2" revision="0dad4e3dfc35cdb39e2ceffb7315471765811c89" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/deqp" path="external/deqp" revision="7c7c548a33f5c681b94d2d500ad841d4269367ae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/desugar" path="external/desugar" revision="d3f7a8a8e80e63349784e2bffc4d827d7769fa83" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -458,7 +468,6 @@
   <project name="platform/external/libvncserver" path="external/libvncserver" revision="a33e8e96b55a6b047f073d119191a8a89c75cb06" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libvterm" path="external/libvterm" revision="b0cd8ebbc4550b856a956e22c06f0740c5050f53" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libweave" path="external/libweave" revision="c70e7b9224e25fcb6993409e8a153187e4e672c0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-
   <project name="platform/external/libyuv" path="external/libyuv" revision="81fe2cdd28502d1fbc7f7e96eb559739635615aa" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/linux-kselftest" path="external/linux-kselftest" revision="f0c10b1db1de183a13ff98cf588e2ea90356ee58" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/lisa" path="external/lisa" revision="f04ac492c3ce340c78dfcd6131139b66a6df2c0f" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -520,10 +529,7 @@
   <project name="platform/external/universal-tween-engine" path="external/universal-tween-engine" revision="efe8193526dea3b430aab4cf6d9a6c3d280ea5d3" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/v4l2_codec2" path="external/v4l2_codec2" revision="622b7e65750e1090d3dfcab65842003e178afc5c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/vboot_reference" path="external/vboot_reference" revision="7dd10004fd528e03141460afda3b8ea49a5a441d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-
   <project name="platform/external/vogar" path="external/vogar" revision="b6cff99d04f81d255fc9024c91b828e4ed413200" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/volley" path="external/volley" revision="cc450f2af9e8d74d134883e3085688eeca34de38" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" revision="74576db80608980f4dc6afb8d1084d5b40bea9a0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/walt" path="external/walt" revision="52926e018b1a1dad067d25ba0eb2be8dc15d49fd" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/wycheproof" path="external/wycheproof" revision="46d28ac44a242d84d610a294a640266d3b0e033b" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/x264" path="external/x264" revision="7bf0b975cdfd5692a4598ab09e1258abe5ea5fff" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -531,31 +537,26 @@
   <project name="platform/external/xmlwriter" path="external/xmlwriter" revision="e95d92246ee35273dde2bee8b00485cc14c12be5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/xmp_toolkit" path="external/xmp_toolkit" revision="42ea4dc6d1fc2206a7778029070ed9213e3b0fbf" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/zxing" path="external/zxing" revision="fedf8f2d8099bf7bb85dc3db8699343d56617deb" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="5db188878b2b20c02e7cbd3ef50ae46faf2f056d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="bb4526283b94dfcaa1bcd1f74e6b2433d57b4911" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="b92f89582e55359c0b6bcef75e6fbb72d5969cb3" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/frameworks/ml" path="frameworks/ml" revision="182295a3f930484289cf42cb2c86a96348517844" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="a0d4e3108663202564a6833b76770075b8e5b767" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
 
+  <project name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="a0d4e3108663202564a6833b76770075b8e5b767" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="397f1e5be11362ce66864075388a721e322d5839" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/opt/chips" path="frameworks/opt/chips" revision="21b3b3c7f4808243d40608767a5ac37632e1d228" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="e3771879de6fbc4ecca1e5f1bba074162f6ba3bf" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/opt/datetimepicker" path="frameworks/opt/datetimepicker" revision="50781edfd22358f30834444812a44cc05ae7521f" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/opt/net/lowpan" path="frameworks/opt/net/lowpan" revision="84056f40394d65dbf78c4d83771d7a70d117ee9f" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-
   <project name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="61549a8b76c4c7dcf98939fb16949a4d699ca8fa" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="66056c7ebb06d3c011a8682a16d8c0d07c08b6b9" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
   <project name="platform/hardware/akm" path="hardware/akm" revision="99e8b227cd00678ce863c04ebde0b8d9a6f7df5c" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" revision="e4b943a7ece621b09dce62e41b87155dfadd05be" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" revision="f756c26aea4d295e04f36e2be3c7c017775ae8a8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/hardware/google/apf" path="hardware/google/apf" revision="4f1b5f27e705d82d0567f4566c17aa838ba413a0" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/hardware/invensense" path="hardware/invensense" revision="11e5ff75af866f91622b6008fa13db1c3685ae69" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="fa3d69db0ca20fefb99255b9e7cd0d2f74f8dc2d" upstream="refs/heads/android-blast.lnx.2.0.r21-rel"/>
-
-
   <project name="platform/hardware/qcom/thermal" path="hardware/qcom/thermal" revision="34f922d74a2e0bc81815785c49e7c8598a628647" upstream="refs/heads/qvr.lnx.4.0.r5-rel"/>
   <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" revision="59864a2cd0cddb89dd5fc4933db11b69fbab61ae" upstream="refs/heads/qvr.lnx.4.0.r5-rel"/>
   <project name="platform/hardware/ril" path="hardware/ril" revision="a9e983fde87e33419bc7e6af9f43f47cdf4cb04a" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
+
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="ae5989936da179b2afeceae8ff407fb67a2b2512" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
   <project name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="11081f67266c0a495c01133f3830c7a4d35923a0" upstream="refs/heads/bt.lnx.3.2.r18-rel"/>
   <project name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="4aefbe8ff37a3d67136eab7f29d37c597eef3d1c" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -575,7 +576,6 @@
   <project name="platform/packages/apps/Car/Stream" path="packages/apps/Car/Stream" revision="c35843f2c9480544ecea9df5e47955c1a28b1e51" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" revision="3506f3f39a1328465009ec080a741373b338bead" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/apps/Car/UserManagement" path="packages/apps/Car/UserManagement" revision="ff9fc654b3b7640949d0e971b9542b0387433935" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="11a5e130be5a17f3b1f055805d373de08d00e639" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="0381ef22e1883e4304b16edbbaba05d75817218c" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
   <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="bb6eb89e4f5b1314b7385e6eedbadd3d988f3b8b" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
   <project name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="a100f7565c222894897f8d229eca0d8a27a7d63a" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -626,6 +626,7 @@
   <project name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="2168b7b29d96346393d1d6510e3a8fb028fff3b0" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" revision="52edb5903c788dbfbcc56713167e25a694829618" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
   <project name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" revision="b241483c0881994bcfbb2d643c1f35a7ebcd43b0" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
   <project name="platform/packages/experimental" path="packages/experimental" revision="2460de484cdc9e40806f55988fd962c655e30a62" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn" revision="61902845f80c35fa56c736219efb14dacd0cfda3" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
   <project name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider" revision="33d26f5eedb3d3011762ce5b2de66e931bf64b35" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
@@ -643,11 +644,11 @@
   <project name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" revision="56bcafdae3e0b3f71705ffe0526a490f39fffe6e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView" revision="6e0a80f6faed6191acc8ce1b6c79eada09e9e042" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/services/BuiltInPrintService" path="packages/services/BuiltInPrintService" revision="91677a1f406c3f568dfaed3cf42293296e536396" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/packages/services/Car" path="packages/services/Car" revision="5bc0accb2878d1320e517b618b7ad6d9c4241267" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/services/Mms" path="packages/services/Mms" revision="53a30f8ce52c983eef0caa2c03ab8a59c1c985f7" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/services/NetworkRecommendation" path="packages/services/NetworkRecommendation" revision="d38530e427c55fb801de3c65c127672c9b678c8e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="350e505b11a585c1241f075abf21ba2c785adcbc" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
   <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="67f7a41db117f7c17cffd8be3a5fb314383b4d3e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
   <project name="platform/pdk" path="pdk" revision="b2591d08408b2765a2c1f99830011dbbca0db84e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/platform_testing" path="platform_testing" revision="62c977e8b55b51d9739494cbfc473cdc5cb86868" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" revision="84799d6c14e7c88d7c6eea06b799858bbc834efa" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -683,6 +684,8 @@
   <project name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="9ba46410f65f03c885b65b949f2b04265cffdf05" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="ae5a64ebf99eb93d85a69cbf6a394f8327cb5d67" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="6a461864882ef2fec0caab813044b2106bfa199d" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel"/>
+
+  <project name="platform/sdk" path="sdk" revision="5b11a64436399a07daaf6034193be981193a7b93" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="toolchain/binutils" revision="dd7b632eac4d3d51c445f60bb87348b005691703" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   -->
 </manifest>
