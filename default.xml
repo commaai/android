@@ -206,13 +206,23 @@
 
   <!-- random externals -->
 
-  <!-- prebuilts -->
-  <project clone-depth="1" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="f39cb3e537ad90d4985fc372b339d466799d964e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+<!-- prebuilts -->
+  <!-- android -->
   <project clone-depth="1" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="692a2a62d5862258c6a88d3b9bfcbc1dd0431ae8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="f39cb3e537ad90d4985fc372b339d466799d964e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/misc" path="prebuilts/misc" revision="598387341a7104f2bd46fca3e2c1161bce609de3" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project clone-depth="1" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="88fa20009d5581163b4656d52e2fcc1f56042da6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project clone-depth="1" name="platform/prebuilts/tools" path="prebuilts/tools" revision="bd037f3696cc33196a876c34a7f5a0dcc6e089ee" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project clone-depth="1" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="9802e351bf16f8137807da945a4bc36371a16be6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="2538644348d06278149f8f918930d058cb4f32a7" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
+  <!-- compilers -->
+  <project clone-depth="1" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="c9c4fb77a024d2610f83e54e536c99a964ea85ab" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="43bf3bf040b873cb1334cdc0687a03d8d6f4b1c8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project clone-depth="1" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="ce80566d209ef0fba56e5bd4cc4cf11435f83a71" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" revision="a706ab3bc2ac5168166659d6423da4b8b8e8644b" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="12eccb2e29b05b39fa83e5299b1f4486b9e743a4" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
 
   <!--
   <project name="device/generic/arm64" revision="392eec3cb4c64721cd5b76fa36535954b5d45309" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -578,14 +588,8 @@
   <project name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" revision="f6f661b424f646bc5ddf9e1b1e644abb492b7547" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" revision="a8a50e922b39a2dba7e56030c660e1aabca168f3" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/deqp" path="prebuilts/deqp" revision="fcff955e99f3d02e7fe0b0a65818b5cc690594b7" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="2538644348d06278149f8f918930d058cb4f32a7" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/eclipse" path="prebuilts/eclipse" revision="cf9f78f8cf41b16edf9f712598a42743d5cea4af" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" revision="6d08ca9f45ff685648fd13c75bf5cac4b11c19bb" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="c9c4fb77a024d2610f83e54e536c99a964ea85ab" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="43bf3bf040b873cb1334cdc0687a03d8d6f4b1c8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" revision="a706ab3bc2ac5168166659d6423da4b8b8e8644b" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="12eccb2e29b05b39fa83e5299b1f4486b9e743a4" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="e76a9a506d7ad132f107eb2f7c27b6a8ccb68b91" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="a57c546eec04da569ddd24dd72b0d57feb95845a" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" revision="4adfde8bc82dd39f59e0445588c3e599ada477d2" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -594,7 +598,6 @@
   <project name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit" revision="d32685dba4011664b590b94ad156bc734c2c9bb5" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="c7fc1cdb67ff477e4ef1f7dee12568f223ea18c7" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="268c5495b8003e09173a1ae7b1e9dc9b019e300d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/misc" path="prebuilts/misc" revision="598387341a7104f2bd46fca3e2c1161bce609de3" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="49b50adb1a149100905b368570c2cb56cadc0854" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="87e7c6027290300bfb92c082c4fa622e78b03359" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/ca-certificates" path="system/ca-certificates" revision="5ce37ce30d01ba9069a6875d2e1555c961decd70" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
