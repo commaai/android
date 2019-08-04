@@ -3,9 +3,13 @@
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
   <default remote="caf" revision="refs/heads/android-external.lnx.2.9.1-rel"/>
 
+  <!-- kernel -->
+  <project clone-depth="1" name="kernel/msm-4.9" revision="993115b8d103e819c3ae24d5c4b454308449e6c9" upstream="refs/heads/kernel.lnx.4.9.r21-rel"/>
+  <project name="platform/external/dtc" path="external/dtc" revision="28db22e591524c297d99474dacede6e088f57d8e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/kmod" path="external/kmod" revision="4082ee0d1ad5ce92c5ea6fdc5ca08e89cdd9801d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+
   <!-- device specific -->
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="4903118f022b5faa2f69a31ca8516fab37374539" upstream="refs/heads/uefi.lnx.1.9.r25-rel"/>
-  <project clone-depth="1" name="kernel/msm-4.9" revision="993115b8d103e819c3ae24d5c4b454308449e6c9" upstream="refs/heads/kernel.lnx.4.9.r21-rel"/>
   <project name="device/qcom/common" revision="65f346fa720a71ca15a24005d7b592b23cfdc28c" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel">
     <copyfile dest="build.sh" src="build.sh"/>
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
@@ -121,7 +125,7 @@
   <project name="platform/system/libhidl" path="system/libhidl" revision="686135f821bdf3d45107fc6d447db4ce0f7a1be4" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/libhwbinder" path="system/libhwbinder" revision="5b1b248f53ce3aa9ff6b53fa56baba5b74c28125" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/tools/apksig" path="tools/apksig" revision="aa5e81d94308e777cd338807ea6bc823852701f1" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/external/dtc" path="external/dtc" revision="28db22e591524c297d99474dacede6e088f57d8e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+
 
   <!-- android system extra -->
   <project name="platform/system/ca-certificates" path="system/ca-certificates" revision="5ce37ce30d01ba9069a6875d2e1555c961decd70" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -243,6 +247,7 @@
   <!-- crypto/math externals -->
   <project name="platform/external/boringssl" path="external/boringssl" revision="62879cca4ae93df2754313b018153a6e4b281403" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/bouncycastle" path="external/bouncycastle" revision="5ceec62d17794be64eeb661f0ba79fc849e5fef4" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/scrypt" path="external/scrypt" revision="651345f614361cae9bfeae7257c7d213594d4864" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/fdlibm" path="external/fdlibm" revision="fcd17254a9e59ceb0420d4a2faf29db6b004c443" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/cblas" path="external/cblas" revision="5bd46f566a31694a7e442d091c23230003ecbb05" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/eigen" path="external/eigen" revision="4cc30c3e144f1fdc217fcf29d2531f9a7b5139c1" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -323,6 +328,7 @@
   <project clone-depth="1" name="platform/prebuilts/tools" path="prebuilts/tools" revision="bd037f3696cc33196a876c34a7f5a0dcc6e089ee" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project clone-depth="1" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="9802e351bf16f8137807da945a4bc36371a16be6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project clone-depth="1" name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="2538644348d06278149f8f918930d058cb4f32a7" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="c7fc1cdb67ff477e4ef1f7dee12568f223ea18c7" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
 
   <!-- compilers -->
   <project clone-depth="1" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="c9c4fb77a024d2610f83e54e536c99a964ea85ab" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -432,7 +438,6 @@
   <project name="platform/external/jsr330" path="external/jsr330" revision="d00e8235f22162768fbc8f17deb7abbcd30a94c5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/junit-params" path="external/junit-params" revision="7ce32acfc39e6f690e90ca3b5e5893e16be113cf" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/kernel-headers" path="external/kernel-headers" revision="2834eaa11b034d77d2cd12b8410b20d878b8d0ae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/kmod" path="external/kmod" revision="4082ee0d1ad5ce92c5ea6fdc5ca08e89cdd9801d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libbackup" path="external/libbackup" revision="a645153b0a97663636bacdc5527c0d304fa79657" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libcap-ng" path="external/libcap-ng" revision="835f318b9785a70415980fba96c34ee5c6b7e415" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libconstrainedcrypto" path="external/libconstrainedcrypto" revision="6bf44d6ebfa08b5b9371c22e7dfd54a85bd98151" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -659,7 +664,6 @@
   <project name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="cd1b6806eae4eaa88d82ce61dbb7c2bcfea1f96a" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" revision="4949e1906af402a00d74e20939abc6b95d2caf30" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit" revision="d32685dba4011664b590b94ad156bc734c2c9bb5" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="c7fc1cdb67ff477e4ef1f7dee12568f223ea18c7" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="268c5495b8003e09173a1ae7b1e9dc9b019e300d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="49b50adb1a149100905b368570c2cb56cadc0854" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="87e7c6027290300bfb92c082c4fa622e78b03359" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
