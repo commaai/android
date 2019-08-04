@@ -226,6 +226,7 @@
 
   <!-- system externals -->
   <project name="platform/external/jemalloc" path="external/jemalloc" revision="b96c7bef7b58ed7bb0661febb5dcfb872cfbda9c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/dlmalloc" path="external/dlmalloc" revision="6661f3ca66b55d8f5a57b96fec97efaf8f3897a5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libpcap" path="external/libpcap" revision="9bfd0218fde2b4795911f718609b3d470bf3fe89" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/pcre" path="external/pcre" revision="b863f3713b739f9abf40de964919eace80a4ef5b" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/safe-iop" path="external/safe-iop" revision="cd76f998688d145235de78ecd5b340d0eac9239d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -262,6 +263,7 @@
   <project name="platform/external/fdlibm" path="external/fdlibm" revision="fcd17254a9e59ceb0420d4a2faf29db6b004c443" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/cblas" path="external/cblas" revision="5bd46f566a31694a7e442d091c23230003ecbb05" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/eigen" path="external/eigen" revision="4cc30c3e144f1fdc217fcf29d2531f9a7b5139c1" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/modp_b64" path="external/modp_b64" revision="2df9f7bc7b980f78e0b367123fcbe1ae94077859" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
   <!-- compression externals -->
   <project name="platform/external/zlib" path="external/zlib" revision="476598b025f3f205bdb7d3fbb0b3789679bfadc4" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -270,6 +272,7 @@
   <project name="platform/external/liblzf" path="external/liblzf" revision="a88b9629447deabe8697d2f8fd4cc70aa6e1b563" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/bzip2" path="external/bzip2" revision="00452f17c9ff7a50b40a3ebe8efd3b327d428d9e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/xz-embedded" path="external/xz-embedded" revision="5e2e69cfcf62e18fc8a5096701df8540e040f069" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/lz4" path="external/lz4" revision="3ee768fbb6de6581220531f3af170d7b01bbc040" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
   <!-- networking externals -->
   <project name="platform/external/libnfnetlink" path="external/libnfnetlink" revision="3691f6d20dd8b9d4014081dff833977ae86eac1f" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -306,6 +309,10 @@
   <project name="platform/external/aac" path="external/aac" revision="4b803018da698081a99dcc0963b74f7e7ef4502e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libavc" path="external/libavc" revision="35ac4bcf073b88fd829ec635cd931ba1ee1e2f83" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/fec" path="external/fec" revision="4342555427f5bb0788dfacd1eb07d2876afab733" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/libldac" path="external/libldac" revision="56bedd68cf1e63548d137db74a7f5052962e7eae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/piex" path="external/piex" revision="0bb948749042ed32c64341e2ca2b822c4189ba55" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/libhevc" path="external/libhevc" revision="25b6f1e98ae5bd042b8c32675871f03419738f6d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/libmpeg2" path="external/libmpeg2" revision="8e89b779b8c19669fdff9614ef991eb27ff39389" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
   <!-- protobuf -->
   <project name="platform/external/protobuf" path="external/protobuf" revision="e7b0e6a2c06a914742c3e216556908a4fe9bee8e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -332,6 +339,7 @@
   <project name="platform/external/libdivsufsort" path="external/libdivsufsort" revision="2a896e7033ced391c57ec46c1d772b15417621a4" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/avb" path="external/avb" revision="6ef1490a2cfbdd35448e11381a2ac66d85a69e7c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" revision="74576db80608980f4dc6afb8d1084d5b40bea9a0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/gemmlowp" path="external/gemmlowp" revision="ecd43744fc61fea6f5504540c5c26d469d4d3c5c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
 <!-- prebuilts -->
   <!-- android -->
@@ -409,7 +417,6 @@
   <project name="platform/external/desugar" path="external/desugar" revision="d3f7a8a8e80e63349784e2bffc4d827d7769fa83" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/devlib" path="external/devlib" revision="0d8ffa979098c9e1bf8eb0f1c76cfbd5df1324cc" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/dhcpcd-6.8.2" path="external/dhcpcd-6.8.2" revision="b3e401ad788d3a42a9c7de524becfb665ec7b166" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/dlmalloc" path="external/dlmalloc" revision="6661f3ca66b55d8f5a57b96fec97efaf8f3897a5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/dng_sdk" path="external/dng_sdk" revision="2867e21dc6c826846aa0aaceb4df7474bb7dbb4d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/donuts" path="external/donuts" revision="005389fb31a67841b5de42f0d25fbfab843e208c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/drm_gralloc" path="external/drm_gralloc" revision="f2936dc85a5f92d4dcdfa7b46066c9cd64086720" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -427,7 +434,6 @@
   <project name="platform/external/flatbuffers" path="external/flatbuffers" revision="83d6225e9b642ea069023e45a943d3e7f916fb62" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/fmtlib" path="external/fmtlib" revision="f4d6768e2595b881a146e41e275f77203db9bc56" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/fonttools" path="external/fonttools" revision="fede58680958e96e6e8f61c3cc6282f798452c53" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/gemmlowp" path="external/gemmlowp" revision="ecd43744fc61fea6f5504540c5c26d469d4d3c5c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/glide" path="external/glide" revision="273410a3b8c0f36af5ab3af1de5961ba35ec5778" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/google-api-services-storage" path="external/google-api-services-storage" revision="29b36ffc866ec32ea01f92ab55100f16bb4b2157" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/google-breakpad" path="external/google-breakpad" revision="5702aec91e04d86b7e850d00243b6b9035b5923c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -459,11 +465,8 @@
   <project name="platform/external/libedit" path="external/libedit" revision="67e14dfc833aafa400a3aad8cb329cbaec503445" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libese" path="external/libese" revision="c69e3645b5fe17d7827c6cdebcb90428a764fc16" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libgdx" path="external/libgdx" revision="6bcf44912ceee31ec3e9620b4ba517fe6fb2c4d7" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/libhevc" path="external/libhevc" revision="25b6f1e98ae5bd042b8c32675871f03419738f6d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/libldac" path="external/libldac" revision="56bedd68cf1e63548d137db74a7f5052962e7eae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libmicrohttpd" path="external/libmicrohttpd" revision="1e68f5d827a859ba3b7ab6a70a60247e0b96afa5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libmojo" path="external/libmojo" revision="dab69d106411f93ce701628a3bb3fa97f6820b94" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/libmpeg2" path="external/libmpeg2" revision="8e89b779b8c19669fdff9614ef991eb27ff39389" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libmtp" path="external/libmtp" revision="7e8b340b5e80da63cd06977e61fe72784289bb3f" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libtextclassifier" path="external/libtextclassifier" revision="91105a97e8f38130ccc342bc3b18f4cec40c22fa" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libusb-compat" path="external/libusb-compat" revision="759481ae400d02fe99488dcdcd653b4f8139a39c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -476,13 +479,11 @@
   <project name="platform/external/lld" path="external/lld" revision="26c9bb3b51a7ac4bc45f73d532a03cfd9982043a" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/lmfit" path="external/lmfit" revision="cc79822d100938c92bc403706c95f4583af1f60c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/ltp" path="external/ltp" revision="c690a493d20fb5788f1b00d52e97194cdc031f26" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/lz4" path="external/lz4" revision="3ee768fbb6de6581220531f3af170d7b01bbc040" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/markdown" path="external/markdown" revision="06a8f8b914d477183f68b84424bce8ff4dae7e84" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mesa3d" path="external/mesa3d" revision="535305b2743cf54b3b1770cae036864473c6ac43" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/messageformat" path="external/messageformat" revision="907c6d3a0e6887fe89da48f51012d0c14d881511" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mmc-utils" path="external/mmc-utils" revision="f105db5bd1934f0c3e5f74bbc9a5aaeac7a6bf2b" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mockftpserver" path="external/mockftpserver" revision="d2d467778a561725d42bc6c17e826e7ccf970bae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/modp_b64" path="external/modp_b64" revision="2df9f7bc7b980f78e0b367123fcbe1ae94077859" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mp4parser" path="external/mp4parser" revision="88bd0c6cfa7fcfbbebcc15c2c565f714cb36b065" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mtpd" path="external/mtpd" revision="793cd4e6e35c96d74895a83101608c57b82a7c39" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/nanohttpd" path="external/nanohttpd" revision="c6783c32331b3fe78ffd5077e7f180995d0e268e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -497,7 +498,6 @@
   <project name="platform/external/openssh" path="external/openssh" revision="bd6488196fea9c2517100e27852f57f30322ad3b" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="bbfb25464ff30c5a62dce351d719a8c533afb2a3" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/parameter-framework" path="external/parameter-framework" revision="247231a17211f56a96e6a595a9eedadc06231242" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/piex" path="external/piex" revision="0bb948749042ed32c64341e2ca2b822c4189ba55" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/ply" path="external/ply" revision="583d33c593896afeb8486a25fabfcf6e9dc9ca75" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/ppp" path="external/ppp" revision="b870a67b1bedd7ac54655e1dae3b693e028ba268" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/proguard" path="external/proguard" revision="af893cdc1242e4cfbeeb10e2323f9a689a825177" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
