@@ -85,6 +85,9 @@
   <!-- android system tools -->
   <project name="platform/system/tools/hidl" path="system/tools/hidl" revision="6e572b4c15fa26a278fd066a7682537e16d5b651" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/tools/aidl" path="system/tools/aidl" revision="0a3a83f9cb942c73b04407dcb1fc5f9ceb176172" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="3ca91dcd496457edfc5e0c7c67c01cfe4221cb7c" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/update_engine" path="system/update_engine" revision="6235c9e2acd750b8fa4f745b92705a998ac12d13" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/libhidl" path="system/libhidl" revision="686135f821bdf3d45107fc6d447db4ce0f7a1be4" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
 
   <!-- android frameworks -->
   <project name="platform/frameworks/base" path="frameworks/base" revision="55d152845edfdb9bfb1804df4dccfd4b611daf35" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -102,6 +105,7 @@
   <project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="7273219b3c1634618813f5e1b55df4e432cde268" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/ex" path="frameworks/ex" revision="6d31a0d5970c6fe871d602d3f808e12e4ab14018" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="9120e441d8ed74d2b3d852ad7dcf4c88369b7d95" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/frameworks/data-binding" path="frameworks/data-binding" revision="82b5fd8e43ff8276419b032ce40f6eb42e04e67e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
 
   <!-- android optional frameworks -->
   <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="997023d08b6f0a973f1d83aba79839d26d92386f" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -475,7 +479,6 @@
   <project name="platform/external/xz-embedded" path="external/xz-embedded" revision="5e2e69cfcf62e18fc8a5096701df8540e040f069" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/zxing" path="external/zxing" revision="fedf8f2d8099bf7bb85dc3db8699343d56617deb" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="5db188878b2b20c02e7cbd3ef50ae46faf2f056d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/frameworks/data-binding" path="frameworks/data-binding" revision="82b5fd8e43ff8276419b032ce40f6eb42e04e67e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="bb4526283b94dfcaa1bcd1f74e6b2433d57b4911" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="b92f89582e55359c0b6bcef75e6fbb72d5969cb3" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/ml" path="frameworks/ml" revision="182295a3f930484289cf42cb2c86a96348517844" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -614,12 +617,10 @@
   <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="87e7c6027290300bfb92c082c4fa622e78b03359" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/ca-certificates" path="system/ca-certificates" revision="5ce37ce30d01ba9069a6875d2e1555c961decd70" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/chre" path="system/chre" revision="c0a7292323d7726bd504fc72f1ca74c6cb8cba13" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="3ca91dcd496457edfc5e0c7c67c01cfe4221cb7c" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="4a8ce635151597ebd50ed908afb307967e96db91" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="244deb7559a1982cbaa21d9bd74d7e94b27694ee" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="54e7e43c4b41f1bb9a9feb21fcc334f0ed7436f8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/libfmq" path="system/libfmq" revision="c829c83361ae883449351342e095507aa9779a33" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/libhidl" path="system/libhidl" revision="686135f821bdf3d45107fc6d447db4ce0f7a1be4" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/libhwbinder" path="system/libhwbinder" revision="5b1b248f53ce3aa9ff6b53fa56baba5b74c28125" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/libufdt" path="system/libufdt" revision="c75cf9d7ae8c30d2e224e3a8d5d0571d01ce9886" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/libvintf" path="system/libvintf" revision="55af503b1bd35248724686972b2b65ea34b13e1e" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -628,7 +629,6 @@
   <project name="platform/system/sepolicy" path="system/sepolicy" revision="df4432cedfa76b02f6dbcb26ff527e3b4d5d0375" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/timezone" path="system/timezone" revision="55f4d7209e0d1d198a5615a7b7a4a0c3339939cc" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/tpm" path="system/tpm" revision="987689803d813efb9b011236a7853c8f3edba1f6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/update_engine" path="system/update_engine" revision="6235c9e2acd750b8fa4f745b92705a998ac12d13" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/test/vts" path="test/vts" revision="813e85a22a36fb996e10f2c436a01a87e51737c4" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="1827b3d57935677f0ded5f785385595f50ead1a8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="f4ebb39ac3b708a0bc36a1a3f9f38c06ededa0a6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
