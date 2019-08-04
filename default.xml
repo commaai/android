@@ -39,6 +39,13 @@
   <!-- hardware -->
   <project name="platform/hardware/libhardware" path="hardware/libhardware" revision="05d05305c9659ac96737171d022210d8bfc82d10" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="e307f547b66912fba4e7dec538eed910e52b8777" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/hardware/interfaces" path="hardware/interfaces" revision="234b6e9886fe24b36e6ade2e392b0ad4b6f7305f" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="68b62d684570a82dcfa54bcaf19e3d805dd26413" upstream="refs/heads/video-userspace.lnx.3.0.r12-rel"/>
+  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="f015a583195b8e7755b91a6cb3322019662bc3f5" upstream="refs/heads/audio-hal.lnx.4.0.r23-rel"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="4d0b9c1164acaac1cbd2c0fa894e16287deb24d0" upstream="refs/heads/display.lnx.4.0.r12-rel"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="26b39253a9dd91df9b9217c492180ff5b6397989" upstream="refs/heads/wlan-aosp.lnx.2.9.2.r16-rel"/>
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="c92755030e03538869c13345a9f11ceac5a7799c" upstream="refs/heads/location.lnx.3.0.r11-rel"/>
+  <project name="platform/hardware/qcom/bt" path="hardware/qcom/bt" revision="2e4ef49956a430bfb7cabc35b7fb0c33b2a557b7" upstream="refs/heads/bt.lnx.3.2.r18-rel"/>
 
   <!-- android high level directories -->
   <project name="platform/bionic" path="bionic" revision="c6c89b3401f3f6690e2307de7e2d079894c8147a" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -75,6 +82,10 @@
   <project name="platform/system/keymaster" path="system/keymaster" revision="9c135605a9e8c9e358c8dc97e7533c8e163a4d5c" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/bt" path="system/bt" revision="edc988e2b17fc2829346b0e245d9b63fe280920d" upstream="refs/heads/bt.lnx.3.2.r18-rel"/>
 
+  <!-- android system tools -->
+  <project name="platform/system/tools/hidl" path="system/tools/hidl" revision="6e572b4c15fa26a278fd066a7682537e16d5b651" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/system/tools/aidl" path="system/tools/aidl" revision="0a3a83f9cb942c73b04407dcb1fc5f9ceb176172" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
   <!-- android frameworks -->
   <project name="platform/frameworks/base" path="frameworks/base" revision="55d152845edfdb9bfb1804df4dccfd4b611daf35" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/frameworks/native" path="frameworks/native" revision="9cbf38e5522bc6712c5b86dd6e57aad6b0d82590" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -104,6 +115,36 @@
 
   <!-- fonts -->
   <project name="platform/external/roboto-fonts" path="external/roboto-fonts" revision="e062dc38a7d5870bc6d7dc33c6f42165c228d4c0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+
+  <!-- java externals -->
+  <project name="platform/external/junit" path="external/junit" revision="1955f1a352add6793ebb442ba60d6d2a3a282cb6" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/libcore" path="libcore" revision="ad1f77f8195c8d3e1c916241d5d559dd2417e898" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/external/icu" path="external/icu" revision="df8f714f17856b67042d5a9585b57960539be970" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/tagsoup" path="external/tagsoup" revision="eb098e338ccf676033eb9185175b417ba1b10139" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/nist-sip" path="external/nist-sip" revision="8445067c3b53e5bd56c32f1c4fb688083c4f4005" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/libphonenumber" path="external/libphonenumber" revision="0f7b02133d154754a644f4fbfe4f334eb1923367" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/conscrypt" path="external/conscrypt" revision="596d82bab183cf09790f8db45c703a52bff14085" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/okhttp" path="external/okhttp" revision="ff30c2aec39b187dc35fca529f5bb439872d54c2" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/apache-xml" path="external/apache-xml" revision="31d7642eb8f37a9166db7f1c9e313ab651bdb8ba" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/apache-http" path="external/apache-http" revision="3c9829f7074b2911ea7cadc886998cbefedd4ad6" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+
+  <!-- java for doclava -->
+  <project name="platform/external/doclava" path="external/doclava" revision="6540a489694973695ae09f5b9a699852a2b23bd0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/antlr" path="external/antlr" revision="dd5fa6d48b827c5d98b625adbc209f4a05567534" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/guava" path="external/guava" revision="88e792c40b27a2ba6a84fde54c8890e97effd1bc" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/jsr305" path="external/jsr305" revision="3278bcfa33f28b1465f0b7212a2aeb855608b753" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/jsilver" path="external/jsilver" revision="b9b84920ba47ddf7f15baa01c56b28e3d3f951ea" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+
+  <!-- testing -->
+  <project name="platform/external/mockwebserver" path="external/mockwebserver" revision="2440623105409d48ec0a3717bb6f3da711a0f15d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/littlemock" path="external/littlemock" revision="481b1fc280bbb7c4e528df70864882fc59840ed6" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/mockito" path="external/mockito" revision="1a957c0577ac3347db1b44bc87ccde78381a76b0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/hamcrest" path="external/hamcrest" revision="acdcb536f99925df6d73e2b1df0f9aac45682cb3" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/objenesis" path="external/objenesis" revision="c2a84ee37f5afbdfa81e866790aebf7884e102d3" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/dexmaker" path="external/dexmaker" revision="e79601d0a4d8347aadd0bc8e9deb397588bf9d4d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/javasqlite" path="external/javasqlite" revision="ee41d81872eedc632f42bd231b95bc945690d159" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/easymock" path="external/easymock" revision="eebaf1b32b478e5b6c610c23452c0bb32d14c207" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/nist-pkits" path="external/nist-pkits" revision="ca6b41c541f92f8e9c928561ff2b0890f337ada6" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
 <!-- GNU core system -->
   <!-- toolchain -->
@@ -260,11 +301,8 @@
   <project name="platform/external/ant-glob" path="external/ant-glob" revision="a73228afa9540b9c5518d360c5ae630bb634f975" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" revision="4a2f6987e8717c8fe4776bdb06656801746e64b4" upstream="refs/heads/ant.lnx.2.9.1.r37-rel"/>
   <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" revision="b616838fc8c89085742a542d528e2fd55d679ef9" upstream="refs/heads/ant.lnx.2.9.1.r37-rel"/>
-  <project name="platform/external/antlr" path="external/antlr" revision="dd5fa6d48b827c5d98b625adbc209f4a05567534" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/apache-commons-math" path="external/apache-commons-math" revision="18f62fca59d387e3c1ccd8f80087d9c9af40bcc8" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/apache-harmony" path="external/apache-harmony" revision="9733d7ddb11207483309740c8df6182e4163ad79" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/apache-http" path="external/apache-http" revision="3c9829f7074b2911ea7cadc886998cbefedd4ad6" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/apache-xml" path="external/apache-xml" revision="31d7642eb8f37a9166db7f1c9e313ab651bdb8ba" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/archive-patcher" path="external/archive-patcher" revision="40b8a403ba0e5791ee99e2be12ac5dd2f9e314ea" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/arm-neon-tests" path="external/arm-neon-tests" revision="104e2a662ec8443e9a7603b22efbb3b86c1e7094" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/autotest" path="external/autotest" revision="bcf7573e28bc6a917166d313066021c46d604554" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -278,7 +316,6 @@
   <project name="platform/external/caliper" path="external/caliper" revision="c5af418e69ea901340b15e7639689e7aaf6aa8be" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/chromium-trace" path="external/chromium-trace" revision="55352304872de77f7e9d852b02079b649d5df339" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/cmockery" path="external/cmockery" revision="9199c7bfafefea32d1884182fa655b6e4578c1c4" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/conscrypt" path="external/conscrypt" revision="596d82bab183cf09790f8db45c703a52bff14085" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/crcalc" path="external/crcalc" revision="5559610bea3b267abef3273868f2d6b8c01409a5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/cros/system_api" path="external/cros/system_api" revision="e7a696e0ee9944ed085e54cc78ad60a6c08af9f0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/curl" path="external/curl" revision="b5c9d8dcd176a116701c532c138cbe09db56df68" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -286,18 +323,15 @@
   <project name="platform/external/deqp" path="external/deqp" revision="7c7c548a33f5c681b94d2d500ad841d4269367ae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/desugar" path="external/desugar" revision="d3f7a8a8e80e63349784e2bffc4d827d7769fa83" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/devlib" path="external/devlib" revision="0d8ffa979098c9e1bf8eb0f1c76cfbd5df1324cc" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/dexmaker" path="external/dexmaker" revision="e79601d0a4d8347aadd0bc8e9deb397588bf9d4d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/dhcpcd-6.8.2" path="external/dhcpcd-6.8.2" revision="b3e401ad788d3a42a9c7de524becfb665ec7b166" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/dlmalloc" path="external/dlmalloc" revision="6661f3ca66b55d8f5a57b96fec97efaf8f3897a5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/dng_sdk" path="external/dng_sdk" revision="2867e21dc6c826846aa0aaceb4df7474bb7dbb4d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/doclava" path="external/doclava" revision="6540a489694973695ae09f5b9a699852a2b23bd0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/donuts" path="external/donuts" revision="005389fb31a67841b5de42f0d25fbfab843e208c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/drm_gralloc" path="external/drm_gralloc" revision="f2936dc85a5f92d4dcdfa7b46066c9cd64086720" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" revision="38e84e747804f4e51bdc10367c642ffe3eb78f48" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/droiddriver" path="external/droiddriver" revision="9c529227d3b7c8b2e8e1066a9d8ce325d0016713" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/drrickorang" path="external/drrickorang" revision="23d02aa32f580d03680aa8f0a62afbb4c915e669" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/dtc" path="external/dtc" revision="28db22e591524c297d99474dacede6e088f57d8e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/easymock" path="external/easymock" revision="eebaf1b32b478e5b6c610c23452c0bb32d14c207" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/ebtables" path="external/ebtables" revision="3f430ac843caa90f25c5b4f695cf350beadec671" upstream="refs/heads/data-external.lnx.2.9.2.r16-rel"/>
   <project name="platform/external/eclipse-basebuilder" path="external/eclipse-basebuilder" revision="076f46888ed346775b8efc564d7694063ef5eea7" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/eclipse-windowbuilder" path="external/eclipse-windowbuilder" revision="c533332008088ee5f61745b724361fbde5b7e770" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -321,28 +355,21 @@
   <project name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" revision="7b6623bd54cee3e48ae8a4f477f616366643cc78" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/google-tv-pairing-protocol" path="external/google-tv-pairing-protocol" revision="d6c0476029d7a62bb9fbfd08a8a47c9188432864" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/googletest" path="external/googletest" revision="c906394684dc7773dd1d51da5f21149f6724f114" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/guava" path="external/guava" revision="88e792c40b27a2ba6a84fde54c8890e97effd1bc" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/guice" path="external/guice" revision="c94f47512257b4ce1d748451161fe93445bf9c9a" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/hamcrest" path="external/hamcrest" revision="acdcb536f99925df6d73e2b1df0f9aac45682cb3" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="a6952998e20660eec965b60933cda39a48404d5e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/icu" path="external/icu" revision="df8f714f17856b67042d5a9585b57960539be970" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/ims" path="external/ims" revision="df0a4ed981f785b85e3bf2b2630310674be7ecc9" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="c4531e5b09403a9954213dfb18d0deaac5badc12" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/iputils" path="external/iputils" revision="feb69a81ce53a7c4c5859a7347a93e44be7a7fd5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/iw" path="external/iw" revision="1c37986b96ac3b1a204e69fc4a126586b9e4e536" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jacoco" path="external/jacoco" revision="de17e9e2d921152a621e9c2259d8a56afe32ebbb" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/javasqlite" path="external/javasqlite" revision="ee41d81872eedc632f42bd231b95bc945690d159" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/javassist" path="external/javassist" revision="f7c4b954072e563b75f6910c25bb689bbf38a3d1" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jcommander" path="external/jcommander" revision="9a3ba316f5b73c3a19291b92534e990eec263e8b" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jdiff" path="external/jdiff" revision="07d92bdaeeaac1e3c91b48226ca692bbcf3146b5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jline" path="external/jline" revision="74812032f8d8eddbef387f18c96de9e5c38b8fdb" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jmdns" path="external/jmdns" revision="0c71647deb7f7835c473fd3dfb45943083e47794" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/jsilver" path="external/jsilver" revision="b9b84920ba47ddf7f15baa01c56b28e3d3f951ea" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/json-c" path="external/json-c" revision="6442a2f9e74d070b39a66c60a6b14ae637a5ffde" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jsoncpp" path="external/jsoncpp" revision="57ff5b8b1b3b473b783ce5d2ef0fa04945b3adc8" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/jsr305" path="external/jsr305" revision="3278bcfa33f28b1465f0b7212a2aeb855608b753" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jsr330" path="external/jsr330" revision="d00e8235f22162768fbc8f17deb7abbcd30a94c5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/junit" path="external/junit" revision="1955f1a352add6793ebb442ba60d6d2a3a282cb6" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/junit-params" path="external/junit-params" revision="7ce32acfc39e6f690e90ca3b5e5893e16be113cf" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/kernel-headers" path="external/kernel-headers" revision="2834eaa11b034d77d2cd12b8410b20d878b8d0ae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/kmod" path="external/kmod" revision="4082ee0d1ad5ce92c5ea6fdc5ca08e89cdd9801d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -365,7 +392,6 @@
   <project name="platform/external/libmojo" path="external/libmojo" revision="dab69d106411f93ce701628a3bb3fa97f6820b94" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libmpeg2" path="external/libmpeg2" revision="8e89b779b8c19669fdff9614ef991eb27ff39389" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libmtp" path="external/libmtp" revision="7e8b340b5e80da63cd06977e61fe72784289bb3f" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/libphonenumber" path="external/libphonenumber" revision="0f7b02133d154754a644f4fbfe4f334eb1923367" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libtextclassifier" path="external/libtextclassifier" revision="91105a97e8f38130ccc342bc3b18f4cec40c22fa" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libunwind_llvm" path="external/libunwind_llvm" revision="e6e06197c722a3b16c5870cc58512c80ca84d1ab" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libusb" path="external/libusb" revision="723eef28307737e21348b124234c18eba2038764" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -377,7 +403,6 @@
   <project name="platform/external/libyuv" path="external/libyuv" revision="81fe2cdd28502d1fbc7f7e96eb559739635615aa" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/linux-kselftest" path="external/linux-kselftest" revision="f0c10b1db1de183a13ff98cf588e2ea90356ee58" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/lisa" path="external/lisa" revision="f04ac492c3ce340c78dfcd6131139b66a6df2c0f" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/littlemock" path="external/littlemock" revision="481b1fc280bbb7c4e528df70864882fc59840ed6" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/lld" path="external/lld" revision="26c9bb3b51a7ac4bc45f73d532a03cfd9982043a" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/lmfit" path="external/lmfit" revision="cc79822d100938c92bc403706c95f4583af1f60c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/ltp" path="external/ltp" revision="c690a493d20fb5788f1b00d52e97194cdc031f26" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -388,8 +413,6 @@
   <project name="platform/external/minijail" path="external/minijail" revision="3e15fdc2e3394f38647512383172513bb99876d0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mmc-utils" path="external/mmc-utils" revision="f105db5bd1934f0c3e5f74bbc9a5aaeac7a6bf2b" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mockftpserver" path="external/mockftpserver" revision="d2d467778a561725d42bc6c17e826e7ccf970bae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/mockito" path="external/mockito" revision="1a957c0577ac3347db1b44bc87ccde78381a76b0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/mockwebserver" path="external/mockwebserver" revision="2440623105409d48ec0a3717bb6f3da711a0f15d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/modp_b64" path="external/modp_b64" revision="2df9f7bc7b980f78e0b367123fcbe1ae94077859" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mp4parser" path="external/mp4parser" revision="88bd0c6cfa7fcfbbebcc15c2c565f714cb36b065" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/mtpd" path="external/mtpd" revision="793cd4e6e35c96d74895a83101608c57b82a7c39" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -399,12 +422,8 @@
   <project name="platform/external/netperf" path="external/netperf" revision="e100a0c4105b94f7044b243287a5da22f5e8e4e7" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/neven" path="external/neven" revision="db08cb85039ac6103a73cafd2e60048d79922eb8" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/nfacct" path="external/nfacct" revision="4e23be5b152185261a6154679406a661b39de6f4" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/nist-pkits" path="external/nist-pkits" revision="ca6b41c541f92f8e9c928561ff2b0890f337ada6" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/nist-sip" path="external/nist-sip" revision="8445067c3b53e5bd56c32f1c4fb688083c4f4005" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/noto-fonts" path="external/noto-fonts" revision="1241c696382e5af904693e02431321f2b5bd027a" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/oauth" path="external/oauth" revision="49f3624a6d3307b640a012f15b94d04174473501" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/objenesis" path="external/objenesis" revision="c2a84ee37f5afbdfa81e866790aebf7884e102d3" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/okhttp" path="external/okhttp" revision="ff30c2aec39b187dc35fca529f5bb439872d54c2" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/opencv" path="external/opencv" revision="c42a7f68da372776861437ea5a12a9ae54d934ff" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/openssh" path="external/openssh" revision="bd6488196fea9c2517100e27852f57f30322ad3b" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="bbfb25464ff30c5a62dce351d719a8c533afb2a3" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -433,7 +452,6 @@
   <project name="platform/external/svox" path="external/svox" revision="b4dfd23ea360ac3995ba2361df3c929e4957f729" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/swiftshader" path="external/swiftshader" revision="1eefe88f245c4c2b0b8e6bdb69e805cb1e93edbf" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/syslinux" path="external/syslinux" revision="76d05dc695b06c4e987bb8078f78032441e1430c" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/tagsoup" path="external/tagsoup" revision="eb098e338ccf676033eb9185175b417ba1b10139" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/tcpdump" path="external/tcpdump" revision="97c206d78ccaf8fbafc892c589caea50e2a15f85" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/testng" path="external/testng" revision="1d7bbdba751215e9cf52f1f92f3591aa4e9d5894" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/timezonepicker-support" path="external/timezonepicker-support" revision="99e91a76fd74bad10266623d67cdb98d011f709e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -475,19 +493,13 @@
   <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" revision="e4b943a7ece621b09dce62e41b87155dfadd05be" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" revision="f756c26aea4d295e04f36e2be3c7c017775ae8a8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/hardware/google/apf" path="hardware/google/apf" revision="4f1b5f27e705d82d0567f4566c17aa838ba413a0" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/hardware/interfaces" path="hardware/interfaces" revision="234b6e9886fe24b36e6ade2e392b0ad4b6f7305f" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/hardware/invensense" path="hardware/invensense" revision="11e5ff75af866f91622b6008fa13db1c3685ae69" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="f015a583195b8e7755b91a6cb3322019662bc3f5" upstream="refs/heads/audio-hal.lnx.4.0.r23-rel"/>
   <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="fa3d69db0ca20fefb99255b9e7cd0d2f74f8dc2d" upstream="refs/heads/android-blast.lnx.2.0.r21-rel"/>
-  <project name="platform/hardware/qcom/bt" path="hardware/qcom/bt" revision="2e4ef49956a430bfb7cabc35b7fb0c33b2a557b7" upstream="refs/heads/bt.lnx.3.2.r18-rel"/>
-  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="4d0b9c1164acaac1cbd2c0fa894e16287deb24d0" upstream="refs/heads/display.lnx.4.0.r12-rel"/>
-  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="c92755030e03538869c13345a9f11ceac5a7799c" upstream="refs/heads/location.lnx.3.0.r11-rel"/>
-  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="68b62d684570a82dcfa54bcaf19e3d805dd26413" upstream="refs/heads/video-userspace.lnx.3.0.r12-rel"/>
+
+
   <project name="platform/hardware/qcom/thermal" path="hardware/qcom/thermal" revision="34f922d74a2e0bc81815785c49e7c8598a628647" upstream="refs/heads/qvr.lnx.4.0.r5-rel"/>
   <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" revision="59864a2cd0cddb89dd5fc4933db11b69fbab61ae" upstream="refs/heads/qvr.lnx.4.0.r5-rel"/>
-  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="26b39253a9dd91df9b9217c492180ff5b6397989" upstream="refs/heads/wlan-aosp.lnx.2.9.2.r16-rel"/>
   <project name="platform/hardware/ril" path="hardware/ril" revision="a9e983fde87e33419bc7e6af9f43f47cdf4cb04a" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
-  <project name="platform/libcore" path="libcore" revision="ad1f77f8195c8d3e1c916241d5d559dd2417e898" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="ae5989936da179b2afeceae8ff407fb67a2b2512" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
   <project name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="11081f67266c0a495c01133f3830c7a4d35923a0" upstream="refs/heads/bt.lnx.3.2.r18-rel"/>
   <project name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="4aefbe8ff37a3d67136eab7f29d37c597eef3d1c" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -615,8 +627,6 @@
   <project name="platform/system/nvram" path="system/nvram" revision="a2cbda182e4631dc45b3e988db9a6c0a0c36a610" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/sepolicy" path="system/sepolicy" revision="df4432cedfa76b02f6dbcb26ff527e3b4d5d0375" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/timezone" path="system/timezone" revision="55f4d7209e0d1d198a5615a7b7a4a0c3339939cc" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/tools/aidl" path="system/tools/aidl" revision="0a3a83f9cb942c73b04407dcb1fc5f9ceb176172" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/system/tools/hidl" path="system/tools/hidl" revision="6e572b4c15fa26a278fd066a7682537e16d5b651" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/tpm" path="system/tpm" revision="987689803d813efb9b011236a7853c8f3edba1f6" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/system/update_engine" path="system/update_engine" revision="6235c9e2acd750b8fa4f745b92705a998ac12d13" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/test/vts" path="test/vts" revision="813e85a22a36fb996e10f2c436a01a87e51737c4" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
