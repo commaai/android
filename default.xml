@@ -20,6 +20,9 @@
   <project name="device/common" revision="44f3e76431cd7ab8d546d4eac9fccd391f28bc15" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/vendor/qcom/skunk" path="device/qcom/sdm845" revision="13a36aceb4a2cb9a8d80d7fac12737a55f1cd123" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel"/>
 
+  <!-- needed -->
+  <project name="device/generic/goldfish" revision="887b6a11de4e65be24474268bd7720c863c2c59d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+
   <!-- other vendor stuff -->
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" revision="f6732010a96e5c535d505501ebb5b2b6274edc50" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
   <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/interfaces/opensource/nfc" revision="e7f7684c6cd11cffd288c9a71ee2485bb50ee334" upstream="refs/heads/nfc.lnx.3.2.r10-rel">
@@ -238,6 +241,7 @@
   <project name="platform/external/sqlite" path="external/sqlite" revision="7e8032233a9e93746b5c669246c386880cd66f41" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/minijail" path="external/minijail" revision="3e15fdc2e3394f38647512383172513bb99876d0" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libcap" path="external/libcap" revision="3a4e07136e6d79ba5cfafb639f9ecc5ff76000d2" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/libevent" path="external/libevent" revision="6b11d747012c72746e485a24b68e65e28b8e015f" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
   <!-- xml parsers -->
   <project name="platform/external/libxml2" path="external/libxml2" revision="dcd6a75fa64226add1b58f9ef2376e08e609e078" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -353,7 +357,6 @@
   <project name="device/generic/armv7-a-neon" revision="d86e5c5d2bc5cabb347b3da718e9fc7d185a6503" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/generic/car" revision="a00c93a19344fe3767a70955d343d15c752ba748" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/generic/common" revision="0e223f6a92e0aeff235c2d29d067a23087ca91b0" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="device/generic/goldfish" revision="887b6a11de4e65be24474268bd7720c863c2c59d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/generic/goldfish-opengl" revision="f878f4c269a24848295a3427232329be01c23ed5" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/generic/mini-emulator-arm64" revision="51b846f25228225430f8c67b2db42edae89a1a51" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/generic/mini-emulator-armv7-a-neon" revision="258706fc0ddcf2c9be48967f4766ec90efb736a5" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -455,7 +458,6 @@
   <project name="platform/external/libdaemon" path="external/libdaemon" revision="e2f604066d97431c95856c73d7b9ee46b348d37e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libedit" path="external/libedit" revision="67e14dfc833aafa400a3aad8cb329cbaec503445" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libese" path="external/libese" revision="c69e3645b5fe17d7827c6cdebcb90428a764fc16" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/libevent" path="external/libevent" revision="6b11d747012c72746e485a24b68e65e28b8e015f" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libgdx" path="external/libgdx" revision="6bcf44912ceee31ec3e9620b4ba517fe6fb2c4d7" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libhevc" path="external/libhevc" revision="25b6f1e98ae5bd042b8c32675871f03419738f6d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libldac" path="external/libldac" revision="56bedd68cf1e63548d137db74a7f5052962e7eae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
