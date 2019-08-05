@@ -8,25 +8,20 @@
   <project name="device/qcom/common" revision="65f346fa720a71ca15a24005d7b592b23cfdc28c" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel">
     <copyfile dest="build.sh" src="build.sh"/>
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-    <copyfile dest="kernel/Android.mk" src="stop_scan.mk"/>
-    <copyfile dest="disregard/Android.mk" src="stop_scan.mk"/>
   </project>
   <project name="device/qcom/sepolicy" revision="57b1c51ed75387c1c6adde9233308a518ba87706" upstream="refs/heads/sepolicy.lnx.3.0.1.r16-rel"/>
   <project name="device/common" revision="44f3e76431cd7ab8d546d4eac9fccd391f28bc15" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="device/generic/goldfish" revision="887b6a11de4e65be24474268bd7720c863c2c59d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
 
   <!-- tici -->
-  <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="4903118f022b5faa2f69a31ca8516fab37374539" upstream="refs/heads/uefi.lnx.1.9.r25-rel"/>
   <project name="platform/vendor/qcom/skunk" path="device/qcom/sdm845" revision="13a36aceb4a2cb9a8d80d7fac12737a55f1cd123" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel"/>
+  <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="4903118f022b5faa2f69a31ca8516fab37374539" upstream="refs/heads/uefi.lnx.1.9.r25-rel"/>
   <project clone-depth="1" name="kernel/msm-4.9" revision="993115b8d103e819c3ae24d5c4b454308449e6c9" upstream="refs/heads/kernel.lnx.4.9.r21-rel"/>
-  <project name="platform/external/dtc" path="external/dtc" revision="28db22e591524c297d99474dacede6e088f57d8e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/kmod" path="external/kmod" revision="4082ee0d1ad5ce92c5ea6fdc5ca08e89cdd9801d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
   <!-- EON -->
   <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="e5a9de6cf147c5d54fa0340d0fa70934fc704d21" upstream="qcom-devices.lnx.2.0.r5-rel"/>
   <project clone-depth="1" name="kernel/lk" path="bootable/bootloader/lk" revision="b3e8131d5cff855118342cd646ced86cd50594ae" upstream="lk.lnx.1.0.r26-rel"/>
-
-  <!-- needed -->
-  <project name="device/generic/goldfish" revision="887b6a11de4e65be24474268bd7720c863c2c59d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project clone-depth="1" name="kernel/msm-3.18" revision="51da0cd9e58483f082bb2152fecc59c9e0e00576" upstream="kernel.lnx.3.18.r33-rel"/>
 
   <!-- other vendor stuff -->
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" revision="f6732010a96e5c535d505501ebb5b2b6274edc50" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
@@ -75,6 +70,8 @@
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
+  <project name="platform/external/dtc" path="external/dtc" revision="28db22e591524c297d99474dacede6e088f57d8e" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/kmod" path="external/kmod" revision="4082ee0d1ad5ce92c5ea6fdc5ca08e89cdd9801d" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
 
   <!-- recovery -->
   <project name="platform/bootable/recovery" path="bootable/recovery" revision="1b00333a4ca9ce5300926b002b06d5d483b13315" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
@@ -108,14 +105,12 @@
   <project name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="67d8b4d99e99ef6dae653913caba17a93cd09324" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
   <project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="5f2511109c1677cf0607fe602848baed6799c922" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
 
-  <!-- app crap, really needed? -->
+  <!-- extra apps that snuck in -->
+  <project name="platform/packages/services/Car" path="packages/services/Car" revision="5bc0accb2878d1320e517b618b7ad6d9c4241267" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="11a5e130be5a17f3b1f055805d373de08d00e639" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="11081f67266c0a495c01133f3830c7a4d35923a0" upstream="refs/heads/bt.lnx.3.2.r18-rel"/>
   <project name="platform/packages/apps/Email" path="packages/apps/Email" revision="b0793a64f4b60fec2a1bae46ef595a3db6afa84b" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
   <project name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" revision="52edb5903c788dbfbcc56713167e25a694829618" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
-
-  <!-- car crap, really needed? -->
-  <project name="platform/packages/services/Car" path="packages/services/Car" revision="5bc0accb2878d1320e517b618b7ad6d9c4241267" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="11a5e130be5a17f3b1f055805d373de08d00e639" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
 
   <!-- art (and support) -->
   <project name="platform/art" path="art" revision="09f517d456acc6c4813d5a21e0b5469cf56670bd" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
