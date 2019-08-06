@@ -349,6 +349,7 @@
   <!-- random externals -->
   <project name="platform/external/libusb" path="external/libusb" revision="723eef28307737e21348b124234c18eba2038764" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jsoncpp" path="external/jsoncpp" revision="57ff5b8b1b3b473b783ce5d2ef0fa04945b3adc8" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
+  <project name="platform/external/json-c" path="external/json-c" revision="6442a2f9e74d070b39a66c60a6b14ae637a5ffde" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libbrillo" path="external/libbrillo" revision="fead14b1403a604faad97c7f13b2f88ed41045b9" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/libchrome" path="external/libchrome" revision="b4b96cdfd447daac679b067c3b969cc5ed22a798" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/googletest" path="external/googletest" revision="c906394684dc7773dd1d51da5f21149f6724f114" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
@@ -471,7 +472,6 @@
   <project name="platform/external/jdiff" path="external/jdiff" revision="07d92bdaeeaac1e3c91b48226ca692bbcf3146b5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jline" path="external/jline" revision="74812032f8d8eddbef387f18c96de9e5c38b8fdb" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jmdns" path="external/jmdns" revision="0c71647deb7f7835c473fd3dfb45943083e47794" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
-  <project name="platform/external/json-c" path="external/json-c" revision="6442a2f9e74d070b39a66c60a6b14ae637a5ffde" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/jsr330" path="external/jsr330" revision="d00e8235f22162768fbc8f17deb7abbcd30a94c5" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/junit-params" path="external/junit-params" revision="7ce32acfc39e6f690e90ca3b5e5893e16be113cf" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
   <project name="platform/external/kernel-headers" path="external/kernel-headers" revision="2834eaa11b034d77d2cd12b8410b20d878b8d0ae" upstream="refs/heads/android-external.lnx.3.1.r14-rel"/>
