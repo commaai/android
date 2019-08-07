@@ -2,6 +2,7 @@
 <manifest>
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
   <default remote="caf" revision="refs/heads/android-external.lnx.2.9.1-rel"/>
+  <remote fetch="ssh://git@github.com/commaai/" name="comma"/>
   <remote fetch="https://github.com" name="private"/>
 
   <!-- device -->
@@ -14,7 +15,7 @@
   <project name="device/generic/goldfish" revision="887b6a11de4e65be24474268bd7720c863c2c59d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
 
   <!-- tici -->
-  <project name="platform/vendor/qcom/skunk" path="device/qcom/sdm845" revision="13a36aceb4a2cb9a8d80d7fac12737a55f1cd123" upstream="refs/heads/qcom-devices.lnx.3.0.r12-rel"/>
+  <project name="android_vendor_qcom_skunk" path="device/qcom/sdm845" remote="comma" revision="tici"/>
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="4903118f022b5faa2f69a31ca8516fab37374539" upstream="refs/heads/uefi.lnx.1.9.r25-rel"/>
   <project clone-depth="1" name="kernel/msm-4.9" revision="993115b8d103e819c3ae24d5c4b454308449e6c9" upstream="refs/heads/kernel.lnx.4.9.r21-rel"/>
 
