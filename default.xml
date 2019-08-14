@@ -13,6 +13,10 @@
   <project name="device/qcom/sepolicy" revision="57b1c51ed75387c1c6adde9233308a518ba87706" upstream="refs/heads/sepolicy.lnx.3.0.1.r16-rel"/>
   <project name="device/common" revision="44f3e76431cd7ab8d546d4eac9fccd391f28bc15" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="device/generic/goldfish" revision="887b6a11de4e65be24474268bd7720c863c2c59d" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
+  <project name="android_device_comma_tici" path="device/comma/tici" remote="comma" revision="master" upstream="master">
+    <!-- <copyfile dest="build.sh" src="build.sh"/> -->
+    <!-- <copyfile dest="vendor/comma/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/> -->
+  </project>
 
   <!-- tici -->
   <project name="android_vendor_qcom_skunk" path="device/qcom/sdm845" remote="comma" revision="tici"/>
