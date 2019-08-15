@@ -87,6 +87,8 @@
   <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="26b39253a9dd91df9b9217c492180ff5b6397989" upstream="refs/heads/wlan-aosp.lnx.2.9.2.r16-rel"/>
   <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="c92755030e03538869c13345a9f11ceac5a7799c" upstream="refs/heads/location.lnx.3.0.r11-rel"/>
   <project name="platform/hardware/qcom/bt" path="hardware/qcom/bt" revision="2e4ef49956a430bfb7cabc35b7fb0c33b2a557b7" upstream="refs/heads/bt.lnx.3.2.r18-rel"/>
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="fa3d69db0ca20fefb99255b9e7cd0d2f74f8dc2d" upstream="refs/heads/android-blast.lnx.2.0.r21-rel"/>
+  <project name="platform/hardware/qcom/thermal" path="hardware/qcom/thermal" revision="34f922d74a2e0bc81815785c49e7c8598a628647" upstream="refs/heads/qvr.lnx.4.0.r5-rel"/>
   <project name="platform/hardware/ril" path="hardware/ril" revision="a9e983fde87e33419bc7e6af9f43f47cdf4cb04a" upstream="refs/heads/atel.lnx.2.9.2.r16-rel"/>
 
   <!-- android high level directories -->
@@ -566,8 +568,6 @@
   <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" revision="f756c26aea4d295e04f36e2be3c7c017775ae8a8" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/hardware/google/apf" path="hardware/google/apf" revision="4f1b5f27e705d82d0567f4566c17aa838ba413a0" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
   <project name="platform/hardware/invensense" path="hardware/invensense" revision="11e5ff75af866f91622b6008fa13db1c3685ae69" upstream="refs/heads/android-framework.lnx.3.1.r14-rel"/>
-  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="fa3d69db0ca20fefb99255b9e7cd0d2f74f8dc2d" upstream="refs/heads/android-blast.lnx.2.0.r21-rel"/>
-  <project name="platform/hardware/qcom/thermal" path="hardware/qcom/thermal" revision="34f922d74a2e0bc81815785c49e7c8598a628647" upstream="refs/heads/qvr.lnx.4.0.r5-rel"/>
   <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" revision="59864a2cd0cddb89dd5fc4933db11b69fbab61ae" upstream="refs/heads/qvr.lnx.4.0.r5-rel"/>
 
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="ae5989936da179b2afeceae8ff407fb67a2b2512" upstream="refs/heads/android_ui.lnx.2.9.2.r17-rel"/>
