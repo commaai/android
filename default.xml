@@ -54,6 +54,7 @@
   <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="7970e06904797835b4f1011304e4560f0b8e20f4" upstream="refs/heads/wlan-cmn.driver.lnx.1.0.r53-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="ad88d9834b2f2b92677ed6d971f06fc2f6169c79" upstream="refs/heads/wlan-cld3.driver.lnx.1.1.r53-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="20d9c6ba5cba92e03665b13f15d778e94c559592" upstream="refs/heads/wlan-service.lnx.1.9.r26-rel"/>
+  <project name="android_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="comma" revision="tici" upstream="tici"/>
 
   <!-- build -->
   <project name="platform/build" path="build/make" revision="a5fc209d4868fcee67f393bc61bbcacfec576ff9" upstream="refs/heads/android-framework.lnx.3.1.r14-rel">
