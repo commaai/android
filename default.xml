@@ -6,7 +6,7 @@
   <remote fetch="https://github.com" name="private"/>
 
   <!-- device -->
-  <project name="device/qcom/common" remote="comma" revision="tici" upstream="tici">
+  <project name="android_device_qcom_common" remote="comma" revision="tici" upstream="tici">
     <copyfile dest="build.sh" src="build.sh"/>
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
@@ -57,7 +57,7 @@
   <project name="android_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="comma" revision="tici" upstream="tici"/>
 
   <!-- build -->
-  <project name="platform/build" path="build/make" remote="comma" revision="tici" upstream="tici">
+  <project name="android_build" path="build/make" remote="comma" revision="tici" upstream="tici">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
