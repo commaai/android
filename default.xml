@@ -11,19 +11,19 @@
 
 <!-- device specific -->
   <!-- build system -->
-  <project groups="pdk" name="commaai/android_build" path="build" remote="private" revision="master" upstream="master">
+  <project groups="pdk" name="commaai/android_build" path="build" remote="private" revision="e0e8a6ecb8746066c4fbc7a2b47f9fafc58e7c78" upstream="master">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
 
   <!-- device -->
-  <project name="commaai/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="private" revision="master" upstream="master"/>
-  <project name="commaai/android_device_oppo_common" path="device/oppo/common" remote="private" revision="master" upstream="master"/>
+  <project name="commaai/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="private" revision="14eb30a6dc7f340806d2ea158bc46ac938933f75" upstream="master"/>
+  <project name="commaai/android_device_oppo_common" path="device/oppo/common" remote="private" revision="dca802e28bcc6581440d2fc7b7b25d6d92297cfd" upstream="master"/>
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" revision="d08df7b60be52867937fd02c92cbe6624a3c3ca7" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_device_qcom_sepolicy" path="device/qcom/sepolicy" revision="d805fbcf82e932c519b9a0a79a5995b3f84218fe" upstream="refs/heads/cm-13.0"/>
 
   <!-- vendor -->
-  <project name="commaai/android_vendor_oneplus_oneplus3" path="vendor/oneplus/oneplus3" remote="private" revision="master" upstream="master"/>
-  <project name="commaai/android_vendor_cm" path="vendor/cm" remote="private" revision="master" upstream="master"/>
+  <project name="commaai/android_vendor_oneplus_oneplus3" path="vendor/oneplus/oneplus3" remote="private" revision="2e53561e0b3192af70fde71c9ad3e684ec87610a" upstream="master"/>
+  <project name="commaai/android_vendor_cm" path="vendor/cm" remote="private" revision="3f6eeeb553940e234183fb94e6f3d81424fa87de" upstream="master"/>
   <project name="CyanogenMod/cm_platform_sdk" path="vendor/cmsdk" revision="d755121d2c4c833d432aaf09810bfcad8e65e9f6" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_qcom_opensource_dpm" path="vendor/qcom/opensource/dpm" revision="070a9ec1127b42da4a4c58bd865ba64b8730d9e3" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" revision="5451bb05347d541eb0b65aac6739a25da338e3b3" upstream="refs/heads/cm-13.0"/>
@@ -33,14 +33,14 @@
   <project groups="pdk" name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" revision="368bd2abab25c637a657d1fe4cef6b2222b29e82" upstream="refs/heads/cm-13.0"/>
 
   <!-- kernel -->
-  <project clone-depth="1" name="commaai/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="private" revision="master" upstream="master"/>
+  <project clone-depth="1" name="commaai/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="private" revision="7c6db5e9235c9f3c41ebfcf3d893a3ff927fa32c" upstream="master"/>
 
   <!-- hardware -->
   <project groups="pdk" name="CyanogenMod/android_hardware_libhardware" path="hardware/libhardware" revision="7659cdd34d33498b3e172730a888f8ea793e1ef3" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" revision="1f27ca88dc332eecf1dda3a6dc1afcdef6591e78" upstream="refs/heads/cm-13.0"/>
   <project groups="qcom" name="CyanogenMod/android_hardware_qcom_camera" path="hardware/qcom/camera" revision="84a2ea4aa3a87aaab0238aaba2f78761dcaac6b3" upstream="refs/heads/cm-13.0"/>
   <project groups="qcom,qcom_audio" name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio/default" revision="20bb5b4400ae1051619593e322f8eee5297addf1" upstream="refs/heads/cm-13.0"/>
-  <project groups="qcom,qcom_audio" name="commaai/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8996" remote="private" revision="master" upstream="master"/>
+  <project groups="qcom,qcom_audio" name="commaai/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8996" remote="private" revision="6e93570b3690bfea6d635db24a78746b8877ff04" upstream="master"/>
   <project groups="qcom" name="sultanxda/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8996" revision="2a76ca5e969171812a0938ac3c705b9f49b2caa4" upstream="cm-13.0-caf-8996_1.3.2"/>
   <project groups="pdk,qcom,qcom_display" name="sultanxda/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8996" revision="7e3da286fe738f395aee606d126912dc8547ce46" upstream="cm-13.0-caf-8996_1.3.2"/>
   <project groups="qcom_wlan" name="CyanogenMod/android_hardware_qcom_wlan" path="hardware/qcom/wlan" revision="70d3f9f7afb90a0b6d1d3321ef80175ab3584719" upstream="refs/heads/cm-13.0"/>
@@ -61,16 +61,16 @@
 
 <!-- Android -->
   <!-- NEOS apps -->
-  <project name="commaai/android_system_extras_su" path="system/extras/su" remote="private" revision="master" upstream="master"/>
-  <project name="commaai/android_packages_apps_NEOSSetup" path="packages/apps/NEOSSetup" remote="private" revision="master" upstream="master"/>
-  <project groups="pdk-fs" name="commaai/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="private" revision="master" upstream="master"/>
+  <project name="commaai/android_system_extras_su" path="system/extras/su" remote="private" revision="199592cc8e9816d9dc2027265062d94ef920b007" upstream="master"/>
+  <project name="commaai/android_packages_apps_NEOSSetup" path="packages/apps/NEOSSetup" remote="private" revision="98828033a016504e859134802371ac20b2e644cf" upstream="master"/>
+  <project groups="pdk-fs" name="commaai/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="private" revision="6c2fa29a5abf747b9b477146d71a664c4f86c2f4" upstream="master"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" revision="0dc4a6ba667a17de1764ac0c00c2e6a47c6a7fe2" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-fs" name="commaai/android_packages_apps_Settings" path="packages/apps/Settings" remote="private" revision="master" upstream="master"/>
+  <project groups="pdk-fs" name="commaai/android_packages_apps_Settings" path="packages/apps/Settings" remote="private" revision="d7abf363759e6df61238274fa21418b4f5490493" upstream="master"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_KeyChain" path="packages/apps/KeyChain" revision="2674ad7724497782c96fba24d7d907525f59d8e8" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" revision="846011826a98c7f9093f5560e8d22a3290fe0504" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_services_Telephony" path="packages/services/Telephony" revision="b8655dc761dc98734f40440d1888e26b6593bb95" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" revision="c3d8153bec08a97c9e0983e28d593de67e657672" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="private" revision="master" upstream="master"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="private" revision="d47a796237479857a2108443fafd6dd515802e83" upstream="master"/>
   <project name="CyanogenMod/android_packages_apps_BluetoothExt" path="packages/apps/BluetoothExt" revision="865465dd36988f0f933d2a1935eac91e4c4448e6" upstream="refs/heads/cm-13.0"/>
 
   <!-- art (and support) -->
@@ -81,7 +81,7 @@
   <project groups="pdk" name="CyanogenMod/android_external_jarjar" path="external/jarjar" revision="41c2bca43edfc197c3c67619115b9a70d9227008" upstream="refs/heads/cm-13.0"/>
 
   <!-- android base system -->
-  <project groups="pdk" name="commaai/android_system_core" path="system/core" remote="private" revision="master" upstream="master"/>
+  <project groups="pdk" name="commaai/android_system_core" path="system/core" remote="private" revision="53907edda9296b704a5a5cfa50fc3a4bafdde1da" upstream="master"/>
   <project groups="pdk" name="CyanogenMod/android_system_extras" path="system/extras" revision="0d598afe878adff21637d2673a07a7280c7151c5" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_vold" path="system/vold" revision="89599b68da8bca97575add0493e2440d5e204cbe" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="CyanogenMod/android_system_security" path="system/security" revision="6b8a2a31177c7baeabe9a05afb72cdd411698598" upstream="refs/heads/cm-13.0"/>
@@ -93,10 +93,10 @@
   <project groups="pdk" name="CyanogenMod/android_system_bt" path="system/bt" revision="ccde045431d38d4828412149f067631487f8025f" upstream="refs/heads/cm-13.0"/>
 
   <!-- android frameworks -->
-  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_frameworks_base" path="frameworks/base" remote="private" revision="master" upstream="master"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_frameworks_base" path="frameworks/base" remote="private" revision="50c05bb6992f49079448da215ae98d9e05d6a92c" upstream="master"/>
   <project groups="pdk" name="CyanogenMod/android_frameworks_native" path="frameworks/native" revision="b22bca465e55618a949d9cbdea665a1a3a831241" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_multidex" path="frameworks/multidex" revision="805db15e4d7baa57062ad08fb03eeac8691475c8" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="commaai/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="private" revision="master" upstream="master"/>
+  <project groups="pdk" name="commaai/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="private" revision="9c19cdad4aea82f44db09fdc473e26a6964c2b8b" upstream="master"/>
   <project groups="frameworks_ims,pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_net_ims" path="frameworks/opt/net/ims" revision="adbcc1db161da32f97de4eba11e51ff62f605ee6" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_net_voip" path="frameworks/opt/net/voip" revision="7b21ed512efedc31ab4acb93f02efb8f4a1329a2" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_support" path="frameworks/support" revision="e05dca1bdb2e49bb22d4d158bee10d22360f83d9" upstream="refs/heads/cm-13.0"/>
@@ -114,7 +114,7 @@
   <!-- android optional frameworks -->
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/data-binding" path="frameworks/data-binding" remote="aosp" revision="8b7340d0b2e57d5a3d71135f778b7f90e274a5f3" upstream="refs/tags/android-6.0.1_r72"/>
   <project groups="pdk-fs" name="CyanogenMod/android_frameworks_opt_net_ethernet" path="frameworks/opt/net/ethernet" revision="2a21941a046fca9b7a7ff79903bc32523d1c22e5" upstream="refs/heads/cm-13.0"/>
-  <project groups="pdk" name="commaai/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="private" revision="master" upstream="master"/>
+  <project groups="pdk" name="commaai/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="private" revision="aee39089c1af7ec238218ea43b107acbd4c4bf81" upstream="master"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_setupwizard" path="frameworks/opt/setupwizard" revision="a30259bf61a6676d546dcd4907b515212b4d23fa" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_opt_inputmethodcommon" path="frameworks/opt/inputmethodcommon" revision="990fcb1a6dbb5d1204cc8ec86e4bc3f691f4aeeb" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_webview" path="frameworks/webview" revision="10cecb31eed4770eb3345b79de158569f1b82d3c" upstream="refs/heads/cm-13.0"/>
