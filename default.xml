@@ -16,7 +16,7 @@
   </project>
 
   <!-- device -->
-  <project name="commaai/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="private" revision="14eb30a6dc7f340806d2ea158bc46ac938933f75" upstream="master"/>
+  <project name="commaai/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="private" revision="aa7d9c23fe197a32cc57732adfd8b710383bca4b" upstream="master"/>
   <project name="commaai/android_device_oppo_common" path="device/oppo/common" remote="private" revision="dca802e28bcc6581440d2fc7b7b25d6d92297cfd" upstream="master"/>
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" revision="d08df7b60be52867937fd02c92cbe6624a3c3ca7" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_device_qcom_sepolicy" path="device/qcom/sepolicy" revision="d805fbcf82e932c519b9a0a79a5995b3f84218fe" upstream="refs/heads/cm-13.0"/>
