@@ -4,9 +4,9 @@
   <remote fetch="https://github.com" name="github"/>
   <remote fetch="https://github.com" name="private"/>
   <!--<remote fetch="ssh://git@github.com" name="private"/>-->
-  
+
   <default remote="github" revision="refs/heads/cm-13.0" sync-c="true" sync-j="4"/>
-  
+
   <project name="commaai/android" path="android" remote="private" revision="mindroid" upstream="mindroid"/>
 
 <!-- device specific -->
@@ -22,7 +22,7 @@
   <project name="CyanogenMod/android_device_qcom_sepolicy" path="device/qcom/sepolicy" revision="d805fbcf82e932c519b9a0a79a5995b3f84218fe" upstream="refs/heads/cm-13.0"/>
 
   <!-- vendor -->
-  <project name="commaai/android_vendor_oneplus_oneplus3" path="vendor/oneplus/oneplus3" remote="private" revision="2e53561e0b3192af70fde71c9ad3e684ec87610a" upstream="master"/>
+  <project name="commaai/android_vendor_oneplus_oneplus3" path="vendor/oneplus/oneplus3" remote="private" revision="7ebca2acbedb2a892eb220d180cb010c572ae920" upstream="master"/>
   <project name="commaai/android_vendor_cm" path="vendor/cm" remote="private" revision="3f6eeeb553940e234183fb94e6f3d81424fa87de" upstream="master"/>
   <project name="CyanogenMod/cm_platform_sdk" path="vendor/cmsdk" revision="d755121d2c4c833d432aaf09810bfcad8e65e9f6" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_qcom_opensource_dpm" path="vendor/qcom/opensource/dpm" revision="070a9ec1127b42da4a4c58bd865ba64b8730d9e3" upstream="refs/heads/cm-13.0"/>
