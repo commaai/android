@@ -22,7 +22,7 @@
   <project name="CyanogenMod/android_device_qcom_sepolicy" path="device/qcom/sepolicy" revision="d805fbcf82e932c519b9a0a79a5995b3f84218fe" upstream="refs/heads/cm-13.0"/>
 
   <!-- vendor -->
-  <project name="commaai/android_vendor_oneplus_oneplus3" path="vendor/oneplus/oneplus3" remote="private" revision="7ebca2acbedb2a892eb220d180cb010c572ae920" upstream="master"/>
+  <project name="commaai/android_vendor_oneplus_oneplus3" path="vendor/oneplus/oneplus3" remote="private" revision="84204e3593e7d766167c797f88ad633c49e6572f" upstream="master"/>
   <project name="commaai/android_vendor_cm" path="vendor/cm" remote="private" revision="3f6eeeb553940e234183fb94e6f3d81424fa87de" upstream="master"/>
   <project name="CyanogenMod/cm_platform_sdk" path="vendor/cmsdk" revision="d755121d2c4c833d432aaf09810bfcad8e65e9f6" upstream="refs/heads/cm-13.0"/>
   <project name="CyanogenMod/android_vendor_qcom_opensource_dpm" path="vendor/qcom/opensource/dpm" revision="070a9ec1127b42da4a4c58bd865ba64b8730d9e3" upstream="refs/heads/cm-13.0"/>
@@ -33,7 +33,7 @@
   <project groups="pdk" name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" revision="368bd2abab25c637a657d1fe4cef6b2222b29e82" upstream="refs/heads/cm-13.0"/>
 
   <!-- kernel -->
-  <project clone-depth="1" name="commaai/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="private" revision="7c6db5e9235c9f3c41ebfcf3d893a3ff927fa32c" upstream="master"/>
+  <project clone-depth="1" name="commaai/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="private" revision="b04ac0d9f3fa39247bc22b9b116e7b1a94e2d061" upstream="master"/>
 
   <!-- hardware -->
   <project groups="pdk" name="CyanogenMod/android_hardware_libhardware" path="hardware/libhardware" revision="7659cdd34d33498b3e172730a888f8ea793e1ef3" upstream="refs/heads/cm-13.0"/>
