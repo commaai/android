@@ -63,7 +63,7 @@
   <!-- NEOS apps -->
   <project name="commaai/android_system_extras_su" path="system/extras/su" remote="private" revision="199592cc8e9816d9dc2027265062d94ef920b007" upstream="master"/>
   <project name="commaai/android_packages_apps_NEOSSetup" path="packages/apps/NEOSSetup" remote="private" revision="98828033a016504e859134802371ac20b2e644cf" upstream="master"/>
-  <project name="commaai/android_packages_apps_black" path="packages/apps/black" remote="private" revision="e4a62be7050effc604a7827b33a062151c7f371d" upstream="master"/>
+  <project name="commaai/android_packages_apps_black" path="packages/apps/black" remote="private" revision="04e867d466ef90bf0b1605e5d32dd6ede7e1f212" upstream="master"/>
   <project groups="pdk-fs" name="commaai/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="private" revision="6c2fa29a5abf747b9b477146d71a664c4f86c2f4" upstream="master"/>
   <project groups="pdk-fs" name="CyanogenMod/android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" revision="0dc4a6ba667a17de1764ac0c00c2e6a47c6a7fe2" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-fs" name="commaai/android_packages_apps_Settings" path="packages/apps/Settings" remote="private" revision="d7abf363759e6df61238274fa21418b4f5490493" upstream="master"/>
