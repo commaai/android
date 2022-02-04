@@ -94,7 +94,7 @@
   <project groups="pdk" name="CyanogenMod/android_system_bt" path="system/bt" revision="ccde045431d38d4828412149f067631487f8025f" upstream="refs/heads/cm-13.0"/>
 
   <!-- android frameworks -->
-  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_frameworks_base" path="frameworks/base" remote="private" revision="25268ab70f3042abf508a31b6a2a53dbc693b2a7" upstream="master"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="commaai/android_frameworks_base" path="frameworks/base" remote="private" revision="aef5893b34606675e2400e82ee87ed91e47d3b97" upstream="master"/>
   <project groups="pdk" name="CyanogenMod/android_frameworks_native" path="frameworks/native" revision="b22bca465e55618a949d9cbdea665a1a3a831241" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk-cw-fs,pdk-fs" name="CyanogenMod/android_frameworks_multidex" path="frameworks/multidex" revision="805db15e4d7baa57062ad08fb03eeac8691475c8" upstream="refs/heads/cm-13.0"/>
   <project groups="pdk" name="commaai/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="private" revision="9c19cdad4aea82f44db09fdc473e26a6964c2b8b" upstream="master"/>
